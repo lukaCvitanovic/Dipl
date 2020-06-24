@@ -1,0 +1,16 @@
+<html>
+  <head><title>DOM clobering - HTML filter bypass</title></head>
+  <h1>DOM clobering</h1>
+  <hr>
+  <div id="dom_posts">
+    <% for(var i = 0; i < posts.length; i++) { %>
+        <%- posts[i] %>
+    <% } %>
+  </div>
+  <form id="search" action="/dom-clobering2" method="POST">
+    <p>Post</p>
+    <textarea name="post" rows="10" cols="30"></textarea>
+    <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+    <button type="submit">Post</button>
+  </form>
+</html>

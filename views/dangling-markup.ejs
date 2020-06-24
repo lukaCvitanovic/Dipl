@@ -1,0 +1,9 @@
+<html>
+  <head><title>Dangling markup injection</title></head>
+  <h1>Dangling markup injection</h1>
+  <form id="form1" action="/signup" method="POST">
+    <input type="text" name="tekst" value="">
+    <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+    <button onclick="click()">Sign up</button>
+  </form>
+</html>

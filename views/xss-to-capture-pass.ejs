@@ -1,0 +1,17 @@
+<html>
+  <head><title>XSS to capture password</title></head>
+  <h1>XSS to capture password</h1>
+  <hr>
+  <h1>Log in</h1>
+  <form id="form1" action="/xss-to-capture-pass/login" method="POST">
+    <p>Name</p>
+    <input type="text" name="name" value="">
+    <p>Password</p>
+    <input type="password" name="pass" value="">
+    <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+    <button type="submit">Log in</button>
+  </form>
+  <form id="logout" action="/xss-to-capture-pass/logout" method="GET">
+    <button type="submit">Logout</button>
+  </form>
+</html>

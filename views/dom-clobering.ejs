@@ -1,0 +1,28 @@
+<html>
+  <head><title>DOM clobering - logical OR</title></head>
+  <h1>DOM clobering</h1>
+  <hr>
+  <div id="dom_posts">
+  </div>
+  <form id="search" action="/dom-clobering" method="POST">
+    <p>Post</p>
+    <textarea name="post" rows="10" cols="30"></textarea>
+    <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+    <button type="submit">Post</button>
+  </form>
+  <script>
+      <% for(var i = 0; i< posts.length; i++) { %> 
+          var a = '<%-posts[i]%>';
+          document.getElementById("dom_posts").innerHTML += a;
+      <% } %>
+  </script>
+  <script>
+      window.onload = () => {
+        let doc = window.doc || {path: 'https://unpkg.com/axios/dist/axios.min.js'}
+        let script = document.createElement('script')
+        script.innerHTML = doc.path
+        console.log(doc.path)
+        document.body.appendChild(script)
+      }
+  </script>
+</html>
