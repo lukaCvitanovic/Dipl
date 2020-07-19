@@ -61,7 +61,8 @@ mydb.add_blind_user = (trackingId) => {
 
 mydb.get_blind_user = (trackingId) => {
     return new Promise((resolve, reject) => {
-        let sql = util.format("SELECT user_id FROM mydb.blind_users WHERE TrackingID = '%s';", trackingId)
+        var str = "SELECT user_id FROM mydb.blind_users WHERE TrackingID = '%s';"
+        let sql = util.format(str, trackingId)
         pool.query(sql, (err, result) => {
             if(err) {
                 return reject(err)

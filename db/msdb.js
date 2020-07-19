@@ -50,7 +50,8 @@ msdb.get_blind_user = async (trackingId) => {
     if(status) {
         var req = new mssql.Request(conn)
         return new Promise((resolve, reject) => {
-            let sql = util.format("SELECT user_id FROM blind_users WHERE TrackingID = '%s';", trackingId)
+            let sql = util.format("SELECT user_id FROM blind_users WHERE TrackingID = \'%s\';", trackingId)
+            console.log(sql)
             req.query(sql, (err, result) => {
                 if(err) {
                     console.log(err)
@@ -85,10 +86,12 @@ msdb.test = async () => {
     }
 }
 
-async function f() {
-    var a = await msdb.test()
-    console.log(a)
+async function main() {
+    var l = await msdb.get_blind_user("03tqij9ohphk04x7")
+    console.log(l[0].recordset[0])
 }
+
+main()
 
 
 module.exports = msdb

@@ -1,0 +1,2299 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.29)  19 JUL 2020 21:48
+entering extended mode
+**./eg_abstract.tex
+(eg_abstract.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+! Undefined control sequence.
+l.13 {\fontsize{14}{18}\bf
+                           {SA≈ΩETAK}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 {\fontsize{14}{18}\bf {S
+                             A≈ΩETAK}}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no ≈ in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no K in font nullfont!
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...ji iskori≈°tavaju pronaƒëene ranjivosti. }
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ë in font cmr10!
+
+Overfull \hbox (24.1667pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 Tema
+ []
+
+
+Overfull \hbox (33.33342pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 diplom-
+ []
+
+
+Overfull \hbox (18.94449pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 skog
+ []
+
+
+Overfull \hbox (19.47227pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 rada
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 je
+ []
+
+
+Overfull \hbox (47.52791pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 pronalazak
+ []
+
+
+Overfull \hbox (24.47227pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 front-
+ []
+
+
+Overfull \hbox (15.55559pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 end
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 ran-
+ []
+
+
+Overfull \hbox (26.44452pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 jivosti
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 ap-
+ []
+
+
+Overfull \hbox (33.33344pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 likacija,
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 naini
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 na
+ []
+
+
+Overfull \hbox (18.05559pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 koje
+ []
+
+
+Overfull \hbox (8.38889pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 se
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 te
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 ran-
+ []
+
+
+Overfull \hbox (26.44452pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 jivosti
+ []
+
+
+Overfull \hbox (23.88896pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 mogu
+ []
+
+
+Overfull \hbox (39.75009pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 zloupotr-
+ []
+
+
+Overfull \hbox (22.50006pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 jebiti
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 te
+ []
+
+
+Overfull \hbox (18.05559pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 koje
+ []
+
+
+Overfull \hbox (9.50002pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 su
+ []
+
+
+Overfull \hbox (31.94452pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 metode
+ []
+
+
+Overfull \hbox (29.47229pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 obrane
+ []
+
+
+Overfull \hbox (10.83337pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 od
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 na-
+ []
+
+
+Overfull \hbox (21.11118pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 pada
+ []
+
+
+Overfull \hbox (16.38893pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 koji
+ []
+
+
+Overfull \hbox (20.05559pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 isko-
+ []
+
+
+Overfull \hbox (10.02779pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 ri-
+ []
+
+
+Overfull \hbox (27.50008pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 tavaju
+ []
+
+
+Overfull \hbox (23.36116pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 pron-
+ []
+
+
+Overfull \hbox (19.44447pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 aene
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 ran-
+ []
+
+
+Overfull \hbox (29.2223pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 jivosti.
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...ái do korisniƒçko imena i lozinke ≈ærtve.}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no æ in font cmr10!
+
+Overfull \hbox (18.61116pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 XSS
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ran-
+ []
+
+
+Overfull \hbox (23.66673pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 jivost
+ []
+
+
+Overfull \hbox (23.91672pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 preko
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 up-
+ []
+
+
+Overfull \hbox (35.8612pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ravitelja
+ []
+
+
+Overfull \hbox (28.61119pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 lozinki
+ []
+
+
+Overfull \hbox (30.3334pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 opisuje
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 na-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 pad
+ []
+
+
+Overfull \hbox (16.38893pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 koji
+ []
+
+
+Overfull \hbox (20.05559pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 isko-
+ []
+
+
+Overfull \hbox (10.02779pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ri-
+ []
+
+
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 tava
+ []
+
+
+Overfull \hbox (18.61116pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 XSS
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ran-
+ []
+
+
+Overfull \hbox (23.66673pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 jivost
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 u
+ []
+
+
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 blog
+ []
+
+
+Overfull \hbox (35.0834pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 stranici.
+ []
+
+
+Overfull \hbox (21.25003pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 Ran-
+ []
+
+
+Overfull \hbox (23.66673pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 jivost
+ []
+
+
+Overfull \hbox (19.16672pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 koju
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (25.63893pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 stran-
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ica
+ []
+
+
+Overfull \hbox (18.11115pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 pos-
+ []
+
+
+Overfull \hbox (10.83334pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 je-
+ []
+
+
+Overfull \hbox (18.61116pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 duje
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 je
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 mo-
+ []
+
+
+Overfull \hbox (28.94452pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 gunost
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 da
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ko-
+ []
+
+
+Overfull \hbox (13.97223pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ris-
+ []
+
+
+Overfull \hbox (13.61116pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 nik
+ []
+
+
+Overfull \hbox (18.33337pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 upie
+ []
+
+
+Overfull \hbox (30.13895pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 HTML
+ []
+
+
+Overfull \hbox (15.83339pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 kod
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 u
+ []
+
+
+Overfull \hbox (21.44449pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 tekst
+ []
+
+
+Overfull \hbox (23.05563pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 lanka
+ []
+
+
+Overfull \hbox (16.38893pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 koji
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 je
+ []
+
+
+Overfull \hbox (28.3334pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 mogue
+ []
+
+
+Overfull \hbox (20.05559pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 isko-
+ []
+
+
+Overfull \hbox (17.30559pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 risti
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 loe
+ []
+
+
+Overfull \hbox (18.88893pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 kon-
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 fig-
+ []
+
+
+Overfull \hbox (15.58336pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 uri-
+ []
+
+
+Overfull \hbox (20.30562pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ranji
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 up-
+ []
+
+
+Overfull \hbox (30.86119pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ravitelj
+ []
+
+
+Overfull \hbox (28.61119pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 lozinki
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 i
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 na
+ []
+
+
+Overfull \hbox (12.50003pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 taj
+ []
+
+
+Overfull \hbox (18.88895pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 nain
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 doi
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 do
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ko-
+ []
+
+
+Overfull \hbox (13.97223pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ris-
+ []
+
+
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 niko
+ []
+
+
+Overfull \hbox (26.11118pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 imena
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 i
+ []
+
+
+Overfull \hbox (30.00006pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 lozinke
+ []
+
+
+Overfull \hbox (20.02782pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 rtve. 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...nje bilo kakvog koda unutar web stranice.}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no æ in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ë in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 U
+ []
+
+
+Overfull \hbox (37.00006pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 sljedeem
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 na-
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 padu
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 je
+ []
+
+
+Overfull \hbox (20.05559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 isko-
+ []
+
+
+Overfull \hbox (25.58339pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ritena
+ []
+
+
+Overfull \hbox (24.58339pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 DOM
+ []
+
+
+Overfull \hbox (21.11115pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 clob-
+ []
+
+
+Overfull \hbox (17.5278pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ber-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ing
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ran-
+ []
+
+
+Overfull \hbox (23.66673pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 jivost
+ []
+
+
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 blog
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (25.63893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 stran-
+ []
+
+
+Overfull \hbox (14.44446pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ice.
+ []
+
+
+Overfull \hbox (21.11118pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 Ovaj
+ []
+
+
+Overfull \hbox (15.00005pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 put
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (25.63893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 stran-
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ica
+ []
+
+
+Overfull \hbox (23.91672pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 prim-
+ []
+
+
+Overfull \hbox (25.5834pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 jernju
+ []
+
+
+Overfull \hbox (25.58339pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 proia-
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 vanje
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ko-
+ []
+
+
+Overfull \hbox (13.97223pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ris-
+ []
+
+
+Overfull \hbox (23.3334pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 nikog
+ []
+
+
+Overfull \hbox (20.8334pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 koda
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 te
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 dop-
+ []
+
+
+Overfull \hbox (14.44449pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 uta
+ []
+
+
+Overfull \hbox (15.05557pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 sig-
+ []
+
+
+Overfull \hbox (19.47226pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 urne
+ []
+
+
+Overfull \hbox (30.13895pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 HTML
+ []
+
+
+Overfull \hbox (10.55556pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 el-
+ []
+
+
+Overfull \hbox (7.77777pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 e-
+ []
+
+
+Overfull \hbox (29.16672pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 mente,
+ []
+
+
+Overfull \hbox (35.02786pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 atribute
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 i
+ []
+
+
+Overfull \hbox (26.69449pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 mrene
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 pro-
+ []
+
+
+Overfull \hbox (28.88896pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tokole.
+ []
+
+
+Overfull \hbox (18.05559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 Mu-
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tim,
+ []
+
+
+Overfull \hbox (14.44449pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ova
+ []
+
+
+Overfull \hbox (25.63893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 stran-
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ica
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ima
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ran-
+ []
+
+
+Overfull \hbox (23.66673pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 jivost
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 u
+ []
+
+
+Overfull \hbox (24.16673pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 nainu
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 na
+ []
+
+
+Overfull \hbox (16.38893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 koji
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 je
+ []
+
+
+Overfull \hbox (15.83339pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 kod
+ []
+
+
+Overfull \hbox (33.38898pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 napisan
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 te
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 pro-
+ []
+
+
+Overfull \hbox (18.94449pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 pust
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 u
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 fil-
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 teru
+ []
+
+
+Overfull \hbox (16.38893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 koji
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 je
+ []
+
+
+Overfull \hbox (8.38889pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 se
+ []
+
+
+Overfull \hbox (23.91672pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 prim-
+ []
+
+
+Overfull \hbox (16.38892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 jen-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 juje
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 na
+ []
+
+
+Overfull \hbox (21.44449pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tekst
+ []
+
+
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 blog
+ []
+
+
+Overfull \hbox (25.83342pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 lanka.
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 Ovo
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 za-
+ []
+
+
+Overfull \hbox (23.61118pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 jedno
+ []
+
+
+Overfull \hbox (43.33347pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 omoguava
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 na-
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 padu
+ []
+
+
+Overfull \hbox (24.75005pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 izvra-
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 vanje
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 bilo
+ []
+
+
+Overfull \hbox (30.0001pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 kakvog
+ []
+
+
+Overfull \hbox (20.8334pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 koda
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 un-
+ []
+
+
+Overfull \hbox (18.36116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 utar
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (25.63893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 stran-
+ []
+
+
+Overfull \hbox (14.44446pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ice. 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+! Undefined control sequence.
+<write> ...tentsline {chapter}{SA≈ΩETAK}{\thepage 
+                                                  }}
+l.26 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\@writefile{toc}{\contentsline {chapter}{SA≈ΩETAK}{}}
+{C:/Users/Luka/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...bi se gotovo neprimjetno izvukli podatci.}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 Sli-
+ []
+
+
+Overfull \hbox (11.38893pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 jpi
+ []
+
+
+Overfull \hbox (22.36118pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 SQLi
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 na-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 pad
+ []
+
+
+Overfull \hbox (20.05559pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 isko-
+ []
+
+
+Overfull \hbox (10.02779pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 ri-
+ []
+
+
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 tava
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 do-
+ []
+
+
+Overfull \hbox (14.47226pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 bro
+ []
+
+
+Overfull \hbox (36.13898pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 napravl-
+ []
+
+
+Overfull \hbox (18.33337pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 jenu
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 ap-
+ []
+
+
+Overfull \hbox (31.1112pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 likaciju
+ []
+
+
+Overfull \hbox (18.61116pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 koja
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 ne
+ []
+
+
+Overfull \hbox (16.69446pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 rea-
+ []
+
+
+Overfull \hbox (16.69449pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 gira
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 na
+ []
+
+
+Overfull \hbox (18.61116pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 kan-
+ []
+
+
+Overfull \hbox (21.11118pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 jenja
+ []
+
+
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 ili
+ []
+
+
+Overfull \hbox (22.80559pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 greke
+ []
+
+
+Overfull \hbox (15.55557pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 iza-
+ []
+
+
+Overfull \hbox (7.77777pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 z-
+ []
+
+
+Overfull \hbox (19.72227pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 vane
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 na
+ []
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 bazi
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 po-
+ []
+
+
+Overfull \hbox (31.94455pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 dataka.
+ []
+
+
+Overfull \hbox (21.11118pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 Ovaj
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 na-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 pad
+ []
+
+
+Overfull \hbox (20.05559pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 isko-
+ []
+
+
+Overfull \hbox (10.02779pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 ri-
+ []
+
+
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 tava
+ []
+
+
+Overfull \hbox (30.8334pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 zadanu
+ []
+
+
+Overfull \hbox (18.88893pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 kon-
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 fig-
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 u-
+ []
+
+
+Overfull \hbox (24.75006pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 raciju
+ []
+
+
+Overfull \hbox (19.44447pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 baze
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 po-
+ []
+
+
+Overfull \hbox (29.16676pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 dataka
+ []
+
+
+Overfull \hbox (19.72229pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 kako
+ []
+
+
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 bi
+ []
+
+
+Overfull \hbox (8.38889pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 se
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 go-
+ []
+
+
+Overfull \hbox (18.61116pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 tovo
+ []
+
+
+Overfull \hbox (33.91673pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 neprim-
+ []
+
+
+Overfull \hbox (21.9445pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 jetno
+ []
+
+
+Overfull \hbox (28.88898pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 izvukli
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 po-
+ []
+
+
+Overfull \hbox (24.4445pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 datci. 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 ...jer se koristi zastarjela funkcionalnost.}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ë in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no æ in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+
+Overfull \hbox (21.25003pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 Ran-
+ []
+
+
+Overfull \hbox (23.66673pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 jivost
+ []
+
+
+Overfull \hbox (18.61116pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 koja
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 je
+ []
+
+
+Overfull \hbox (23.36116pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 pron-
+ []
+
+
+Overfull \hbox (20.00005pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 aena
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 u
+ []
+
+
+Overfull \hbox (19.86116pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 ASP
+ []
+
+
+Overfull \hbox (27.63893pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 .NET-
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 u
+ []
+
+
+Overfull \hbox (43.33347pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 omoguava
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 nap-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 dau
+ []
+
+
+Overfull \hbox (24.75005pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 izvra-
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 vanje
+ []
+
+
+Overfull \hbox (53.08348pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 proizvoljnog
+ []
+
+
+Overfull \hbox (23.61119pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 koda,
+ []
+
+
+Overfull \hbox (11.41669pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 jer
+ []
+
+
+Overfull \hbox (8.38889pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 se
+ []
+
+
+Overfull \hbox (39.75009pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 zloupotr-
+ []
+
+
+Overfull \hbox (10.83334pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 je-
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 bl-
+ []
+
+
+Overfull \hbox (17.50006pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 java
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 za-
+ []
+
+
+Overfull \hbox (7.27777pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 s-
+ []
+
+
+Overfull \hbox (16.13892pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 tar-
+ []
+
+
+Overfull \hbox (15.27782pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 jela
+ []
+
+
+Overfull \hbox (48.05568pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 funkcional-
+ []
+
+
+Overfull \hbox (21.16672pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 nost.
+ []
+
+
+Overfull \hbox (21.11118pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 Ovaj
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 na-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 pad
+ []
+
+
+Overfull \hbox (8.38889pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 se
+ []
+
+
+Overfull \hbox (25.8334pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 izvodi
+ []
+
+
+Overfull \hbox (34.22229pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 kreiran-
+ []
+
+
+Overfull \hbox (15.83337pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 jem
+ []
+
+
+Overfull \hbox (24.44447pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 URL-
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 a
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 ko-
+ []
+
+
+Overfull \hbox (14.16672pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 jim
+ []
+
+
+Overfull \hbox (8.38889pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 se
+ []
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 moe
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 u
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (25.63893pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 stran-
+ []
+
+
+Overfull \hbox (12.7778pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 ciu
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 ui-
+ []
+
+
+Overfull \hbox (15.5556pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 tati
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 ma-
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 li-
+ []
+
+
+Overfull \hbox (27.22227pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 ciozna
+ []
+
+
+Overfull \hbox (33.13898pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 skripta,
+ []
+
+
+Overfull \hbox (11.41669pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 jer
+ []
+
+
+Overfull \hbox (8.38889pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 se
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 ko-
+ []
+
+
+Overfull \hbox (17.30559pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 risti
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 za-
+ []
+
+
+Overfull \hbox (7.27777pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 s-
+ []
+
+
+Overfull \hbox (16.13892pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 tar-
+ []
+
+
+Overfull \hbox (15.27782pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 jela
+ []
+
+
+Overfull \hbox (48.05568pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 funkcional-
+ []
+
+
+Overfull \hbox (21.16672pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 nost. 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 ...jni ili skriveni podataka s web stranice.}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no ç in font cmr10!
+
+Overfull \hbox (3.61111pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 I
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 na
+ []
+
+
+Overfull \hbox (23.36118pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 kraju
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 je
+ []
+
+
+Overfull \hbox (32.83342pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 opisana
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ran-
+ []
+
+
+Overfull \hbox (23.66673pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 jivost
+ []
+
+
+Overfull \hbox (21.11116pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 PHP
+ []
+
+
+Overfull \hbox (33.44449pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 servera.
+ []
+
+
+Overfull \hbox (17.50006pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 Ova
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ran-
+ []
+
+
+Overfull \hbox (23.66673pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 jivost
+ []
+
+
+Overfull \hbox (8.38889pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 se
+ []
+
+
+Overfull \hbox (25.55562pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 nalazi
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 u
+ []
+
+
+Overfull \hbox (24.16673pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 nainu
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 na
+ []
+
+
+Overfull \hbox (16.38893pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 koji
+ []
+
+
+Overfull \hbox (21.11116pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 PHP
+ []
+
+
+Overfull \hbox (25.66669pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 server
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 in-
+ []
+
+
+Overfull \hbox (15.58334pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ter-
+ []
+
+
+Overfull \hbox (17.25002pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 pre-
+ []
+
+
+Overfull \hbox (15.58337pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 tira
+ []
+
+
+Overfull \hbox (14.47223pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 rel-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 a-
+ []
+
+
+Overfull \hbox (21.9445pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 tivne
+ []
+
+
+Overfull \hbox (21.11115pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 URL
+ []
+
+
+Overfull \hbox (30.08337pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 adrese.
+ []
+
+
+Overfull \hbox (17.50006pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 Ova
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ran-
+ []
+
+
+Overfull \hbox (23.66673pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 jivost
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 za-
+ []
+
+
+Overfull \hbox (12.50002pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ht-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 jeva
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ko-
+ []
+
+
+Overfull \hbox (28.08339pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ritenje
+ []
+
+
+Overfull \hbox (12.50002pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 In-
+ []
+
+
+Overfull \hbox (15.58334pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ter-
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 net
+ []
+
+
+Overfull \hbox (15.4167pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 Ex-
+ []
+
+
+Overfull \hbox (20.58337pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 plor-
+ []
+
+
+Overfull \hbox (13.36113pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 era
+ []
+
+
+Overfull \hbox (16.38893pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 koji
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 u
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ko-
+ []
+
+
+Overfull \hbox (26.11118pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 nanici
+ []
+
+
+Overfull \hbox (43.33347pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 omoguava
+ []
+
+
+Overfull \hbox (23.91672pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 prim-
+ []
+
+
+Overfull \hbox (18.33337pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 jenu
+ []
+
+
+Overfull \hbox (18.33337pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 CSS
+ []
+
+
+Overfull \hbox (18.05559pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 key-
+ []
+
+
+Overfull \hbox (16.11115pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 log-
+ []
+
+
+Overfull \hbox (18.36115pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 gera
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ko-
+ []
+
+
+Overfull \hbox (14.16672pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 jim
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 je
+ []
+
+
+Overfull \hbox (28.88898pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 mogua
+ []
+
+
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 izvui
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 bilo
+ []
+
+
+Overfull \hbox (16.38893pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 koji
+ []
+
+
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 tajni
+ []
+
+
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ili
+ []
+
+
+Overfull \hbox (33.69452pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 skriveni
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 po-
+ []
+
+
+Overfull \hbox (29.16676pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 dataka
+ []
+
+
+Overfull \hbox (3.94444pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 s
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (25.63893pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 stran-
+ []
+
+
+Overfull \hbox (14.44446pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 ice. 
+ []
+
+! Undefined control sequence.
+l.38 \bf
+        {Kljuƒçne rijeƒçi:\\}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \bf{K
+          ljuƒçne rijeƒçi:\\}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no K in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no ƒ in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ƒ in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (21.38895pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 XSS,
+ []
+
+
+Overfull \hbox (25.13896pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 SQLi,
+ []
+
+
+Overfull \hbox (20.97227pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 Dom
+ []
+
+
+Overfull \hbox (21.11115pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 clob-
+ []
+
+
+Overfull \hbox (17.5278pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 ber-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 ing,
+ []
+
+
+Overfull \hbox (21.8056pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 ASP.
+ []
+
+
+Overfull \hbox (24.3056pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 NET,
+ []
+
+
+Overfull \hbox (23.0556pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 PHP,
+ []
+
+
+Overfull \hbox (18.33337pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 CSS
+ []
+
+
+Overfull \hbox (18.05559pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 key-
+ []
+
+
+Overfull \hbox (16.11115pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 log-
+ []
+
+
+Overfull \hbox (16.13892pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 ger,
+ []
+
+
+Overfull \hbox (19.16672pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 hak-
+ []
+
+
+Overfull \hbox (11.69444pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 er-
+ []
+
+
+Overfull \hbox (12.00003pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 ski
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 na-
+ []
+
+
+Overfull \hbox (18.88895pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 pad,
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 ran-
+ []
+
+
+Overfull \hbox (26.44452pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 jivost, 
+ []
+
+)
+! Emergency stop.
+<*> ./eg_abstract.tex
+                     
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 10 strings out of 493305
+ 222 string characters out of 3130237
+ 59825 words of memory out of 3000000
+ 3659 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 16i,4n,15p,467b,113s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

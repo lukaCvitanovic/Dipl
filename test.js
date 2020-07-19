@@ -1,3 +1,4 @@
+/*
 const axios = require('axios')
 const fs = require('fs')
 const util = require('util')
@@ -157,3 +158,6 @@ function test() {
 }
 
 generate_CSS(1,'')
+*/
+
+alert('ASP. NET XSS napad')

