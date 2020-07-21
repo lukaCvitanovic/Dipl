@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.29)  19 JUL 2020 21:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.29)  21 JUL 2020 02:29
 entering extended mode
 **./eg_abstract.tex
 (eg_abstract.tex
@@ -157,8 +157,8 @@ Overfull \hbox (23.88896pt too wide) in paragraph at lines 19--20
  []
 
 
-Overfull \hbox (39.75009pt too wide) in paragraph at lines 19--20
-\OT1/cmr/m/n/10 zloupotr-
+Overfull \hbox (42.52788pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 zloupotri-
  []
 
 
@@ -253,7 +253,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 ...ái do korisniƒçko imena i lozinke ≈ærtve.}
+l.22 ...i do korisniƒçkog imena i lozinke ≈ærtve.}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -270,8 +270,6 @@ Missing character: There is no ƒ in font cmr10!
 Missing character: There is no á in font cmr10!
 Missing character: There is no ≈ in font cmr10!
 Missing character: There is no ° in font cmr10!
-Missing character: There is no ƒ in font cmr10!
-Missing character: There is no ç in font cmr10!
 Missing character: There is no ƒ in font cmr10!
 Missing character: There is no á in font cmr10!
 Missing character: There is no ƒ in font cmr10!
@@ -384,8 +382,8 @@ Overfull \hbox (21.25003pt too wide) in paragraph at lines 22--23
  []
 
 
-Overfull \hbox (23.66673pt too wide) in paragraph at lines 22--23
-\OT1/cmr/m/n/10 jivost
+Overfull \hbox (26.44452pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 jivost,
  []
 
 
@@ -484,13 +482,18 @@ Overfull \hbox (21.44449pt too wide) in paragraph at lines 22--23
  []
 
 
-Overfull \hbox (23.05563pt too wide) in paragraph at lines 22--23
-\OT1/cmr/m/n/10 lanka
+Overfull \hbox (25.83342pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 lanka,
  []
 
 
-Overfull \hbox (16.38893pt too wide) in paragraph at lines 22--23
-\OT1/cmr/m/n/10 koji
+Overfull \hbox (20.27783pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 zbog
+ []
+
+
+Overfull \hbox (18.05559pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 koje
  []
 
 
@@ -534,8 +537,8 @@ Overfull \hbox (15.58336pt too wide) in paragraph at lines 22--23
  []
 
 
-Overfull \hbox (20.30562pt too wide) in paragraph at lines 22--23
-\OT1/cmr/m/n/10 ranji
+Overfull \hbox (14.47226pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ran
  []
 
 
@@ -559,18 +562,8 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 22--23
  []
 
 
-Overfull \hbox (10.55559pt too wide) in paragraph at lines 22--23
-\OT1/cmr/m/n/10 na
- []
-
-
-Overfull \hbox (12.50003pt too wide) in paragraph at lines 22--23
-\OT1/cmr/m/n/10 taj
- []
-
-
 Overfull \hbox (18.88895pt too wide) in paragraph at lines 22--23
-\OT1/cmr/m/n/10 nain
+\OT1/cmr/m/n/10 tako
  []
 
 
@@ -594,8 +587,8 @@ Overfull \hbox (13.97223pt too wide) in paragraph at lines 22--23
  []
 
 
-Overfull \hbox (18.33339pt too wide) in paragraph at lines 22--23
-\OT1/cmr/m/n/10 niko
+Overfull \hbox (23.3334pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 nikog
  []
 
 
@@ -631,7 +624,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no ƒ in font cmr10!
-Missing character: There is no ç in font cmr10!
+Missing character: There is no á in font cmr10!
 Missing character: There is no ≈ in font cmr10!
 Missing character: There is no ° in font cmr10!
 Missing character: There is no ƒ in font cmr10!
@@ -774,8 +767,8 @@ Overfull \hbox (23.91672pt too wide) in paragraph at lines 25--26
  []
 
 
-Overfull \hbox (25.5834pt too wide) in paragraph at lines 25--26
-\OT1/cmr/m/n/10 jernju
+Overfull \hbox (22.25005pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 jernu
  []
 
 
@@ -879,8 +872,8 @@ Overfull \hbox (28.88896pt too wide) in paragraph at lines 25--26
  []
 
 
-Overfull \hbox (18.05559pt too wide) in paragraph at lines 25--26
-\OT1/cmr/m/n/10 Mu-
+Overfull \hbox (22.50003pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 Meu-
  []
 
 
@@ -1059,8 +1052,8 @@ Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
  []
 
 
-Overfull \hbox (21.66673pt too wide) in paragraph at lines 25--26
-\OT1/cmr/m/n/10 padu
+Overfull \hbox (26.66675pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 padau
  []
 
 
@@ -1167,8 +1160,8 @@ Overfull \hbox (14.44447pt too wide) in paragraph at lines 28--29
  []
 
 
-Overfull \hbox (11.38893pt too wide) in paragraph at lines 28--29
-\OT1/cmr/m/n/10 jpi
+Overfull \hbox (15.83337pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 jepi
  []
 
 
@@ -1516,13 +1509,13 @@ Overfull \hbox (43.33347pt too wide) in paragraph at lines 31--32
  []
 
 
-Overfull \hbox (19.44449pt too wide) in paragraph at lines 31--32
-\OT1/cmr/m/n/10 nap-
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 na-
  []
 
 
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 31--32
-\OT1/cmr/m/n/10 dau
+Overfull \hbox (26.66675pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 padau
  []
 
 
@@ -1556,13 +1549,8 @@ Overfull \hbox (8.38889pt too wide) in paragraph at lines 31--32
  []
 
 
-Overfull \hbox (39.75009pt too wide) in paragraph at lines 31--32
-\OT1/cmr/m/n/10 zloupotr-
- []
-
-
-Overfull \hbox (10.83334pt too wide) in paragraph at lines 31--32
-\OT1/cmr/m/n/10 je-
+Overfull \hbox (44.19453pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10 zloupotre-
  []
 
 
@@ -1687,7 +1675,7 @@ Overfull \hbox (25.63893pt too wide) in paragraph at lines 31--32
 
 
 Overfull \hbox (12.7778pt too wide) in paragraph at lines 31--32
-\OT1/cmr/m/n/10 ciu
+\OT1/cmr/m/n/10 icu
  []
 
 
@@ -1793,7 +1781,7 @@ Missing character: There is no á in font cmr10!
 Missing character: There is no ƒ in font cmr10!
 Missing character: There is no á in font cmr10!
 Missing character: There is no ƒ in font cmr10!
-Missing character: There is no ç in font cmr10!
+Missing character: There is no á in font cmr10!
 
 Overfull \hbox (3.61111pt too wide) in paragraph at lines 34--35
 \OT1/cmr/m/n/10 I
@@ -2080,8 +2068,8 @@ Overfull \hbox (7.50002pt too wide) in paragraph at lines 34--35
  []
 
 
-Overfull \hbox (28.88898pt too wide) in paragraph at lines 34--35
-\OT1/cmr/m/n/10 mogua
+Overfull \hbox (28.3334pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 mogue
  []
 
 
@@ -2278,7 +2266,7 @@ Overfull \hbox (17.80559pt too wide) in paragraph at lines 38--40
 
 
 Overfull \hbox (26.44452pt too wide) in paragraph at lines 38--40
-\OT1/cmr/m/n/10 jivost, 
+\OT1/cmr/m/n/10 jivosti 
  []
 
 )
@@ -2290,10 +2278,10 @@ Overfull \hbox (26.44452pt too wide) in paragraph at lines 38--40
  
 Here is how much of TeX's memory you used:
  10 strings out of 493305
- 222 string characters out of 3130237
+ 240 string characters out of 3130237
  59825 words of memory out of 3000000
  3659 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 16i,4n,15p,467b,113s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 16i,4n,15p,468b,113s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -143,11 +143,16 @@ router.get('/blind-sqli', (req, res) => {
 
 router.post('/blind-sqli', (req, res) => {
     res.send('POST route for /blind-sqli')
+
+    var someObject = window.someObject || {};
+
+    console.log(someObject)
+
 })
 
 
 
-//DOM clobering
+//DOM clobering         /(A(ABCD))/Script.js
 //payload (crome only)
 //<a id=doc><a id=doc name=path href="cid:alert(1)//">
 
